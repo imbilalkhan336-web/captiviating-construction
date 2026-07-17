@@ -27,7 +27,7 @@ function ServiceCard({ icon, title, body }) {
     return (
         <div className="group relative mt-7 rounded-lg border-x border-b border-gray-200 bg-white px-6 pb-8 pt-12 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-blue-light/40 hover:shadow-lg">
             <div className="absolute -top-7 left-1/2 flex h-14 w-14 -translate-x-1/2 items-center justify-center rounded-full bg-brand-blue-light shadow-md ring-4 ring-white">
-                <img src={icon} alt={title} className="h-8 w-8 object-contain" />
+                <img src={icon} alt={title} className="h-8 w-8 object-contain brightness-0 invert" />
             </div>
             <h3 className="font-body text-xl font-bold text-brand-blue">{title}</h3>
             <p className="mt-3 font-body text-sm leading-relaxed text-gray-600">{body}</p>
