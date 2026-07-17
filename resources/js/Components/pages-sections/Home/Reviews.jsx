@@ -188,7 +188,7 @@ export default function Reviews({ reviews = [] }) {
     }
 
     return (
-        <section className="relative overflow-hidden bg-[#F2F4F6] py-20 lg:py-24">
+        <section className="relative overflow-hidden bg-[#F2F4F6] py-20 lg:py-16">
             <div className="relative mx-auto max-w-7xl px-4">
                 <p className="text-center font-poppins text-[10px] font-bold uppercase tracking-[0.2em] text-[#1A73E8]">
                     Hear What Our Customers Are Saying
@@ -197,7 +197,7 @@ export default function Reviews({ reviews = [] }) {
                     Over {reviewsCount}+ Reviews
                 </h2>
 
-                <div className="relative mt-12">
+                <div className="relative mt-6">
                     <div
                         ref={scrollerRef}
                         onPointerDown={onPointerDown}
@@ -242,7 +242,7 @@ export default function Reviews({ reviews = [] }) {
 
                 {/* Pagination dots */}
                 {dotCount > 1 && (
-                    <div className="mt-8 flex justify-center gap-2">
+                    <div className="mt-4 flex justify-center gap-2">
                         {[...Array(dotCount)].map((_, i) => (
                             <button
                                 key={i}

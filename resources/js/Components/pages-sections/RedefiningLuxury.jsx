@@ -2,7 +2,7 @@ import FeatureBlock from '@/Components/FrontComponents/FeatureBlock';
 
 export default function RedefiningLuxury() {
     return (
-        <section className="bg-white py-16 lg:py-24">
+        <section className="bg-white py-4">
             <div className="mx-auto max-w-7xl px-4">
                 <FeatureBlock
                     heading="Redefining Luxury"
