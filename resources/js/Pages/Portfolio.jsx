@@ -30,15 +30,12 @@ export default function Portfolio({ gallery = [], reviews = [], seo = {} }) {
                     className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url('${HERO_BG}')` }}
                 />
-                <div aria-hidden="true" className="absolute inset-0 bg-black/60" />
+                <div aria-hidden="true" className="absolute inset-0 bg-black/35" />
                 <div className="relative mx-auto max-w-[1200px] px-4 py-20 text-center lg:py-28">
-                    <p className="text-sm font-bold uppercase tracking-[0.25em] text-brand-orange">
-                        Our Work
-                    </p>
-                    <h1 className="mt-3 font-montserrat text-4xl font-semibold text-white sm:text-5xl lg:text-6xl">
+                    <h1 className="mt-3 font-montserrat text-[45px] font-bold leading-[54px] text-white">
                         Portfolio
                     </h1>
-                    <p className="mx-auto mt-5 max-w-2xl font-body text-sm leading-relaxed text-white/85 md:text-base">
+                    <p className="mx-auto mt-5 max-w-2xl font-montserrat text-[16px] font-normal leading-[24px] text-white/85">
                         A look at the custom homes, renovations, and additions we&apos;ve brought to life for
                         families across New Jersey â€” built with craftsmanship, care, and lasting value.
                     </p>

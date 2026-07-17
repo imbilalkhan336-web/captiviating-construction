@@ -34,7 +34,7 @@
                     {/* Gradient overlay â€” darker on the left where text lives */}
                     <div
                         aria-hidden="true"
-                        className="absolute inset-0 bg-gradient-to-r from-[#0A2A4A] via-[#0A2A4A]/85 to-[#0A2A4A]/30 md:via-[#0A2A4A]/75 md:to-transparent"
+                        className="absolute inset-0 bg-gradient-to-r from-[#0A2A4A]/80 via-[#0A2A4A]/50 to-[#0A2A4A]/10 md:via-[#0A2A4A]/40 md:to-transparent"
                     />
 
                     {/* Decorative depth orbs */}
@@ -50,23 +50,14 @@
                     {/* Content */}
                     <div className="relative px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14">
                         <div className="max-w-lg">
-                            {/* Eyebrow label with accent line */}
-                            <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">
-                                {label}
-                            </p>
-                            <span
-                                aria-hidden="true"
-                                className="mt-3 block h-0.5 w-10 rounded-full bg-brand-orange"
-                            />
-
                             {/* Title */}
-                            <h1 className={`mt-4 font-display text-[32px] uppercase leading-[0.95] text-white md:text-[42px] lg:text-[50px] ${titleClassName}`}>
+                            <h1 className={`font-montserrat text-[45px] font-bold leading-[54px] text-white ${titleClassName}`}>
                                 {title}
                             </h1>
 
                             {/* Description */}
                             {description && (
-                                <p className="mt-5 font-body text-sm leading-relaxed text-white/85 md:text-base">
+                                <p className="mt-5 font-montserrat text-[16px] font-normal leading-[24px] text-white/85">
                                     {description}
                                 </p>
                             )}

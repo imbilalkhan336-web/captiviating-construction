@@ -113,7 +113,7 @@ export default function BlogShow({ post, related = [] }) {
                             className="absolute inset-0 bg-cover bg-center"
                             style={{ backgroundImage: `url('${post.image_path || '/img/cover.webp'}')` }}
                         />
-                        <div aria-hidden="true" className="absolute inset-0 bg-black/60" />
+                        <div aria-hidden="true" className="absolute inset-0 bg-black/35" />
 
                         <div className="relative mx-auto max-w-[1200px] px-4 py-20 lg:py-28">
                             {post.created_at && (
@@ -121,11 +121,11 @@ export default function BlogShow({ post, related = [] }) {
                                     {formatDate(post.created_at)}
                                 </p>
                             )}
-                            <h1 className="mt-3 max-w-3xl font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-white">
+                            <h1 className="mt-3 max-w-3xl font-montserrat text-[45px] font-bold leading-[54px] text-white">
                                 {post.title}
                             </h1>
                             {post.excerpt && (
-                                <p className="mt-4 max-w-2xl font-body text-base leading-relaxed text-white/85">
+                                <p className="mt-4 max-w-2xl font-montserrat text-[16px] font-normal leading-[24px] text-white/85">
                                     {post.excerpt}
                                 </p>
                             )}

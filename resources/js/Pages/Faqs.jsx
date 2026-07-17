@@ -74,9 +74,9 @@ export default function Faqs({ reviews = [], seo = {} }) {
                     className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url('${HERO_BG}')` }}
                 />
-                <div aria-hidden="true" className="absolute inset-0 bg-black/65" />
+                <div aria-hidden="true" className="absolute inset-0 bg-black/35" />
                 <div className="relative mx-auto max-w-[1200px] px-4 py-20 lg:py-24">
-                    <h1 className="font-montserrat text-4xl font-bold text-white sm:text-5xl">
+                    <h1 className="font-montserrat text-[45px] font-bold leading-[54px] text-white">
                         Frequently Asked Questions
                     </h1>
                 </div>

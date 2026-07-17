@@ -101,16 +101,13 @@ function AboutHero() {
                     className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url('${HERO_BG}')` }}
                 />
-                <div aria-hidden="true" className="absolute inset-0 bg-black/70" />
+                <div aria-hidden="true" className="absolute inset-0 bg-black/35" />
 
                 <div className="relative mx-auto max-w-4xl px-4 py-12 text-center lg:py-16">
-                    <p className="text-[13px] font-bold uppercase tracking-[0.25em] text-brand-blue-light">
-                        About Us
-                    </p>
-                    <h1 className="mt-3 font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-white">
+                    <h1 className="mt-3 font-montserrat text-[45px] font-bold leading-[54px] text-white">
                         Building Your Vision Into Reality
                     </h1>
-                    <p className="mx-auto mt-5 max-w-2xl font-body text-[15px] leading-relaxed text-white/85 md:text-base">
+                    <p className="mx-auto mt-5 max-w-2xl font-montserrat text-[16px] font-normal leading-[24px] text-white/85">
                         At Captivating Construction, we bring your dream home to life with expert craftsmanship,
                         innovative solutions, and personalized service. From concept to completion, our team
                         delivers exceptional results that stand the test of time.

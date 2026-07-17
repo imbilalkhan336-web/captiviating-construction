@@ -35,10 +35,10 @@ function TestimonialsHero() {
                     className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url('${HERO_BG}')` }}
                 />
-                <div aria-hidden="true" className="absolute inset-0 bg-black/60" />
+                <div aria-hidden="true" className="absolute inset-0 bg-black/35" />
 
                 <div className="relative mx-auto max-w-[1200px] px-4 py-20 lg:py-28">
-                    <h1 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-white">
+                    <h1 className="font-montserrat text-[45px] font-bold leading-[54px] text-white">
                         Testimonials
                     </h1>
                 </div>

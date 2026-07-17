@@ -42,16 +42,13 @@ function Hero() {
                     className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url('${HERO_BG}')` }}
                 />
-                <div aria-hidden="true" className="absolute inset-0 bg-black/70" />
+                <div aria-hidden="true" className="absolute inset-0 bg-black/35" />
 
                 <div className="relative mx-auto max-w-4xl px-4 py-20 text-center lg:py-28">
-                    <p className="font-script text-2xl text-brand-blue-light md:text-3xl">
-                        Dream It. See It. Build It.
-                    </p>
-                    <h1 className="mt-2 font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-white">
+                    <h1 className="mt-2 font-montserrat text-[45px] font-bold leading-[54px] text-white">
                         Transform Your Kitchen With A Free 3D Design From Captivating Construction
                     </h1>
-                    <p className="mx-auto mt-5 max-w-2xl font-body text-[15px] leading-relaxed text-white/85 md:text-base">
+                    <p className="mx-auto mt-5 max-w-2xl font-montserrat text-[16px] font-normal leading-[24px] text-white/85">
                         At Captivating Construction, we make it easy to bring your kitchen renovation vision to
                         life â€” starting with a <span className="font-semibold text-white">free 3D kitchen design</span> tailored
                         to your space, style, and budget. Whether you&apos;re upgrading your home, remodeling for
