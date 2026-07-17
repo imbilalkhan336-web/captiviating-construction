@@ -1,4 +1,4 @@
-import { IoCheckmarkCircle } from 'react-icons/io5';
+﻿import { IoCheckmarkCircle } from 'react-icons/io5';
 import { PillButton } from '@/Components/FrontComponents/PillButton';
 
 const POINTS = [
@@ -11,11 +11,12 @@ const POINTS = [
 export default function Craftsmanship() {
     return (
         <section className="bg-[#f3f4f6] py-16 lg:py-24">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-16">
-                    {/* Left — image collage + highlight card */}
-                    <div className="grid grid-cols-2 gap-4">
-                        <div className="flex flex-col gap-4">
+                    {/* Left - image collage + highlight card */}
+                    <div className="flex flex-col gap-4">
+                        {/* Top row: 2 equal images */}
+                        <div className="grid grid-cols-2 gap-4">
                             <img
                                 src="/image/property-13.webp"
                                 alt="Captivating Construction custom home"
@@ -23,20 +24,24 @@ export default function Craftsmanship() {
                                 className="aspect-[5/4] w-full rounded-xl object-cover shadow-sm"
                             />
                             <img
-                                src="/image/property-20.webp"
-                                alt="Custom home exterior by Captivating Construction"
-                                loading="lazy"
-                                className="aspect-[5/4] w-full rounded-xl object-cover shadow-sm"
-                            />
-                        </div>
-                        <div className="flex flex-col gap-4">
-                            <img
                                 src="/image/property-14.webp"
                                 alt="Luxury home built by Captivating Construction"
                                 loading="lazy"
                                 className="aspect-[5/4] w-full rounded-xl object-cover shadow-sm"
                             />
-                            <div className="flex flex-1 flex-col justify-center rounded-xl bg-brand-blue p-6 text-center shadow-sm">
+                        </div>
+                        {/* Bottom row: small image (30%) + topo card (70%) */}
+                        <div className="grid grid-cols-[3fr_7fr] gap-4">
+                            <img
+                                src="/image/property-20.webp"
+                                alt="Custom home exterior by Captivating Construction"
+                                loading="lazy"
+                                className="h-full w-full rounded-xl object-cover shadow-sm"
+                            />
+                            <div
+                                className="flex flex-col justify-center rounded-xl p-6 text-center shadow-sm"
+                                style={{ backgroundImage: "url('/image/topo-bg.svg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#1b82d1' }}
+                            >
                                 <h3 className="font-display text-xl font-bold uppercase leading-tight text-white">
                                     Excellence That Gets Noticed
                                 </h3>
@@ -48,7 +53,7 @@ export default function Craftsmanship() {
                         </div>
                     </div>
 
-                    {/* Right — content */}
+                    {/* Right - content */}
                     <div>
                         <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-blue-light">
                             Building Exceptional Homes

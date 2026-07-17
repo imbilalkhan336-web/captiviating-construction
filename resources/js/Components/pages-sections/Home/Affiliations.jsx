@@ -1,4 +1,4 @@
-const affiliations = [
+﻿const affiliations = [
     { label: 'NATE Certified' },
     { label: 'Energy Star Partner' },
     { label: 'BBB A+ Rated' },
@@ -10,7 +10,7 @@ const affiliations = [
 export default function Affiliations() {
     return (
         <section className="bg-brand-gray py-12 lg:py-16">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <p className="text-center text-sm font-bold uppercase tracking-[0.2em] text-brand-orange">
                     Trusted Affiliations &amp; Certifications
                 </p>

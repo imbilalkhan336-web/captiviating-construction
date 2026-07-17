@@ -1,4 +1,4 @@
-import { LuShieldCheck, LuClock, LuBadgeDollarSign } from 'react-icons/lu';
+﻿import { LuShieldCheck, LuClock, LuBadgeDollarSign } from 'react-icons/lu';
 import ScheduleForm from '@/Components/FrontComponents/ScheduleForm';
 
 const points = [
@@ -14,7 +14,7 @@ export default function ScheduleSection({
 }) {
     return (
         <section className="bg-gray-50 py-16 lg:py-24">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
                     <div>
                         <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">

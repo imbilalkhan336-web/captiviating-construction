@@ -1,4 +1,4 @@
-import Seo from '@/Components/Seo';
+﻿import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
 import CtaBanner from '@/Components/pages-sections/Home/CtaBanner';
@@ -84,7 +84,7 @@ export default function ResourcesPage({ reviews = [], seo = {} }) {
             <Seo
                 seo={seo}
                 fallbackTitle="HVAC & Plumbing Resources & Tips | Guardian Air"
-                fallbackDescription="Free guides, checklists, and tips for HVAC maintenance, plumbing prevention, and indoor air quality from Guardian Air — serving Monmouth, Middlesex, and Ocean counties."
+                fallbackDescription="Free guides, checklists, and tips for HVAC maintenance, plumbing prevention, and indoor air quality from Guardian Air â€” serving Monmouth, Middlesex, and Ocean counties."
             />
 
             <article>
@@ -105,7 +105,7 @@ export default function ResourcesPage({ reviews = [], seo = {} }) {
                         className="pointer-events-none absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-brand-blue/5 blur-3xl"
                     />
 
-                    <div className="relative mx-auto max-w-7xl px-4">
+                    <div className="relative mx-auto max-w-[1200px] px-4">
                         <div className="mb-14 lg:mb-16">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">
                                 Knowledge Base
@@ -160,7 +160,7 @@ export default function ResourcesPage({ reviews = [], seo = {} }) {
                         className="pointer-events-none absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-brand-blue/5 blur-3xl"
                     />
 
-                    <div className="relative mx-auto max-w-7xl px-4">
+                    <div className="relative mx-auto max-w-[1200px] px-4">
                         <div className="mb-14 lg:mb-16">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">
                                 Stay Ahead

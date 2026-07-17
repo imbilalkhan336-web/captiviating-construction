@@ -1,4 +1,4 @@
-import Seo from '@/Components/Seo';
+﻿import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
 import CtaBanner from '@/Components/pages-sections/Home/CtaBanner';
@@ -40,7 +40,7 @@ const offers = [
         badge: 'New Customers',
         title: '$100 Off First Service Call',
         description:
-            'New to Guardian Air? Welcome to the family. Take $100 off your first service call — any trade, any time. No restrictions.',
+            'New to Guardian Air? Welcome to the family. Take $100 off your first service call â€” any trade, any time. No restrictions.',
         expires: 'Ongoing',
         cta: 'Redeem Now',
     },
@@ -56,7 +56,7 @@ const offers = [
     {
         icon: LuShieldCheck,
         badge: 'Membership',
-        title: 'Guardian Care Club — 20% Off',
+        title: 'Guardian Care Club â€” 20% Off',
         description:
             'Join our maintenance membership and save 20% on all repairs, priority scheduling, and two free tune-ups per year.',
         expires: 'Membership Renews Annually',
@@ -65,7 +65,7 @@ const offers = [
     {
         icon: LuClock,
         badge: 'Emergency',
-        title: 'No Emergency Fees — Ever',
+        title: 'No Emergency Fees â€” Ever',
         description:
             'We never charge extra for after-hours, weekend, or holiday emergency calls. Same fair rate, 24 hours a day, 365 days a year.',
         expires: 'Always',
@@ -87,7 +87,7 @@ const howToRedeem = [
     {
         step: '03',
         title: 'Save on Service',
-        description: 'Our technician applies the discount to your final invoice — no hassle.',
+        description: 'Our technician applies the discount to your final invoice â€” no hassle.',
     },
 ];
 
@@ -98,14 +98,14 @@ export default function OffersPage({ reviews = [], seo = {} }) {
             <Seo
                 seo={seo}
                 fallbackTitle="HVAC & Plumbing Specials & Coupons NJ | Guardian Air"
-                fallbackDescription="HVAC coupons in NJ — current Guardian Air specials on heating, cooling & plumbing across Monmouth, Middlesex & Ocean counties. Licensed & insured. Save now!"
+                fallbackDescription="HVAC coupons in NJ â€” current Guardian Air specials on heating, cooling & plumbing across Monmouth, Middlesex & Ocean counties. Licensed & insured. Save now!"
             />
 
             <article>
                 <PageHeader
                     label="Save Big"
                     title="Current Specials & Offers"
-                    description="HVAC coupons and plumbing specials for NJ homeowners — no gimmicks, no hidden conditions, just honest discounts from a local team that values your business."
+                    description="HVAC coupons and plumbing specials for NJ homeowners â€” no gimmicks, no hidden conditions, just honest discounts from a local team that values your business."
                 />
 
                 {/* Offer Cards */}
@@ -119,7 +119,7 @@ export default function OffersPage({ reviews = [], seo = {} }) {
                         className="pointer-events-none absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-brand-blue/5 blur-3xl"
                     />
 
-                    <div className="relative mx-auto max-w-7xl px-4">
+                    <div className="relative mx-auto max-w-[1200px] px-4">
                         <div className="mb-14 lg:mb-16">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">
                                 Active Promotions
@@ -156,7 +156,7 @@ export default function OffersPage({ reviews = [], seo = {} }) {
                                     <p className="mt-4 text-[10px] font-extrabold uppercase tracking-widest text-gray-400">
                                         {offer.expires}
                                     </p>
-                                    <PillButton href="/contact" aria-label={`${offer.cta} — ${offer.title}`} variant="outline" size="sm" className="mt-5 tracking-widest">
+                                    <PillButton href="/contact" aria-label={`${offer.cta} â€” ${offer.title}`} variant="outline" size="sm" className="mt-5 tracking-widest">
                                         {offer.cta}
                                         <LuArrowRight className="h-3.5 w-3.5" />
                                     </PillButton>
@@ -177,7 +177,7 @@ export default function OffersPage({ reviews = [], seo = {} }) {
                         className="pointer-events-none absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-brand-blue/5 blur-3xl"
                     />
 
-                    <div className="relative mx-auto max-w-7xl px-4">
+                    <div className="relative mx-auto max-w-[1200px] px-4">
                         <div className="mb-14 lg:mb-16">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">
                                 Easy Savings

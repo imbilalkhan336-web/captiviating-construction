@@ -1,4 +1,4 @@
-import { Link } from '@inertiajs/react';
+﻿import { Link } from '@inertiajs/react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
@@ -9,13 +9,13 @@ import CtaBanner from '@/Components/pages-sections/Home/CtaBanner';
 import { LuMapPin, LuArrowRight, LuClock, LuShieldCheck, LuBadgeDollarSign, LuHouse, LuFlame, LuSnowflake, LuWrench, LuDroplets, LuWind, LuBuilding2 } from 'react-icons/lu';
 
 const FAQS = [
-    { question: 'Which New Jersey counties does Guardian Air serve?', answer: 'Three: Monmouth, Middlesex, and Ocean. Inside those county lines we cover every town — the pages below break coverage down by county and by city.' },
+    { question: 'Which New Jersey counties does Guardian Air serve?', answer: 'Three: Monmouth, Middlesex, and Ocean. Inside those county lines we cover every town â€” the pages below break coverage down by county and by city.' },
     { question: 'Are response times the same across all your service areas?', answer: 'Close to it. Trucks are stationed around the region rather than at one central shop, so same-day service is standard in all three counties and emergencies typically see help within hours.' },
     { question: 'Does pricing change by location?', answer: 'Never. One flat-rate book covers the entire service area, so a repair costs the same in Freehold, Edison, or Toms River.' },
-    { question: "What if my town isn't listed on your service-area pages?", answer: 'Call anyway. The listed towns are anchors, not boundaries — we routinely serve neighboring communities just outside them.' },
-    { question: 'Is every service available in every town you cover?', answer: 'Yes. Heating, cooling, plumbing, drains, and indoor air quality are all offered everywhere we work — there are no "partial coverage" towns where only some trades are available.' },
+    { question: "What if my town isn't listed on your service-area pages?", answer: 'Call anyway. The listed towns are anchors, not boundaries â€” we routinely serve neighboring communities just outside them.' },
+    { question: 'Is every service available in every town you cover?', answer: 'Yes. Heating, cooling, plumbing, drains, and indoor air quality are all offered everywhere we work â€” there are no "partial coverage" towns where only some trades are available.' },
     { question: 'Do you serve commercial properties throughout your service areas?', answer: 'We do. Offices, restaurants, retail spaces, and light-industrial buildings get the same coverage footprint as homes, with commercial HVAC and plumbing crews dispatched across all three counties.' },
-    { question: 'Is emergency service available across the entire coverage area?', answer: 'Around the clock. Burst pipes, no-heat nights, and failed AC during a heatwave get priority dispatch in every county we serve — weekends and holidays included, with no overtime premium.' },
+    { question: 'Is emergency service available across the entire coverage area?', answer: 'Around the clock. Burst pipes, no-heat nights, and failed AC during a heatwave get priority dispatch in every county we serve â€” weekends and holidays included, with no overtime premium.' },
 ];
 
 const TRADES = [
@@ -30,7 +30,7 @@ const TRADES = [
 const WHY = [
     { icon: LuClock, title: 'Local & Same-Day', body: 'Technicians based in the area mean faster response when you need it most.' },
     { icon: LuShieldCheck, title: 'Licensed & Insured', body: 'Fully licensed NJ technicians and clean, code-compliant work on every visit.' },
-    { icon: LuBadgeDollarSign, title: 'Upfront Pricing', body: 'Flat-rate quotes before any work begins — no overtime fees, no surprises.' },
+    { icon: LuBadgeDollarSign, title: 'Upfront Pricing', body: 'Flat-rate quotes before any work begins â€” no overtime fees, no surprises.' },
     { icon: LuHouse, title: 'Neighbors You Trust', body: 'Family-owned and rooted in the communities we serve across central NJ.' },
 ];
 
@@ -39,8 +39,8 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
         <SiteLayout reviews={reviews}>
             <Seo
                 seo={{}}
-                fallbackTitle="HVAC Service Areas — Central New Jersey | Guardian Air"
-                fallbackDescription="Guardian Air's HVAC service areas span Monmouth, Middlesex & Ocean counties, NJ — find your town for fast, licensed heating, cooling & plumbing. Call today!"
+                fallbackTitle="HVAC Service Areas â€” Central New Jersey | Guardian Air"
+                fallbackDescription="Guardian Air's HVAC service areas span Monmouth, Middlesex & Ocean counties, NJ â€” find your town for fast, licensed heating, cooling & plumbing. Call today!"
             />
             <ServiceSchema
                 serviceName="HVAC Service Areas"
@@ -56,22 +56,22 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                 <PageHeader
                     label="Where We Work"
                     title="Areas We Serve Across New Jersey"
-                    description="Find your county and town below — Guardian Air brings the same trusted technicians to homes and businesses across central New Jersey."
+                    description="Find your county and town below â€” Guardian Air brings the same trusted technicians to homes and businesses across central New Jersey."
                     image="/img/heroes/local.webp"
                 />
 
                 {/* Intro + map */}
                 <section className="bg-white py-14 lg:py-20">
-                    <div className="mx-auto max-w-7xl px-4">
+                    <div className="mx-auto max-w-[1200px] px-4">
                         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
                             <div>
                                 <p className="font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
                                     Looking for trusted HVAC service areas in NJ? Guardian Air covers homes and
                                     businesses across <strong className="text-[#07264A]">Monmouth, Middlesex, and Ocean
-                                    counties</strong> — from the Jersey Shore towns along the Garden State Parkway to the
+                                    counties</strong> â€” from the Jersey Shore towns along the Garden State Parkway to the
                                     inland neighborhoods of central New Jersey. Whether you're near the boardwalks of Point
                                     Pleasant, the historic downtown of Red Bank, or the busy corridors of Edison and
-                                    Woodbridge, our licensed technicians are nearby and ready to help — often the same day.
+                                    Woodbridge, our licensed technicians are nearby and ready to help â€” often the same day.
                                 </p>
                                 <p className="mt-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
                                     We handle heating, cooling, plumbing, drains, and indoor air quality for every kind of
@@ -97,7 +97,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                             {/* Service-area map */}
                             <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-black/20 ring-1 ring-gray-200">
                                 <iframe
-                                    title="Guardian Air HVAC service area map — Monmouth, Middlesex & Ocean counties, NJ"
+                                    title="Guardian Air HVAC service area map â€” Monmouth, Middlesex & Ocean counties, NJ"
                                     src="https://maps.google.com/maps?q=Monmouth+County,+New+Jersey&t=&z=8&ie=UTF8&iwloc=&output=embed"
                                     className="block aspect-[4/3] w-full border-0"
                                     loading="lazy"
@@ -111,7 +111,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
 
                 {/* County hubs + city hubs */}
                 <section className="bg-gray-50 py-14 lg:py-20">
-                    <div className="mx-auto max-w-7xl px-4">
+                    <div className="mx-auto max-w-[1200px] px-4">
                         <div className="mb-10">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">Counties We Serve</p>
                             <h2 className="mt-2 font-display text-[28px] uppercase leading-[0.95] text-[#07264A] md:text-[34px]">
@@ -168,7 +168,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
 
                 {/* Trades available across the full service area */}
                 <section className="bg-white py-14 lg:py-20">
-                    <div className="mx-auto max-w-7xl px-4">
+                    <div className="mx-auto max-w-[1200px] px-4">
                         <div className="mb-10 max-w-3xl">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">Full-Service Coverage</p>
                             <h2 className="mt-2 font-display text-[28px] uppercase leading-[0.95] text-[#07264A] md:text-[34px]">
@@ -176,7 +176,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                             </h2>
                             <p className="mt-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
                                 Coverage means more than a pin on a map. Every trade we offer is available in every
-                                town across our HVAC service areas — there's no town where we only do heating or
+                                town across our HVAC service areas â€” there's no town where we only do heating or
                                 only do drains. The same licensed technicians, the same flat-rate book, all six
                                 service lines, all three counties.
                             </p>
@@ -214,7 +214,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                         </div>
                         <div className="space-y-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base [&_a]:font-semibold [&_a]:text-blue-600 [&_a]:underline">
                             <p>
-                                Our service areas aren't drawn around a single shop — they're built along the
+                                Our service areas aren't drawn around a single shop â€” they're built along the
                                 corridors central New Jersey actually drives. Crews run zoned routes off the Garden
                                 State Parkway, Route 9, Route 18, and I-195, so the truck that reaches you is the
                                 one already working your part of the region, not one fighting traffic from the
@@ -222,8 +222,8 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                                 swap in Woodbridge can both land same-day appointments on the same afternoon.
                             </p>
                             <p>
-                                Calls are dispatched in three tiers. Emergencies — burst pipes, gas smells, no heat
-                                in a freeze — go straight to the front of the line in whichever county they come from. Same-day slots
+                                Calls are dispatched in three tiers. Emergencies â€” burst pipes, gas smells, no heat
+                                in a freeze â€” go straight to the front of the line in whichever county they come from. Same-day slots
                                 handle urgent-but-stable problems like a failing AC or a slow leak. Everything else,
                                 from <Link href="/heating">seasonal tune-ups</Link> to planned
                                 {' '}<Link href="/cooling">system replacements</Link>, is scheduled around your week,
@@ -232,7 +232,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                             <p>
                                 The easiest way to use this page: pick your county hub above for an overview of
                                 local service, then click through to your town's page for neighborhood-level detail.
-                                Each town page also links to dedicated pages for every trade in that location — so
+                                Each town page also links to dedicated pages for every trade in that location â€” so
                                 whether you're searching for a plumber in Toms River or AC repair in Edison, there's
                                 a page that speaks to exactly where you live.
                             </p>

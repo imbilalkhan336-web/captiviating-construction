@@ -1,4 +1,4 @@
-function CheckIcon() {
+﻿function CheckIcon() {
     return (
         <svg
             viewBox="0 0 20 20"
@@ -18,7 +18,7 @@ function CheckIcon() {
 const benefits = [
     { title: 'Family-Owned Since 1977', body: 'Three generations of trusted New Jersey HVAC service.' },
     { title: 'NATE-Certified Technicians', body: 'Top-tier industry credentials on every truck.' },
-    { title: '24/7 Emergency Service', body: "Heat and cooling failures don't wait — neither do we." },
+    { title: '24/7 Emergency Service', body: "Heat and cooling failures don't wait â€” neither do we." },
     { title: 'Upfront, Transparent Pricing', body: 'No surprises. Full quotes before any work begins.' },
     { title: '100% Satisfaction Guarantee', body: 'We stand behind every install and every repair.' },
     { title: 'Licensed, Bonded &amp; Insured', body: 'Full NJ HVAC and plumbing licensing, bonding, and insurance.' },
@@ -29,7 +29,7 @@ const benefits = [
 export default function Benefits() {
     return (
         <section className="relative bg-white py-20 lg:py-24">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="mx-auto max-w-3xl text-center">
                     <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-orange">
                         Why Choose Arctic Air

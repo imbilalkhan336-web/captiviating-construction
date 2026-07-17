@@ -1,4 +1,4 @@
-import { Link } from '@inertiajs/react';
+﻿import { Link } from '@inertiajs/react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
@@ -47,7 +47,7 @@ export default function CostGuide({ guide, seo = {} }) {
                 <PageHeader label="Cost Guide" title={guide.h1 || guide.name} description={guide.description} image="/img/heroes/cost-guides.webp" titleClassName="font-normal" />
 
                 <div className="bg-white">
-                    <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
+                    <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
                         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
                             <div className="lg:col-span-7">
                                 {guide.intro && (

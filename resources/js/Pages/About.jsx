@@ -1,4 +1,4 @@
-import Seo from '@/Components/Seo';
+﻿import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import ServiceSchema from '@/Components/FrontComponents/ServiceSchema';
 import FeatureBlock from '@/Components/FrontComponents/FeatureBlock';
@@ -20,7 +20,7 @@ const HERO_BG = '/image/new-construction.webp';
 const VALUES = [
     {
         title: 'Quality craftsmanship',
-        body: 'We focus on the finest materials, workmanship, and finishes — built to last, never rushed.',
+        body: 'We focus on the finest materials, workmanship, and finishes â€” built to last, never rushed.',
     },
     {
         title: 'Professional responsibility',
@@ -129,7 +129,7 @@ function AboutHero() {
 function AboutCompany() {
     return (
         <section className="bg-white py-16 lg:py-24">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-14">
                     <div>
                         <h2 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-black">
@@ -147,7 +147,7 @@ function AboutCompany() {
                                 thoughtful planning, and hands-on project management. Whether you&apos;re building
                                 a new custom home, expanding the footprint of your home, or transforming an
                                 outdated, underused space, we bring a concierge-like approach tailored to your
-                                needs — with meticulous attention to detail and a constant drive for perfection.
+                                needs â€” with meticulous attention to detail and a constant drive for perfection.
                             </p>
                             <p>
                                 Our promise is simple: deliver well-built homes and renovations through
@@ -179,7 +179,7 @@ function AboutCompany() {
 function MissionValues() {
     return (
         <section className="bg-[#f3f4f6] py-16 lg:py-24">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
                     <div>
                         <h2 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-black">
@@ -217,7 +217,7 @@ function MissionValues() {
 function OurProcess() {
     return (
         <section className="bg-brand-blue-light py-16 lg:py-24">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="text-center">
                     <h2 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-white">
                         Our Process
@@ -249,21 +249,21 @@ export default function AboutPage({ reviews = [], seo = {} }) {
             <Seo
                 seo={seo}
                 fallbackTitle="About Captivating Construction Group | NJ Custom Home Builder"
-                fallbackDescription="Captivating Construction Group is a full-service New Jersey custom home builder with over 30 years of experience — new construction, renovations, additions, and remodeling built with luxury craftsmanship."
+                fallbackDescription="Captivating Construction Group is a full-service New Jersey custom home builder with over 30 years of experience â€” new construction, renovations, additions, and remodeling built with luxury craftsmanship."
             />
             <ServiceSchema
                 serviceName="About Captivating Construction Group"
                 serviceType="Custom home builder and general contractor"
-                description="A full-service New Jersey custom home builder based in Colts Neck — new construction, renovations, additions, and remodeling from concept to completion."
+                description="A full-service New Jersey custom home builder based in Colts Neck â€” new construction, renovations, additions, and remodeling from concept to completion."
                 path="/about"
             />
 
             <AboutHero />
             <AboutCompany />
 
-            {/* What We Do — image left, service list right */}
+            {/* What We Do â€” image left, service list right */}
             <section className="bg-white py-16 lg:py-24">
-                <div className="mx-auto max-w-7xl px-4">
+                <div className="mx-auto max-w-[1200px] px-4">
                     <FeatureBlock
                         heading="What We Do"
                         body="We provide comprehensive construction and renovation services, tailored to homeowners who value craftsmanship, quality, and dependable execution. Our core services include:"
@@ -279,9 +279,9 @@ export default function AboutPage({ reviews = [], seo = {} }) {
             <MissionValues />
             <OurProcess />
 
-            {/* Why Homeowners Choose Us — image left, checklist right */}
+            {/* Why Homeowners Choose Us â€” image left, checklist right */}
             <section className="bg-white py-16 lg:py-24">
-                <div className="mx-auto max-w-7xl px-4">
+                <div className="mx-auto max-w-[1200px] px-4">
                     <FeatureBlock
                         eyebrow="Why Choose Us"
                         heading="Why Homeowners Choose Us"

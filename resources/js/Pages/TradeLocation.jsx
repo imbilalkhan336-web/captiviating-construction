@@ -1,4 +1,4 @@
-import { Link } from '@inertiajs/react';
+﻿import { Link } from '@inertiajs/react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
@@ -27,12 +27,12 @@ export default function TradeLocation({ trade, location, otherTrades = [], nearb
     const svcLower = svc.toLowerCase();
     const loc = location.name;
     const title = `${svc} in ${loc}, NJ | Guardian Air`;
-    const description = `${svc} in ${loc} — Guardian Air provides licensed ${trade.label.toLowerCase()} service in ${loc}, ${location.county_name}, NJ. Same-day response & flat-rate pricing. Call now!`;
+    const description = `${svc} in ${loc} â€” Guardian Air provides licensed ${trade.label.toLowerCase()} service in ${loc}, ${location.county_name}, NJ. Same-day response & flat-rate pricing. Call now!`;
 
     const faqs = [
-        { question: `How much does ${svcLower} cost in ${loc}?`, answer: `Cost depends on the specific issue and parts involved, but Guardian Air always provides a flat-rate quote before any work begins — no hidden fees. Most ${svcLower} jobs in ${loc} are quoted on the spot after a quick diagnosis.` },
+        { question: `How much does ${svcLower} cost in ${loc}?`, answer: `Cost depends on the specific issue and parts involved, but Guardian Air always provides a flat-rate quote before any work begins â€” no hidden fees. Most ${svcLower} jobs in ${loc} are quoted on the spot after a quick diagnosis.` },
         { question: `How fast can you respond in ${loc}?`, answer: `Because our technicians work throughout ${location.county_name}, we can often reach ${loc} the same day, and we offer emergency service for urgent ${trade.label.toLowerCase()} problems.` },
-        { question: `What ${trade.label.toLowerCase()} services do you offer in ${loc}?`, answer: `In ${loc} we handle repair, installation, replacement, and maintenance — backed by licensed, insured technicians and upfront, flat-rate pricing on every visit.` },
+        { question: `What ${trade.label.toLowerCase()} services do you offer in ${loc}?`, answer: `In ${loc} we handle repair, installation, replacement, and maintenance â€” backed by licensed, insured technicians and upfront, flat-rate pricing on every visit.` },
         { question: `Are you local to ${loc}?`, answer: `Yes. Guardian Air serves ${loc} and the surrounding ${location.county_name} area with local technicians, so help is never far away.` },
     ];
 
@@ -60,12 +60,12 @@ export default function TradeLocation({ trade, location, otherTrades = [], nearb
                     title={`${svc} in ${loc}, NJ`}
                     image={HERO_BY_TRADE[trade.slug] || '/img/heroes/company.webp'}
                     imageCover
-                    description={`Licensed ${trade.label.toLowerCase()} service in ${loc} — fast scheduling, upfront flat-rate quotes, and technicians based right in ${location.county_name}.`}
+                    description={`Licensed ${trade.label.toLowerCase()} service in ${loc} â€” fast scheduling, upfront flat-rate quotes, and technicians based right in ${location.county_name}.`}
                     titleClassName="font-normal"
                 />
 
                 <div className="bg-white">
-                    <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
+                    <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
                         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
                             <div className="lg:col-span-7">
                                 <Link
@@ -82,8 +82,8 @@ export default function TradeLocation({ trade, location, otherTrades = [], nearb
                                         {(trade.intro?.length
                                             ? trade.intro
                                             : [
-                                                  `When you need ${svcLower} in ${loc}, Guardian Air is the local team to call. We provide licensed, insured ${trade.label.toLowerCase()} service to homeowners and businesses throughout ${loc} and the surrounding ${location.county_name} area — with fast, often same-day response and honest, flat-rate pricing.`,
-                                                  `Our technicians know the homes and systems common to ${loc}, so we diagnose the real problem quickly and fix it right the first time. No upsells, no surprises — just reliable comfort backed by a satisfaction guarantee.`,
+                                                  `When you need ${svcLower} in ${loc}, Guardian Air is the local team to call. We provide licensed, insured ${trade.label.toLowerCase()} service to homeowners and businesses throughout ${loc} and the surrounding ${location.county_name} area â€” with fast, often same-day response and honest, flat-rate pricing.`,
+                                                  `Our technicians know the homes and systems common to ${loc}, so we diagnose the real problem quickly and fix it right the first time. No upsells, no surprises â€” just reliable comfort backed by a satisfaction guarantee.`,
                                               ]
                                         ).map((p, i) => (
                                             <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
@@ -139,7 +139,7 @@ export default function TradeLocation({ trade, location, otherTrades = [], nearb
                                             ? trade.why
                                             : [
                                                   `Families across ${loc} choose Guardian Air because we show up fast, charge fair flat rates, and treat your home like our own. Every technician is licensed and insured, and every job comes with a clear quote before any work begins.`,
-                                                  `We're proud to be a local, family-owned company serving ${location.county_name} — the same trusted team your neighbors already rely on.`,
+                                                  `We're proud to be a local, family-owned company serving ${location.county_name} â€” the same trusted team your neighbors already rely on.`,
                                               ]
                                         ).map((p, i) => (
                                             <p key={i}>{p}</p>
@@ -150,7 +150,7 @@ export default function TradeLocation({ trade, location, otherTrades = [], nearb
                                 <section className="mt-12">
                                     <SectionHeading sizeClass="text-[26px] font-normal">Book Service in {loc}</SectionHeading>
                                     <p className="mt-6 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
-                                        Ready to schedule {svcLower} in {loc}? Call us at {PHONE} or request service online — we'll
+                                        Ready to schedule {svcLower} in {loc}? Call us at {PHONE} or request service online â€” we'll
                                         confirm a time that works for you, often the same day.
                                     </p>
                                     <div className="mt-5">

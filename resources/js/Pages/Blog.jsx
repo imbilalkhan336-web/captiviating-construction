@@ -1,4 +1,4 @@
-import { Link, usePage } from '@inertiajs/react';
+﻿import { Link, usePage } from '@inertiajs/react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import CtaSection from '@/Components/pages-sections/CtaSection';
@@ -6,7 +6,7 @@ import { LuArrowRight, LuPencil } from 'react-icons/lu';
 
 const HERO_BG = '/image/construction-worker-gripping-a-hammer-working-on-a-new-home-construction-768x511.webp';
 
-// Card images used when a post has no image of its own — cycled by index.
+// Card images used when a post has no image of its own â€” cycled by index.
 const CARD_IMAGES = [
     '/image/How-to-Avoid-Costly-Mistakes-When-Building-a-New-Home-768x512.webp',
     '/image/construction-worker-gripping-a-hammer-working-on-a-new-home-construction-768x511.webp',
@@ -57,7 +57,7 @@ export default function Blog({ posts = [], seo = {} }) {
             <Seo
                 seo={seo}
                 fallbackTitle="Blog | Captivating Construction Group"
-                fallbackDescription="Guides and insights on custom home building, renovations, additions, and construction for New Jersey homeowners — from the Captivating Construction Group team."
+                fallbackDescription="Guides and insights on custom home building, renovations, additions, and construction for New Jersey homeowners â€” from the Captivating Construction Group team."
             />
 
             {/* Hero */}
@@ -70,7 +70,7 @@ export default function Blog({ posts = [], seo = {} }) {
                     />
                     <div aria-hidden="true" className="absolute inset-0 bg-black/60" />
 
-                    <div className="relative mx-auto max-w-7xl px-4 py-20 lg:py-28">
+                    <div className="relative mx-auto max-w-[1200px] px-4 py-20 lg:py-28">
                         <h1 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-white">
                             Read From Our Blog
                         </h1>
@@ -80,7 +80,7 @@ export default function Blog({ posts = [], seo = {} }) {
 
             {/* Posts */}
             <section className="bg-white py-16 lg:py-24">
-                <div className="mx-auto max-w-7xl px-4">
+                <div className="mx-auto max-w-[1200px] px-4">
                     {isAdmin && (
                         <div className="mb-8 flex justify-end">
                             <Link
@@ -97,7 +97,7 @@ export default function Blog({ posts = [], seo = {} }) {
                         <div className="rounded-2xl border-2 border-dashed border-gray-200 p-16 text-center">
                             <p className="font-montserrat text-2xl font-semibold text-[#0A2A4A]">No posts yet</p>
                             <p className="mt-2 font-body text-sm text-gray-500">
-                                Check back soon — we&apos;re working on new articles.
+                                Check back soon â€” we&apos;re working on new articles.
                             </p>
                         </div>
                     ) : (

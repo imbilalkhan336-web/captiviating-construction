@@ -1,4 +1,4 @@
-import { Link } from '@inertiajs/react';
+﻿import { Link } from '@inertiajs/react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
@@ -48,7 +48,7 @@ export default function ServiceArea({ area, cities = [], trades = [], reviews = 
                 />
 
                 <div className="bg-white">
-                    <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
+                    <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
                         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
                             <div className="lg:col-span-7">
                                 <section>
@@ -84,7 +84,7 @@ export default function ServiceArea({ area, cities = [], trades = [], reviews = 
                                     </div>
                                 </section>
 
-                                {/* Towns served — each links to its city hub */}
+                                {/* Towns served â€” each links to its city hub */}
                                 <section className="mt-12">
                                     <SectionHeading sizeClass="text-[26px] font-normal">
                                         Towns We Serve in {area.name}
@@ -115,7 +115,7 @@ export default function ServiceArea({ area, cities = [], trades = [], reviews = 
                                         )}
                                     </div>
                                     <p className="mt-4 font-body text-sm text-gray-500">
-                                        Don&apos;t see your town? We likely still serve it — give us a call to confirm.
+                                        Don&apos;t see your town? We likely still serve it â€” give us a call to confirm.
                                     </p>
                                 </section>
 

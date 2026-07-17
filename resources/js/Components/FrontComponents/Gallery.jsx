@@ -5,16 +5,20 @@ import { LuX } from 'react-icons/lu';
  * Reusable masonry image gallery with a lightbox.
  * Pass an array of image URLs via `images`.
  */
-export default function Gallery({ images = [], className = '' }) {
+export default function Gallery({ images = [], className = '', columns = 3 }) {
     const [active, setActive] = useState(null);
 
     if (!images.length) {
         return null;
     }
 
+    const colClass = columns === 3
+        ? 'columns-1 sm:columns-2 lg:columns-3'
+        : 'columns-2 sm:columns-3 lg:columns-4';
+
     return (
         <>
-            <div className={`columns-2 gap-4 [column-fill:_balance] sm:columns-3 lg:columns-4 ${className}`}>
+            <div className={`${colClass} gap-4 [column-fill:_balance] ${className}`}>
                 {images.map((src, i) => (
                     <button
                         key={`${src}-${i}`}

@@ -1,4 +1,4 @@
-import Seo from '@/Components/Seo';
+﻿import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import ServiceSchema from '@/Components/FrontComponents/ServiceSchema';
 import Craftsmanship from '@/Components/pages-sections/Home/Craftsmanship';
@@ -19,7 +19,7 @@ function ServicesHero() {
                 />
                 <div aria-hidden="true" className="absolute inset-0 bg-black/60" />
 
-                <div className="relative mx-auto max-w-7xl px-4 py-20 lg:py-28">
+                <div className="relative mx-auto max-w-[1200px] px-4 py-20 lg:py-28">
                     <h1 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-white">
                         Services
                     </h1>
@@ -34,13 +34,13 @@ export default function ServicesPage({ reviews = [], seo = {} }) {
         <SiteLayout reviews={reviews}>
             <Seo
                 seo={seo}
-                fallbackTitle="Our Services | Captivating Construction Group — NJ Custom Home Builder"
-                fallbackDescription="Custom home building, renovations, additions, basements, exteriors, and interior remodeling across New Jersey — built with luxury craftsmanship and decades of experience."
+                fallbackTitle="Our Services | Captivating Construction Group â€” NJ Custom Home Builder"
+                fallbackDescription="Custom home building, renovations, additions, basements, exteriors, and interior remodeling across New Jersey â€” built with luxury craftsmanship and decades of experience."
             />
             <ServiceSchema
                 serviceName="Construction & Renovation Services"
                 serviceType="Custom home builder and general contractor"
-                description="New construction, renovations, additions, basements, exteriors, and interior remodeling across New Jersey — from concept to completion."
+                description="New construction, renovations, additions, basements, exteriors, and interior remodeling across New Jersey â€” from concept to completion."
                 path="/services"
             />
 

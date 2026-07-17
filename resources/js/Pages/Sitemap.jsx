@@ -1,4 +1,4 @@
-import { Link } from '@inertiajs/react';
+﻿import { Link } from '@inertiajs/react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
@@ -12,7 +12,7 @@ export default function Sitemap({ groups = [] }) {
             <Seo
                 seo={{}}
                 fallbackTitle="Sitemap | Guardian Air"
-                fallbackDescription="Browse every page on the Guardian Air website — services, service areas, cost guides, and more across Monmouth, Middlesex & Ocean counties, NJ."
+                fallbackDescription="Browse every page on the Guardian Air website â€” services, service areas, cost guides, and more across Monmouth, Middlesex & Ocean counties, NJ."
             />
 
             <Breadcrumbs items={[{ label: 'Sitemap', href: '/sitemap' }]} />
@@ -26,7 +26,7 @@ export default function Sitemap({ groups = [] }) {
                 />
 
                 <div className="bg-white py-14 lg:py-20">
-                    <div className="mx-auto max-w-7xl px-4">
+                    <div className="mx-auto max-w-[1200px] px-4">
                         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                             {groups.map((group) => (
                                 <div key={group.title} className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">

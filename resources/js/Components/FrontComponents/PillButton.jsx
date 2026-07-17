@@ -38,10 +38,10 @@ function CalendarIcon({ className }) {
 }
 
 const SIZE_CLASSES = {
-    sm: { wrap: 'gap-2 px-4 py-2 text-xs', icon: 'h-3.5 w-3.5' },
-    smd: { wrap: 'gap-2 px-5 py-2.5 text-sm', icon: 'h-4 w-4' },
-    md: { wrap: 'gap-2.5 px-7 py-3.5 text-base', icon: 'h-5 w-5' },
-    lg: { wrap: 'gap-2 px-12 py-4 text-base', icon: 'h-5 w-5' },
+    sm: { wrap: 'gap-2 px-4 py-2', icon: 'h-3.5 w-3.5' },
+    smd: { wrap: 'gap-2 px-5 py-2.5', icon: 'h-4 w-4' },
+    md: { wrap: 'gap-2.5 px-7 py-3.5', icon: 'h-5 w-5' },
+    lg: { wrap: 'gap-2 px-12 py-4', icon: 'h-5 w-5' },
 };
 
 // Each variant carries its own colors, shadow, and ring so the base stays
@@ -50,7 +50,7 @@ const VARIANT_CLASSES = {
     light: { bg: 'bg-gradient-to-b from-white to-gray-200 shadow-lg shadow-black/25 ring-1 ring-black/5 transition-colors hover:from-gray-100 hover:to-gray-300', text: 'text-[#003B73]', shine: 'dark' },
     yellow: { bg: 'bg-gradient-to-b from-brand-yellow to-brand-orange shadow-lg shadow-black/25 ring-1 ring-black/5', text: 'text-white', shine: 'light' },
     orange: { bg: 'bg-gradient-to-r from-brand-orange to-brand-orange-dark shadow-lg shadow-brand-orange/30 ring-1 ring-black/5', text: 'text-white', shine: 'light' },
-    dark: { bg: 'bg-[#07264A] shadow-lg shadow-black/25 transition-colors hover:bg-brand-orange', text: 'text-white', shine: 'light' },
+    dark: { bg: 'bg-[#005EAB] shadow-lg shadow-black/25 transition-colors hover:bg-[#004a8a]', text: 'text-white', shine: 'light' },
     blue: { bg: 'bg-brand-blue-light shadow-lg shadow-black/25 transition-colors hover:bg-brand-blue', text: 'text-white', shine: 'light' },
     outline: { bg: 'border-2 border-brand-orange bg-transparent transition-colors hover:bg-brand-orange hover:text-white', text: 'text-brand-orange', shine: null },
 };
@@ -71,7 +71,7 @@ export function PillButton({
 
     const classes = [
         'group relative isolate inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-full',
-        'font-bold uppercase tracking-wide whitespace-nowrap',
+        "[font-family:'Manrope',sans-serif] text-[16px] font-bold leading-[16px] uppercase tracking-wide whitespace-nowrap",
         vr.bg,
         vr.text,
         sz.wrap,

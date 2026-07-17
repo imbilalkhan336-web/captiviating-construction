@@ -1,4 +1,4 @@
-import FeatureBlock from '@/Components/FrontComponents/FeatureBlock';
+﻿import FeatureBlock from '@/Components/FrontComponents/FeatureBlock';
 
 const BLOCKS = [
     {
@@ -11,7 +11,7 @@ const BLOCKS = [
     {
         eyebrow: 'Basements',
         heading: "Taking The 'Unfinished' And Making It Part Of Your Home",
-        body: 'That basement has the potential to offer an entire additional floor of living space — far more than storage. Our expertise turns unfinished, underused basements into inviting living areas. Allow us to help you transform your basement into a captivating gathering space for family and friends to enjoy.',
+        body: 'That basement has the potential to offer an entire additional floor of living space â€” far more than storage. Our expertise turns unfinished, underused basements into inviting living areas. Allow us to help you transform your basement into a captivating gathering space for family and friends to enjoy.',
         image: '/image/basements.webp',
         imageAlt: 'Finished basement living space',
     },
@@ -35,7 +35,7 @@ const BLOCKS = [
     {
         eyebrow: 'Interiors',
         heading: 'Your Interior Deserves To Be Nothing Short of Perfect',
-        body: "Your interior is where you spend most of your time, and every detail should reflect your comfort, style, and functionality. At Captivating Construction, we design and build interiors that balance beauty with everyday living — spaces you'll love to spend time in.",
+        body: "Your interior is where you spend most of your time, and every detail should reflect your comfort, style, and functionality. At Captivating Construction, we design and build interiors that balance beauty with everyday living â€” spaces you'll love to spend time in.",
         bulletsTitle: 'Interior Services Include:',
         bullets: ['Full Home Remodels', 'Kitchen & Bathroom Renovations', 'Custom Built-Ins', 'Coffered Ceilings', 'Custom Bars'],
         image: '/image/interiors.webp',
@@ -48,7 +48,7 @@ export default function ServicesShowcase() {
         <div>
             {BLOCKS.map((block, i) => (
                 <section key={block.heading} className={i % 2 === 1 ? 'bg-[#f3f4f6]' : 'bg-white'}>
-                    <div className="mx-auto max-w-7xl px-4 py-14 lg:py-20">
+                    <div className="mx-auto max-w-[1200px] px-4 py-14 lg:py-20">
                         <FeatureBlock {...block} reverse={i % 2 === 1} />
                     </div>
                 </section>

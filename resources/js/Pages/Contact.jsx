@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { router } from '@inertiajs/react';
 import { LuLoader, LuCheck } from 'react-icons/lu';
 import Seo from '@/Components/Seo';
@@ -17,7 +17,7 @@ const PROJECT_TYPES = [
     'Other',
 ];
 
-const BUDGETS = ['Under $50k', '$50k – $100k', '$100k – $250k', '$250k – $500k', '$500k+'];
+const BUDGETS = ['Under $50k', '$50k â€“ $100k', '$100k â€“ $250k', '$250k â€“ $500k', '$500k+'];
 
 const HEAR_OPTIONS = ['Google', 'Referral', 'Social Media', 'Drove By', 'Home Show', 'Other'];
 
@@ -36,7 +36,7 @@ function ContactHero() {
                 />
                 <div aria-hidden="true" className="absolute inset-0 bg-black/60" />
 
-                <div className="relative mx-auto max-w-7xl px-4 py-20 lg:py-28">
+                <div className="relative mx-auto max-w-[1200px] px-4 py-20 lg:py-28">
                     <h1 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-white">
                         Contact Us
                     </h1>
@@ -119,7 +119,7 @@ export default function ContactPage({ reviews = [], seo = {} }) {
         <SiteLayout reviews={reviews}>
             <Seo
                 seo={seo}
-                fallbackTitle="Contact Us | Captivating Construction Group — NJ Custom Home Builder"
+                fallbackTitle="Contact Us | Captivating Construction Group â€” NJ Custom Home Builder"
                 fallbackDescription="Request a free consultation with Captivating Construction Group. Tell us about your custom home, renovation, or addition project in New Jersey and we'll be in touch."
             />
             <ServiceSchema
@@ -222,7 +222,7 @@ export default function ContactPage({ reviews = [], seo = {} }) {
                                     className="inline-flex items-center gap-2 rounded-lg bg-brand-blue-light px-7 py-3 font-body text-sm font-bold uppercase tracking-wide text-white shadow-lg transition-colors hover:bg-brand-blue disabled:opacity-60"
                                 >
                                     {processing ? (
-                                        <><LuLoader className="h-4 w-4 animate-spin" /> Sending…</>
+                                        <><LuLoader className="h-4 w-4 animate-spin" /> Sendingâ€¦</>
                                     ) : (
                                         'Submit'
                                     )}
@@ -236,7 +236,7 @@ export default function ContactPage({ reviews = [], seo = {} }) {
             {/* Service-area map */}
             <section>
                 <iframe
-                    title="Captivating Construction Group service area — New Jersey"
+                    title="Captivating Construction Group service area â€” New Jersey"
                     src="https://maps.google.com/maps?q=Colts+Neck,+New+Jersey&t=&z=10&ie=UTF8&iwloc=&output=embed"
                     className="block h-[420px] w-full border-0"
                     loading="lazy"

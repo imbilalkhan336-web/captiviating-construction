@@ -1,6 +1,7 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { router } from '@inertiajs/react';
 import { LuLoader, LuCheck, LuRotateCw } from 'react-icons/lu';
+import { FaRegCheckCircle } from 'react-icons/fa';
 import { PillButton } from '@/Components/FrontComponents/PillButton';
 import HeroServicesStrip from './HeroServicesStrip';
 
@@ -26,7 +27,7 @@ const PROJECT_TYPES = [
 
 const labelClass = 'mb-1.5 block font-body text-sm font-semibold text-gray-600';
 const inputClass =
-    'w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 font-body text-sm text-gray-800 outline-none transition-all placeholder:text-gray-400 focus:border-brand-blue-light focus:ring-2 focus:ring-brand-blue-light/20';
+    'w-full rounded-full border border-gray-300 bg-white px-4 py-2.5 font-body text-sm text-gray-800 outline-none transition-all placeholder:text-gray-400 focus:border-brand-blue-light focus:ring-2 focus:ring-brand-blue-light/20';
 
 /* ---------- Quote form (right card) ---------- */
 function QuoteForm() {
@@ -91,11 +92,11 @@ function QuoteForm() {
                 </div>
             ) : (
                 <>
-                    <h3 className="text-center font-body text-xl font-bold text-brand-blue">
+                    <h3 className="text-center font-montserrat text-[18px] font-extrabold leading-[22px] text-[rgb(10,71,122)]">
                         Get A Quote On Your Project
                     </h3>
-                    <p className="mt-1 text-center font-body text-sm font-semibold text-brand-orange">
-                        Let&apos;s Get Started—Just Fill Out The Form Below!
+                    <p className="mt-1 text-center font-montserrat text-[16px] font-normal leading-[19px] text-black">
+                        Let&apos;s get started—just fill out the form below!
                     </p>
 
                     <form onSubmit={handleSubmit} className="mt-6 space-y-5">
@@ -160,7 +161,7 @@ function QuoteForm() {
                             <div className="flex flex-col items-center text-[9px] leading-tight text-gray-400">
                                 <LuRotateCw className="mb-0.5 h-6 w-6" />
                                 reCAPTCHA
-                                <span>Privacy · Terms</span>
+                                <span>Privacy Â· Terms</span>
                             </div>
                         </div>
 
@@ -171,7 +172,7 @@ function QuoteForm() {
                         >
                             {processing ? (
                                 <>
-                                    <LuLoader className="h-4 w-4 animate-spin" /> Sending…
+                                    <LuLoader className="h-4 w-4 animate-spin" /> Sendingâ€¦
                                 </>
                             ) : (
                                 'Submit'
@@ -198,9 +199,9 @@ export default function Hero() {
                 {/* Dark overlay across the whole hero */}
                 <div aria-hidden="true" className="absolute inset-0 bg-black/65" />
 
-                <div className="relative mx-auto max-w-7xl px-4 py-16 lg:py-20">
+                <div className="relative mx-auto max-w-[1200px] px-4 py-16 lg:py-20">
                     <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-                        {/* Left — headline, copy, checklist, CTA */}
+                        {/* Left â€" headline, copy, checklist, CTA */}
                         <div>
                             <h1 className="font-montserrat text-[45px] font-bold not-italic leading-[54px] text-white">
                                 Building New Jersey&apos;s
@@ -217,19 +218,10 @@ export default function Hero() {
                             <ul className="mt-6 space-y-3">
                                 {VALUE_PROPS.map((prop) => (
                                     <li key={prop} className="flex items-center gap-3 font-body text-sm text-white md:text-[15px]">
-                                        <svg
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="#40AAFF"
-                                            strokeWidth={2.25}
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
+                                        <FaRegCheckCircle
                                             aria-hidden="true"
-                                            className="h-6 w-6 flex-shrink-0"
-                                        >
-                                            <circle cx="12" cy="12" r="10" />
-                                            <path d="m7.5 12.5 3 3 6-6.5" />
-                                        </svg>
+                                            className="flex-shrink-0 text-[18px] leading-[18px] text-[rgb(68,170,255)]"
+                                        />
                                         {prop}
                                     </li>
                                 ))}
@@ -242,7 +234,7 @@ export default function Hero() {
                             </div>
                         </div>
 
-                        {/* Right — quote form */}
+                        {/* Right â€" quote form */}
                         <QuoteForm />
                     </div>
                 </div>

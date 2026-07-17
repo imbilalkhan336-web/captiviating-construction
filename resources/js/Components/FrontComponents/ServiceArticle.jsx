@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { router, usePage } from '@inertiajs/react';
 import SectionHeading from '@/Components/FrontComponents/SectionHeading';
 import ScheduleForm from '@/Components/FrontComponents/ScheduleForm';
@@ -24,7 +24,7 @@ const labelClass = 'block text-[11px] font-extrabold uppercase tracking-widest t
  * ------------------------------------------------------------------ */
 
 // Section body: blank-line-separated paragraphs, with a bold lead-in for
-// "Term — explanation" lines so the article keeps its styled look.
+// "Term â€” explanation" lines so the article keeps its styled look.
 function Paragraphs({ text }) {
     if (!text) return null;
 
@@ -47,7 +47,7 @@ function Paragraphs({ text }) {
     return (
         <div className="mt-6 space-y-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
             {paras.map((p, i) => {
-                const dash = p.indexOf(' — ');
+                const dash = p.indexOf(' â€” ');
                 if (dash > 0 && dash < 48 && !/[,.]/.test(p.slice(0, dash))) {
                     return (
                         <p key={i}>
@@ -299,7 +299,7 @@ function BlockToolbar({ onEdit, onDelete, onUp, onDown, isFirst, isLast }) {
 }
 
 /* ------------------------------------------------------------------ *
- * ServiceArticle — shared two-column article + editor + sticky form
+ * ServiceArticle â€” shared two-column article + editor + sticky form
  * ------------------------------------------------------------------ */
 
 export default function ServiceArticle({ page, blocks = [], tags = [], metaLabel = 'Service Guide', faqEyebrow, headingSizeClass, formHeadingClassName = '' }) {
@@ -350,7 +350,7 @@ export default function ServiceArticle({ page, blocks = [], tags = [], metaLabel
     return (
         <>
             <div className="bg-white">
-                <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
+                <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
                     <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
                         {/* Article content */}
                         <div className="lg:col-span-7">

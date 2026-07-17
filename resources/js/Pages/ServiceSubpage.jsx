@@ -1,4 +1,4 @@
-import { Link } from '@inertiajs/react';
+﻿import { Link } from '@inertiajs/react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
@@ -52,7 +52,7 @@ export default function ServiceSubpage({ trade, service, siblings = [], reviews 
             <Seo seo={seo} fallbackTitle={service.title} fallbackDescription={service.description} />
             <ServiceSchema
                 serviceName={service.name}
-                serviceType={`${trade.label} — ${service.name}`}
+                serviceType={`${trade.label} â€” ${service.name}`}
                 description={service.description}
                 path={`/${trade.slug}/${service.slug}`}
                 faqs={faqs}
@@ -76,7 +76,7 @@ export default function ServiceSubpage({ trade, service, siblings = [], reviews 
                 />
 
                 <div className="bg-white">
-                    <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
+                    <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
                         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
                             <div className="lg:col-span-7">
                                 <Link
@@ -108,7 +108,7 @@ export default function ServiceSubpage({ trade, service, siblings = [], reviews 
                                     </Link>
                                     {related.length > 0 && (
                                         <>
-                                            {' '}— including{' '}
+                                            {' '}â€” including{' '}
                                             {related.map((s, i) => (
                                                 <span key={s.href}>
                                                     <Link href={s.href} className="font-semibold text-blue-600 underline">
@@ -119,7 +119,7 @@ export default function ServiceSubpage({ trade, service, siblings = [], reviews 
                                             ))}
                                         </>
                                     )}
-                                    {' '}— or{' '}
+                                    {' '}â€” or{' '}
                                     <Link href="/contact" className="font-semibold text-blue-600 underline">
                                         contact us
                                     </Link>{' '}

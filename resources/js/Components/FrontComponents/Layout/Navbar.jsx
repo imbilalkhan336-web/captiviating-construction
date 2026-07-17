@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from '@inertiajs/react';
+import { Link, usePage } from '@inertiajs/react';
 import { PillButton } from '../PillButton';
 
 const navLinks = [
@@ -35,8 +35,10 @@ function Caret() {
 
 // One top-level item handles a plain link, a hash anchor, or a hover dropdown.
 function NavItem({ link, openMenu, setOpenMenu }) {
+    const { url } = usePage();
+    const isActive = link.href === '/' ? url === '/' : url === link.href || url.startsWith(link.href + '/');
     const linkClasses =
-        'flex items-center whitespace-nowrap px-2.5 py-2 text-xs font-semibold uppercase text-[#07264A] transition-colors hover:text-brand-orange';
+        `flex items-center whitespace-nowrap px-2.5 py-2 [font-family:'Manrope',sans-serif] text-[16px] font-semibold leading-[20px] transition-colors hover:text-[#0060B9] ${isActive ? 'text-[#0060B9]' : 'text-black'}`;
 
     if (link.sublinks) {
         return (
@@ -55,7 +57,7 @@ function NavItem({ link, openMenu, setOpenMenu }) {
                             <Link
                                 key={sub.label}
                                 href={sub.href}
-                                className="block whitespace-nowrap px-4 py-2 text-xs font-semibold uppercase text-[#07264A] transition-colors hover:bg-gray-100 hover:text-brand-orange"
+                                className="block whitespace-nowrap px-4 py-2 text-xs font-semibold uppercase text-[#07264A] transition-colors hover:bg-[#005EAB] hover:text-white"
                             >
                                 {sub.label}
                             </Link>
@@ -87,7 +89,7 @@ export default function Navbar() {
 
     return (
         <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-md">
-            <div className="mx-auto flex max-w-7xl items-center px-4 py-1">
+            <div className="mx-auto flex max-w-[1200px] items-center px-4 py-1">
                 <Link href="/" className="mr-6 flex flex-shrink-0 items-center">
                     <img
                         src="/image/logo.webp"
@@ -100,7 +102,7 @@ export default function Navbar() {
                 <div className="flex-1" />
 
                 {/* Desktop nav links */}
-                <div className="hidden items-center gap-0.5 lg:flex lg:mr-6 xl:mr-10">
+                <div className="hidden items-center gap-0.5 lg:flex lg:mr-2 xl:mr-3">
                     {navLinks.map((link) => (
                         <NavItem key={link.label} link={link} openMenu={openMenu} setOpenMenu={setOpenMenu} />
                     ))}
@@ -108,7 +110,7 @@ export default function Navbar() {
 
                 {/* CTA button */}
                 <div className="hidden flex-shrink-0 items-center md:flex">
-                    <PillButton href="/contact" variant="dark" size="sm">
+                    <PillButton href="/contact" variant="dark" size="sm" className="!px-7 !py-3">
                         Get A Quote
                     </PillButton>
                 </div>

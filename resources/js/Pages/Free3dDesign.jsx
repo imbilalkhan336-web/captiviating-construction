@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { router } from '@inertiajs/react';
 import { LuLoader, LuCheck, LuRotateCw } from 'react-icons/lu';
 import Seo from '@/Components/Seo';
@@ -17,7 +17,7 @@ const INCLUDED = [
     'Selection of cabinet styles, colors, and finishes',
     'Integration of RTA (Ready to Assemble) or pre-assembled cabinets',
     'Appliance placement and functional flow optimization',
-    'Realistic renderings delivered within 5–7 business days',
+    'Realistic renderings delivered within 5â€“7 business days',
 ];
 
 const WHY_US = [
@@ -53,7 +53,7 @@ function Hero() {
                     </h1>
                     <p className="mx-auto mt-5 max-w-2xl font-body text-[15px] leading-relaxed text-white/85 md:text-base">
                         At Captivating Construction, we make it easy to bring your kitchen renovation vision to
-                        life — starting with a <span className="font-semibold text-white">free 3D kitchen design</span> tailored
+                        life â€” starting with a <span className="font-semibold text-white">free 3D kitchen design</span> tailored
                         to your space, style, and budget. Whether you&apos;re upgrading your home, remodeling for
                         resale, or starting fresh, our expert kitchen designers use advanced software to deliver
                         photorealistic 3D renderings that help you visualize the final result before construction begins.
@@ -151,7 +151,7 @@ function DesignForm() {
                         Get Your Free 3D Kitchen Design Today
                     </h2>
                     <p className="mt-2 text-center font-body text-sm font-semibold text-brand-orange">
-                        Start planning your dream kitchen with a custom 3D design — absolutely free and tailored to your space.
+                        Start planning your dream kitchen with a custom 3D design â€” absolutely free and tailored to your space.
                     </p>
 
                     {submitted ? (
@@ -262,7 +262,7 @@ function DesignForm() {
                                 <div className="flex flex-col items-center text-[9px] leading-tight text-gray-400">
                                     <LuRotateCw className="mb-0.5 h-6 w-6 text-gray-400" />
                                     reCAPTCHA
-                                    <span>Privacy · Terms</span>
+                                    <span>Privacy Â· Terms</span>
                                 </div>
                             </div>
 
@@ -273,7 +273,7 @@ function DesignForm() {
                             >
                                 {processing ? (
                                     <>
-                                        <LuLoader className="h-4 w-4 animate-spin" /> Sending…
+                                        <LuLoader className="h-4 w-4 animate-spin" /> Sendingâ€¦
                                     </>
                                 ) : (
                                     'Submit My Free Design Request'
@@ -298,15 +298,15 @@ export default function Free3dDesign({ reviews = [], seo = {}, gallery = [] }) {
             <ServiceSchema
                 serviceName="Free 3D Kitchen Design"
                 serviceType="Kitchen design and remodeling"
-                description="Free photorealistic 3D kitchen designs tailored to your space, style, and budget — for homeowners and contractors across New Jersey and nationwide."
+                description="Free photorealistic 3D kitchen designs tailored to your space, style, and budget â€” for homeowners and contractors across New Jersey and nationwide."
                 path="/free-3d-design"
             />
 
             <Hero />
 
-            {/* What's Included — text left, image right */}
+            {/* What's Included â€” text left, image right */}
             <section className="bg-white py-16 lg:py-24">
-                <div className="mx-auto max-w-7xl px-4">
+                <div className="mx-auto max-w-[1200px] px-4">
                     <FeatureBlock
                         heading="What's Included In Your Free 3D Kitchen Design?"
                         bullets={INCLUDED}
@@ -319,9 +319,9 @@ export default function Free3dDesign({ reviews = [], seo = {}, gallery = [] }) {
                 </div>
             </section>
 
-            {/* Why choose us — image left, text right */}
+            {/* Why choose us â€” image left, text right */}
             <section className="bg-[#f3f4f6] py-16 lg:py-24">
-                <div className="mx-auto max-w-7xl px-4">
+                <div className="mx-auto max-w-[1200px] px-4">
                     <FeatureBlock
                         heading="Why Homeowners & Contractors Choose Us:"
                         bullets={WHY_US}
@@ -335,13 +335,13 @@ export default function Free3dDesign({ reviews = [], seo = {}, gallery = [] }) {
 
             {/* Gallery */}
             <section className="bg-white py-16 lg:py-24">
-                <div className="mx-auto max-w-7xl px-4">
+                <div className="mx-auto max-w-[1200px] px-4">
                     <div className="text-center">
                         <h2 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-black">
                             Real Kitchens. Real Results.
                         </h2>
                         <p className="mx-auto mt-3 max-w-2xl font-body text-base leading-relaxed text-gray-600">
-                            Browse real 3D kitchen designs and remodels — custom-built by our team and delivered nationwide.
+                            Browse real 3D kitchen designs and remodels â€” custom-built by our team and delivered nationwide.
                         </p>
                     </div>
                     <div className="mt-10">

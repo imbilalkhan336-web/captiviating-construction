@@ -1,4 +1,4 @@
-import { Head } from '@inertiajs/react';
+﻿import { Head } from '@inertiajs/react';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
 import CtaBanner from '@/Components/pages-sections/Home/CtaBanner';
@@ -10,7 +10,7 @@ const values = [
     {
         icon: AiOutlineSafety,
         title: 'Integrity First',
-        body: 'We tell you what is wrong — even when the answer is free advice. No upsells, no manufactured emergencies, no pressure quotes at the kitchen table.',
+        body: 'We tell you what is wrong â€” even when the answer is free advice. No upsells, no manufactured emergencies, no pressure quotes at the kitchen table.',
     },
     {
         icon: LuAward,
@@ -25,7 +25,7 @@ const values = [
     {
         icon: LuMapPin,
         title: 'Local & Rooted',
-        body: 'We live where we work. Our technicians are your neighbors across Monmouth, Middlesex, and Ocean counties — invested in the long-term comfort of every NJ home.',
+        body: 'We live where we work. Our technicians are your neighbors across Monmouth, Middlesex, and Ocean counties â€” invested in the long-term comfort of every NJ home.',
     },
 ];
 
@@ -34,19 +34,19 @@ const process = [
         step: '01',
         icon: IoShieldCheckmarkOutline,
         title: 'Honest Diagnosis',
-        body: 'We listen first, then inspect. You get a clear explanation in plain English — not technician-speak — so you understand what is actually wrong before we recommend anything.',
+        body: 'We listen first, then inspect. You get a clear explanation in plain English â€” not technician-speak â€” so you understand what is actually wrong before we recommend anything.',
     },
     {
         step: '02',
         icon: LuAward,
         title: 'Upfront Pricing',
-        body: 'Flat-rate quotes before any work begins. You approve the scope and the number before we pick up a tool — no surprise charges, no hourly meter running.',
+        body: 'Flat-rate quotes before any work begins. You approve the scope and the number before we pick up a tool â€” no surprise charges, no hourly meter running.',
     },
     {
         step: '03',
         icon: IoSettingsOutline,
         title: 'Quality Execution',
-        body: 'Licensed HVAC and plumbing technicians complete the job to spec with the right parts on the truck — not whatever happens to be in stock.',
+        body: 'Licensed HVAC and plumbing technicians complete the job to spec with the right parts on the truck â€” not whatever happens to be in stock.',
     },
     {
         step: '04',
@@ -59,7 +59,7 @@ const process = [
 export default function TestPage({ reviews = [] }) {
     return (
         <SiteLayout reviews={reviews}>
-            <Head title="Test — Guardian Air" />
+            <Head title="Test â€” Guardian Air" />
 
             <PageHeader
                 label="Design Preview"
@@ -68,12 +68,12 @@ export default function TestPage({ reviews = [] }) {
                 image="/img/test-hero.webp"
             />
 
-            {/* Our Values — split layout, heading left */}
+            {/* Our Values â€” split layout, heading left */}
             <section className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white py-20 lg:py-28">
                 <div aria-hidden="true" className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-brand-orange/5 blur-3xl" />
                 <div aria-hidden="true" className="pointer-events-none absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-[#0A55C1]/5 blur-3xl" />
 
-                <div className="relative mx-auto max-w-7xl px-4">
+                <div className="relative mx-auto max-w-[1200px] px-4">
                     <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-12">
                         {/* Heading column (left) */}
                         <div className="lg:col-span-5 lg:sticky lg:top-24 lg:self-start">
@@ -87,7 +87,7 @@ export default function TestPage({ reviews = [] }) {
                             <span aria-hidden="true" className="mt-6 block h-1 w-16 rounded-full bg-brand-orange" />
                             <p className="mt-6 max-w-md font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
                                 Four non-negotiables that shape every quote we write and every
-                                job we close across central New Jersey — the lines we will not
+                                job we close across central New Jersey â€” the lines we will not
                                 cross, no matter how busy the day gets.
                             </p>
 
@@ -97,7 +97,7 @@ export default function TestPage({ reviews = [] }) {
                             </div>
                         </div>
 
-                        {/* Cards (right, 2×2) */}
+                        {/* Cards (right, 2Ã—2) */}
                         <div className="lg:col-span-7">
                             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                                 {values.map(({ icon: Icon, title, body }, i) => (
@@ -135,12 +135,12 @@ export default function TestPage({ reviews = [] }) {
                 </div>
             </section>
 
-            {/* Our Approach — split layout, cards left, heading right (blue accent) */}
+            {/* Our Approach â€” split layout, cards left, heading right (blue accent) */}
             <section className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white py-20 lg:py-28">
                 <div aria-hidden="true" className="pointer-events-none absolute -right-24 top-10 h-72 w-72 rounded-full bg-brand-blue/5 blur-3xl" />
                 <div aria-hidden="true" className="pointer-events-none absolute -left-24 bottom-10 h-72 w-72 rounded-full bg-brand-blue-light/5 blur-3xl" />
 
-                <div className="relative mx-auto max-w-7xl px-4">
+                <div className="relative mx-auto max-w-[1200px] px-4">
                     <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-12">
                         {/* Cards (left, 2x2) */}
                         <div className="order-2 lg:order-1 lg:col-span-7">
@@ -189,7 +189,7 @@ export default function TestPage({ reviews = [] }) {
                             <span aria-hidden="true" className="mt-6 block h-1 w-16 rounded-full bg-brand-blue" />
                             <p className="mt-6 max-w-md font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
                                 A clear, four-step process so you know exactly what to expect
-                                from the first phone call to the final follow-up — no surprises,
+                                from the first phone call to the final follow-up â€” no surprises,
                                 no scope creep, no scramble at the end.
                             </p>
 

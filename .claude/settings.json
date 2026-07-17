@@ -71,7 +71,9 @@
       "Bash(mv \"New Construction.jpg\" \"new-construction.jpg\")",
       "Bash(mv \"Exteriors.jpg\" \"exteriors.jpg\")",
       "Bash(mv \"Interiors.webp\" \"interiors.webp\")",
-      "PowerShell(Get-ChildItem \"F:\\\\my-project\\\\captivatingconstruction\\\\public\\\\image\" -File | Where-Object { $_.LastWriteTime -gt \\(Get-Date \"2026-07-06 02:10\"\\) } | Sort-Object LastWriteTime -Descending | Select-Object Name, Length, LastWriteTime | Format-Table -AutoSize)"
+      "PowerShell(Get-ChildItem \"F:\\\\my-project\\\\captivatingconstruction\\\\public\\\\image\" -File | Where-Object { $_.LastWriteTime -gt \\(Get-Date \"2026-07-06 02:10\"\\) } | Sort-Object LastWriteTime -Descending | Select-Object Name, Length, LastWriteTime | Format-Table -AutoSize)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/home2)",
+      "Bash(npm --version)"
     ]
   }
 }

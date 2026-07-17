@@ -1,4 +1,4 @@
-import { LuShieldCheck, LuCalendarCheck, LuGem, LuAward } from 'react-icons/lu';
+﻿import { LuShieldCheck, LuCalendarCheck, LuGem, LuAward } from 'react-icons/lu';
 import { PillButton, PhonePillButton } from '@/Components/FrontComponents/PillButton';
 
 const PHONE = '(732) 272-5937';
@@ -29,7 +29,7 @@ const trustItems = [
 export default function CtaBanner({ titleWeightClass = 'font-semibold' }) {
     return (
         <section className="bg-white py-8 lg:py-12">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="overflow-hidden rounded-2xl shadow-xl">
                     <div
                         className="relative bg-[#07264A] bg-cover bg-center p-8 sm:p-12 lg:p-16"

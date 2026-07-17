@@ -1,4 +1,4 @@
-import { LuBadgeCheck, LuHardHat, LuClock, LuHandshake, LuBadgeDollarSign, LuShieldCheck } from 'react-icons/lu';
+﻿import { LuBadgeCheck, LuHardHat, LuClock, LuHandshake, LuBadgeDollarSign, LuShieldCheck } from 'react-icons/lu';
 
 const FEATURES = [
     {
@@ -48,14 +48,14 @@ function Feature({ icon: Icon, title, body }) {
 export default function WhyChooseUs() {
     return (
         <section className="relative overflow-hidden bg-white py-16 lg:py-24">
-            {/* Construction photo (diagonal white fade baked into the image) — desktop only */}
+            {/* Construction photo (diagonal white fade baked into the image) â€” desktop only */}
             <div
                 aria-hidden="true"
                 className="absolute inset-0 hidden bg-cover bg-right bg-no-repeat lg:block"
                 style={{ backgroundImage: "url('/image/why-choose-bg.webp')" }}
             />
 
-            <div className="relative mx-auto max-w-7xl px-4">
+            <div className="relative mx-auto max-w-[1200px] px-4">
                 <div className="max-w-3xl">
                     <div className="flex items-center gap-3">
                         <span aria-hidden="true" className="h-px w-10 bg-brand-orange" />

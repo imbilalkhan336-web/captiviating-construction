@@ -1,4 +1,4 @@
-import { LuAward, LuGem, LuUsers, LuCalendarCheck } from 'react-icons/lu';
+﻿import { LuAward, LuGem, LuUsers, LuCalendarCheck } from 'react-icons/lu';
 import { IoShieldCheckmarkOutline } from 'react-icons/io5';
 import { AiOutlineSafety } from 'react-icons/ai';
 import { TbHomeStar } from 'react-icons/tb';
@@ -36,8 +36,8 @@ function StatItem({ icon: Icon, value, label, iconClassName = 'h-6 w-6 lg:h-8 lg
 export default function About({ image = '/img/about-img.webp' } = {}) {
     return (
         <section className="relative bg-white pt-12 pb-8">
-            <div className="mx-auto max-w-7xl px-4">
-                {/* Top — Mission + photo */}
+            <div className="mx-auto max-w-[1200px] px-4">
+                {/* Top â€” Mission + photo */}
                 <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-12">
                     <div className="lg:col-span-6">
                         <p className="text-[14px] font-extrabold uppercase tracking-tight text-brand-orange md:text-[14px] lg:text-[19px]">
@@ -50,7 +50,7 @@ export default function About({ image = '/img/about-img.webp' } = {}) {
                             For over 30 years, Captivating Construction has built a reputation on
                             responsibility, quality, and customer service. We see building as a fluid
                             process in which our experience and attention to detail allow us to stand
-                            above the rest — and we take pride in finishing every project on time and on budget.
+                            above the rest â€” and we take pride in finishing every project on time and on budget.
                         </p>
 
                         <div className="mt-8 grid grid-cols-1 items-stretch gap-4 sm:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] sm:gap-x-6 sm:gap-y-0 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-5">
@@ -69,7 +69,7 @@ export default function About({ image = '/img/about-img.webp' } = {}) {
                             <MiniFeature
                                 icon={LuUsers}
                                 title="Customer Service"
-                                body="Your vision leads — we guide you from concept to completion."
+                                body="Your vision leads â€” we guide you from concept to completion."
                             />
                             <span aria-hidden="true" className="hidden w-px bg-gray-200 sm:block lg:hidden" />
                             <MiniFeature

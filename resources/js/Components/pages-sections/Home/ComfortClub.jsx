@@ -1,4 +1,4 @@
-import { PillButton } from '../../FrontComponents/PillButton';
+﻿import { PillButton } from '../../FrontComponents/PillButton';
 
 const perks = [
     'Two annual tune-ups (heating + cooling)',
@@ -24,7 +24,7 @@ function CheckBadge() {
 export default function ComfortClub() {
     return (
         <section className="relative overflow-hidden bg-gradient-to-br from-brand-blue to-brand-blue-light py-20 lg:py-24">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
                     <div>
                         <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-orange">
@@ -34,7 +34,7 @@ export default function ComfortClub() {
                             Join the Arctic Comfort Club
                         </h2>
                         <p className="mt-4 text-lg leading-relaxed text-white/80">
-                            Priority service, savings, and peace of mind — year-round protection
+                            Priority service, savings, and peace of mind â€” year-round protection
                             for your home's heating, cooling, and plumbing systems.
                         </p>
 

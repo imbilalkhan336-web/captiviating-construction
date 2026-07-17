@@ -1,4 +1,4 @@
-import Seo from '@/Components/Seo';
+﻿import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import ClientReviews from '@/Components/FrontComponents/ClientReviews';
 import CtaSection from '@/Components/pages-sections/CtaSection';
@@ -14,7 +14,7 @@ const TRUST = [
     },
     {
         title: 'On-Time, On-Budget Delivery',
-        body: 'We believe in keeping our word. Your project is completed as promised — without unexpected delays or costs.',
+        body: 'We believe in keeping our word. Your project is completed as promised â€” without unexpected delays or costs.',
     },
     {
         title: 'Personalized Approach',
@@ -37,7 +37,7 @@ function TestimonialsHero() {
                 />
                 <div aria-hidden="true" className="absolute inset-0 bg-black/60" />
 
-                <div className="relative mx-auto max-w-7xl px-4 py-20 lg:py-28">
+                <div className="relative mx-auto max-w-[1200px] px-4 py-20 lg:py-28">
                     <h1 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-white">
                         Testimonials
                     </h1>
@@ -50,7 +50,7 @@ function TestimonialsHero() {
 function WhyTrust() {
     return (
         <section className="bg-[#f3f4f6] py-16 lg:py-24">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-14">
                     <div>
                         <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-orange">
@@ -62,7 +62,7 @@ function WhyTrust() {
                         <p className="mt-5 font-body text-base leading-relaxed text-gray-600">
                             Every project we complete is built on a foundation of trust, transparency, and
                             craftsmanship. We understand that your home or business is one of your biggest
-                            investments — and that&apos;s why we treat every job with care and precision.
+                            investments â€” and that&apos;s why we treat every job with care and precision.
                         </p>
 
                         <ul className="mt-6 space-y-4">
@@ -102,8 +102,8 @@ export default function Testimonials({ reviews = [] }) {
         <SiteLayout reviews={reviews}>
             <Seo
                 seo={{}}
-                fallbackTitle="Testimonials | Captivating Construction Group — NJ Custom Home Builder"
-                fallbackDescription="See what New Jersey homeowners say about Captivating Construction Group — real reviews on our custom home building, renovations, and additions."
+                fallbackTitle="Testimonials | Captivating Construction Group â€” NJ Custom Home Builder"
+                fallbackDescription="See what New Jersey homeowners say about Captivating Construction Group â€” real reviews on our custom home building, renovations, and additions."
             />
 
             <TestimonialsHero />

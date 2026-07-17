@@ -1,4 +1,4 @@
-import { Link } from '@inertiajs/react';
+﻿import { Link } from '@inertiajs/react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
@@ -16,7 +16,7 @@ export default function CostGuidesIndex({ guides = [], faqs: rawFaqs = [], seo =
             <Seo
                 seo={seo}
                 fallbackTitle="HVAC, Plumbing & Drain Cost Guides (NJ) | Guardian Air"
-                fallbackDescription="HVAC repair cost NJ — flat-rate 2026 price guides for furnace, AC, plumbing, duct & drain service across Monmouth, Middlesex & Ocean counties. Call today!"
+                fallbackDescription="HVAC repair cost NJ â€” flat-rate 2026 price guides for furnace, AC, plumbing, duct & drain service across Monmouth, Middlesex & Ocean counties. Call today!"
             />
             <ServiceSchema
                 serviceName="HVAC & Plumbing Cost Guides"
@@ -32,15 +32,15 @@ export default function CostGuidesIndex({ guides = [], faqs: rawFaqs = [], seo =
                 <PageHeader
                     label="Pricing"
                     title="What HVAC & Plumbing Services Cost in New Jersey"
-                    description="Wondering about HVAC repair cost in NJ? No gimmicks, no hidden conditions — honest price ranges for heating, AC, plumbing, duct, and drain work so you know what to expect before you call."
+                    description="Wondering about HVAC repair cost in NJ? No gimmicks, no hidden conditions â€” honest price ranges for heating, AC, plumbing, duct, and drain work so you know what to expect before you call."
                     image="/img/heroes/cost-guides.webp"
                     titleClassName="font-normal"
                 />
 
                 <div className="bg-white py-14 lg:py-20">
-                    <div className="mx-auto max-w-7xl px-4">
+                    <div className="mx-auto max-w-[1200px] px-4">
                         <p className="max-w-3xl font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
-                            Looking for honest HVAC repair cost in NJ — or AC, plumbing, duct, and drain pricing? Guardian Air
+                            Looking for honest HVAC repair cost in NJ â€” or AC, plumbing, duct, and drain pricing? Guardian Air
                             publishes transparent 2026 price ranges for the most common services across Monmouth, Middlesex, and
                             Ocean counties, from Toms River and Freehold to Brick, Old Bridge, Red Bank, and Lakewood. Your exact
                             price is always confirmed with a flat-rate quote before any work begins.
@@ -75,7 +75,7 @@ export default function CostGuidesIndex({ guides = [], faqs: rawFaqs = [], seo =
                             <p className="mt-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
                                 Each guide breaks down typical New Jersey price ranges by job and explains what's included. Diagnostic
                                 service calls generally run $89 to $150 and are often credited toward the repair, and we never add
-                                overtime fees for nights, weekends, or holidays. Browse the related service pages — <Link href="/heating" className="font-semibold text-blue-600 underline">heating</Link>, <Link href="/cooling" className="font-semibold text-blue-600 underline">cooling</Link>, <Link href="/plumbing" className="font-semibold text-blue-600 underline">plumbing</Link>, <Link href="/drains" className="font-semibold text-blue-600 underline">drains</Link>, and <Link href="/indoor-air-quality" className="font-semibold text-blue-600 underline">indoor air quality</Link> — for full details.
+                                overtime fees for nights, weekends, or holidays. Browse the related service pages â€” <Link href="/heating" className="font-semibold text-blue-600 underline">heating</Link>, <Link href="/cooling" className="font-semibold text-blue-600 underline">cooling</Link>, <Link href="/plumbing" className="font-semibold text-blue-600 underline">plumbing</Link>, <Link href="/drains" className="font-semibold text-blue-600 underline">drains</Link>, and <Link href="/indoor-air-quality" className="font-semibold text-blue-600 underline">indoor air quality</Link> â€” for full details.
                             </p>
                         </section>
 

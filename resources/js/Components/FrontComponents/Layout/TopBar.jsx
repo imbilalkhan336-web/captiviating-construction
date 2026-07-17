@@ -6,27 +6,29 @@ export default function TopBar() {
     const isAdmin = Boolean(auth?.user?.is_admin);
 
     return (
-        <div className={`bg-[#0A2A4A] text-white ${isAdmin ? 'block' : 'hidden md:block'}`}>
-            <div className="mx-auto flex max-w-7xl items-center justify-center gap-5 px-4 py-2 text-xs font-semibold md:justify-end md:gap-7 md:text-sm">
+        <div className="bg-[#0A477A] text-white">
+            <div className="mx-auto flex max-w-[1200px] items-center justify-end gap-6 px-4 py-[10px]">
                 <a
                     href="mailto:info@capconnj.com"
-                    className="flex items-center gap-2 text-white/90 transition-colors hover:text-brand-orange"
+                    className="flex items-center gap-1.5 [font-family:'Montserrat',sans-serif] text-[14px] font-normal leading-[21px] text-white transition-colors hover:text-white/80"
                 >
-                    <LuMail className="h-4 w-4 text-white" />
+                    <LuMail className="h-3.5 w-3.5 flex-shrink-0" />
+                    <span className="text-white/40">|</span>
                     info@capconnj.com
                 </a>
+
                 <a
                     href="tel:+17322725937"
-                    className="flex items-center gap-2 text-white/90 transition-colors hover:text-brand-orange"
+                    className="flex items-center gap-1.5 [font-family:'Montserrat',sans-serif] text-[14px] font-normal leading-[21px] text-white transition-colors hover:text-white/80"
                 >
-                    <LuPhone className="h-4 w-4 text-white" />
+                    <LuPhone className="h-3.5 w-3.5 flex-shrink-0" />
                     732-272-5937
                 </a>
 
                 {isAdmin && (
                     <Link
                         href="/admin"
-                        className="font-bold text-brand-orange transition-colors hover:text-brand-orange-dark"
+                        className="[font-family:'Montserrat',sans-serif] text-[14px] font-bold text-brand-orange transition-colors hover:text-white"
                     >
                         Dashboard
                     </Link>

@@ -1,20 +1,20 @@
-import { useRef, useState, useEffect } from 'react';
+﻿import { useRef, useState, useEffect } from 'react';
 import { usePage } from '@inertiajs/react';
 import { LuStar } from 'react-icons/lu';
 
 const FALLBACK_REVIEWS = [
     { name: 'Jessica Nunno', initial: 'J', avatarBg: 'bg-emerald-600', timeAgo: '1 day ago', body: 'They did a great job installing our new HVAC. They worked quickly and everything went smoothly from quote to cleanup. Truly a five-star experience!', rating: 5 },
     { name: 'Barbara Caroleo', initial: 'B', avatarBg: 'bg-emerald-500', timeAgo: '1 day ago', body: 'Very professional and reliable. The crew arrived right on time, walked me through the work, and left the place spotless.', rating: 5 },
-    { name: 'Richard Singer', initial: 'R', avatarBg: 'bg-rose-600', timeAgo: '1 day ago', body: 'Matt was friendly but professional. Replaced the capacitor for $307 when the AC stopped cooling — back up and running in under an hour.', rating: 5 },
+    { name: 'Richard Singer', initial: 'R', avatarBg: 'bg-rose-600', timeAgo: '1 day ago', body: 'Matt was friendly but professional. Replaced the capacitor for $307 when the AC stopped cooling â€” back up and running in under an hour.', rating: 5 },
     { name: 'Vic Alvarado', initial: 'V', avatarBg: 'bg-slate-700', timeAgo: '2 days ago', body: 'Tech Dawan Carter went beyond what was expected and was very knowledgeable. He took time to explain the issue and fixed it the first visit.', rating: 5 },
-    { name: 'Baba Estates LLC', initial: 'B', avatarBg: 'bg-teal-600', timeAgo: '2 days ago', body: 'Excellent service from start to finish — quoted fairly, scheduled fast, and delivered exactly what we needed for our property.', rating: 5 },
+    { name: 'Baba Estates LLC', initial: 'B', avatarBg: 'bg-teal-600', timeAgo: '2 days ago', body: 'Excellent service from start to finish â€” quoted fairly, scheduled fast, and delivered exactly what we needed for our property.', rating: 5 },
     { name: 'Tom Reilly', initial: 'T', avatarBg: 'bg-indigo-600', timeAgo: '3 days ago', body: 'On time, courteous, and explained the work clearly before starting. Pricing was upfront and honest. Highly recommended for HVAC service.', rating: 5 },
     { name: 'Maria Lopez', initial: 'M', avatarBg: 'bg-orange-500', timeAgo: '4 days ago', body: 'Replaced our old furnace with no issues at all. Crew was friendly, neat, and the new system is dramatically quieter than the old one.', rating: 5 },
     { name: 'Daniel Park', initial: 'D', avatarBg: 'bg-cyan-600', timeAgo: '5 days ago', body: 'Quick response when our AC went out during a heatwave. Fair pricing and the technician walked me through everything before doing the work.', rating: 5 },
     { name: 'Sarah Whitfield', initial: 'S', avatarBg: 'bg-purple-600', timeAgo: '6 days ago', body: 'Booked online in the evening and they were here next morning. Diagnosed a leak in the line set and had us cooling again same day.', rating: 5 },
     { name: 'Anthony Russo', initial: 'A', avatarBg: 'bg-amber-600', timeAgo: '1 week ago', body: 'Five stars all around. Honest tech, no upsell pressure, and the new thermostat install made our energy bill noticeably lower.', rating: 5 },
     { name: 'Lakeisha Brown', initial: 'L', avatarBg: 'bg-pink-600', timeAgo: '1 week ago', body: 'I called for a clogged drain and they had someone here within two hours. Fixed it in 30 minutes and gave me tips to keep it from happening again.', rating: 5 },
-    { name: 'Michael O\'Connor', initial: 'M', avatarBg: 'bg-blue-700', timeAgo: '2 weeks ago', body: 'Used Guardian Air for both a heating tune-up and a plumbing repair. One company, one invoice — couldn\'t be easier.', rating: 5 },
+    { name: 'Michael O\'Connor', initial: 'M', avatarBg: 'bg-blue-700', timeAgo: '2 weeks ago', body: 'Used Guardian Air for both a heating tune-up and a plumbing repair. One company, one invoice â€” couldn\'t be easier.', rating: 5 },
 ];
 
 function timeAgo(dateString) {
@@ -189,7 +189,7 @@ export default function Reviews({ reviews = [] }) {
 
     return (
         <section className="relative overflow-hidden bg-[#F2F4F6] py-20 lg:py-16">
-            <div className="relative mx-auto max-w-7xl px-4">
+            <div className="relative mx-auto max-w-[1200px] px-4">
                 <p className="text-center font-poppins text-[10px] font-bold uppercase tracking-[0.2em] text-[#1A73E8]">
                     Hear What Our Customers Are Saying
                 </p>

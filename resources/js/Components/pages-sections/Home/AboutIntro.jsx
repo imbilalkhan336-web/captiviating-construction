@@ -1,4 +1,4 @@
-import { PillButton } from '@/Components/FrontComponents/PillButton';
+﻿import { PillButton } from '@/Components/FrontComponents/PillButton';
 
 const ABOUT_IMG = '/image/about-img.webp';
 const LOGO = '/image/CC-logo.webp';
@@ -6,9 +6,9 @@ const LOGO = '/image/CC-logo.webp';
 export default function AboutIntro() {
     return (
         <section className="relative bg-brand-gray py-20 lg:py-16">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-10">
-                    {/* Left — heading + copy + CTA */}
+                    {/* Left â€” heading + copy + CTA */}
                     <div>
                         <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-brand-blue-light">
                             About Us
@@ -43,7 +43,7 @@ export default function AboutIntro() {
                         </div>
                     </div>
 
-                    {/* Right — home photo + logo */}
+                    {/* Right â€” home photo + logo */}
                     <div>
                         <img
                             src={ABOUT_IMG}

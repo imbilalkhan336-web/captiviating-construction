@@ -1,4 +1,4 @@
-import { PillButton } from '../../FrontComponents/PillButton';
+﻿import { PillButton } from '../../FrontComponents/PillButton';
 
 const points = [
     {
@@ -32,7 +32,7 @@ function Bullet() {
 export default function Difference() {
     return (
         <section className="relative overflow-hidden bg-white py-20 lg:py-24">
-            <div className="relative mx-auto max-w-7xl px-4">
+            <div className="relative mx-auto max-w-[1200px] px-4">
                 <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-12 items-center">
                     <div className="lg:col-span-6">
                         <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-orange">

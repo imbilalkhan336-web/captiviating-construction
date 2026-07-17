@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+﻿import { useRef } from 'react';
 import { FaStar } from 'react-icons/fa';
 import { RiVerifiedBadgeFill } from 'react-icons/ri';
 import { LuChevronLeft, LuChevronRight, LuInfo } from 'react-icons/lu';
@@ -7,7 +7,7 @@ const REVIEWS = [
     { name: 'Hal Simoff', initial: 'H', color: 'bg-purple-500', time: '11 months ago', text: 'Great experience renovating our kitchen. Highly recommend' },
     { name: 'Priscila Salcedo', initial: 'P', color: 'bg-blue-600', time: '11 months ago', text: 'Captivating Construction Group did an exceptional job from start to finish. Their team was professional, punctual, and paid incredible attention to detail throughout the entire project.' },
     { name: 'Sharon Jaramillo', initial: 'S', color: 'bg-teal-500', time: '11 months ago', text: 'Excellent work.' },
-    { name: 'Michael Reyes', initial: 'M', color: 'bg-slate-600', time: '1 year ago', text: 'From design to completion the craftsmanship was outstanding. Couldn’t be happier with our new custom home.' },
+    { name: 'Michael Reyes', initial: 'M', color: 'bg-slate-600', time: '1 year ago', text: 'From design to completion the craftsmanship was outstanding. Couldnâ€™t be happier with our new custom home.' },
     { name: 'Jennifer Torres', initial: 'J', color: 'bg-rose-500', time: '1 year ago', text: 'Professional, on time, and on budget. They made the whole build process stress-free from day one.' },
 ];
 
@@ -72,7 +72,7 @@ export default function ClientReviews() {
 
     return (
         <section className="bg-white py-16 lg:py-24">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 {/* Header */}
                 <div className="text-center">
                     <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-blue-light">

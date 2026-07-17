@@ -1,4 +1,4 @@
-import { Link } from '@inertiajs/react';
+﻿import { Link } from '@inertiajs/react';
 import { LuTrees, LuSofa, LuStar, LuArrowRight, LuCheck } from 'react-icons/lu';
 
 function CapabilityCard({ icon: Icon, title, items, image, href = '/services' }) {
@@ -38,7 +38,7 @@ function CapabilityCard({ icon: Icon, title, items, image, href = '/services' })
 export default function AreaWeServe() {
     return (
         <section className="relative bg-white pt-12 pb-8">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div>
                     <p className="text-sm font-extrabold uppercase text-brand-orange md:text-base lg:text-[24px]">
                         What We Build
@@ -48,7 +48,7 @@ export default function AreaWeServe() {
                     </h2>
                     <p className="mt-6 max-w-2xl font-body text-base leading-relaxed text-black">
                         From striking curb appeal to refined interior finishes, Captivating Construction
-                        handles every detail of your project with one trusted team — delivering timeless
+                        handles every detail of your project with one trusted team â€” delivering timeless
                         design and lasting value across New Jersey.
                     </p>
                 </div>

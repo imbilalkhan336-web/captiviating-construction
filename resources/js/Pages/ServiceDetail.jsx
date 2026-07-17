@@ -1,4 +1,4 @@
-import { IoCheckmarkCircle } from 'react-icons/io5';
+﻿import { IoCheckmarkCircle } from 'react-icons/io5';
 import {
     LuLayoutGrid, LuLayers, LuFilm, LuUtensils, LuArchive,
     LuHouse, LuClipboardList, LuRuler, LuFileCheck, LuHammer, LuCheckCheck, LuSparkles,
@@ -31,7 +31,7 @@ const SERVICES = {
         intro: {
             eyebrow: 'Build On Your Lot',
             heading: 'Build Your Dream Home on Your Own Land',
-            body: "Do you have land available in New Jersey and are looking for a construction team to build a home there? Look no further. The Captivating Construction Group is an experienced team of luxury home builders that can build your custom dream home on your own land. With years of experience, we're ready to bring your vision to life — whether you want to build from the ground up or renovate an existing home. When your home is built from the ground up, you'll know exactly what you're getting, down to the finest detail.",
+            body: "Do you have land available in New Jersey and are looking for a construction team to build a home there? Look no further. The Captivating Construction Group is an experienced team of luxury home builders that can build your custom dream home on your own land. With years of experience, we're ready to bring your vision to life â€” whether you want to build from the ground up or renovate an existing home. When your home is built from the ground up, you'll know exactly what you're getting, down to the finest detail.",
             image: '/image/Grollo-Belmore-140.webp',
             ctaLabel: null,
         },
@@ -53,7 +53,7 @@ const SERVICES = {
         timeline: {
             eyebrow: 'Timeline & Budget',
             heading: 'Timeline and Budget to Build on a Lot in NJ',
-            body: 'When we begin a project, we build on your lot with a clear timeline and budget in mind — and we stick to it. We treat every home we build as if it were our own, keeping you informed at every step so there are no surprises along the way.',
+            body: 'When we begin a project, we build on your lot with a clear timeline and budget in mind â€” and we stick to it. We treat every home we build as if it were our own, keeping you informed at every step so there are no surprises along the way.',
             bulletsTitle: 'Contact Captivating Construction About Your New Home',
             image: '/image/gellory/24-West-4.webp',
             ctaLabel: null,
@@ -63,7 +63,7 @@ const SERVICES = {
     'nj-kitchen-renovations': {
         title: 'Kitchen Built-Outs & Renovations',
         metaDescription:
-            'Custom kitchen renovations and built-outs in New Jersey — luxury design, full-service project management, and expert craftsmanship from Captivating Construction Group.',
+            'Custom kitchen renovations and built-outs in New Jersey â€” luxury design, full-service project management, and expert craftsmanship from Captivating Construction Group.',
         heroSubtitle:
             "The kitchen is the heart of the home, and we're here to help you captivate your dream kitchen in NJ. Captivating Construction Group brings decades of craftsmanship, design expertise, and a passion for perfection to every kitchen we remodel.",
         heroImage: '/image/home-hero-bg.webp',
@@ -86,7 +86,7 @@ const SERVICES = {
                 },
                 {
                     title: 'Quality Materials & Craftsmanship',
-                    body: 'We pride ourselves on meticulous craftsmanship and a commitment to premium materials — from cabinetry and countertops to flooring and fixtures, chosen for durability, function, and lasting design appeal.',
+                    body: 'We pride ourselves on meticulous craftsmanship and a commitment to premium materials â€” from cabinetry and countertops to flooring and fixtures, chosen for durability, function, and lasting design appeal.',
                 },
                 {
                     title: 'Modern Upgrades & Energy-Efficient Solutions',
@@ -121,7 +121,7 @@ const SERVICES = {
         faqs: [
             { q: 'How long does a kitchen remodel typically take?', a: 'Most kitchen renovations in New Jersey take between 6 and 10 weeks, depending on size and complexity. During your consultation we provide a realistic timeline tailored to your specific project.' },
             { q: 'Can I customize my kitchen layout and design?', a: 'Absolutely. Every kitchen we build is fully customized to your space, style, and how you use it. Our design team works closely with you to create a layout that fits your life.' },
-            { q: 'What is the average cost of a kitchen renovation in NJ?', a: 'Costs vary based on size, materials, and scope. We provide detailed, transparent estimates up front so you know exactly where your investment goes — with no surprises.' },
+            { q: 'What is the average cost of a kitchen renovation in NJ?', a: 'Costs vary based on size, materials, and scope. We provide detailed, transparent estimates up front so you know exactly where your investment goes â€” with no surprises.' },
             { q: 'Do you provide warranties on your kitchen remodeling projects?', a: 'Yes. We stand behind our work with a workmanship warranty and pass along the manufacturer warranties on the materials and appliances we install.' },
         ],
     },
@@ -136,14 +136,14 @@ const SERVICES = {
             {
                 type: 'feature',
                 heading: 'Trusted Luxury Home Builder in New Jersey',
-                body: "When it comes to luxury home builders in New Jersey, you want someone you can trust — with the experience and the ability to make your vision a reality. Captivating Construction has over 30 years of expertise delivering the very highest-quality luxury home building. Every design reflects your unique lifestyle, whether you're after a serene coastal retreat, a modern family residence, or an estate with timeless architecture.",
+                body: "When it comes to luxury home builders in New Jersey, you want someone you can trust â€” with the experience and the ability to make your vision a reality. Captivating Construction has over 30 years of expertise delivering the very highest-quality luxury home building. Every design reflects your unique lifestyle, whether you're after a serene coastal retreat, a modern family residence, or an estate with timeless architecture.",
                 image: '/image/property-13.webp',
                 ctaLabel: null,
             },
             {
                 type: 'servicesShowcase',
                 heading: 'Luxury Home Builder Services',
-                body: "Whether you're envisioning a primary residence, vacation retreat, or coastal getaway, Captivating Construction has the skill and insight to bring your dream to life. Our team takes the time to understand your unique needs, lifestyle, and preferences — ensuring every detail comes together beautifully.",
+                body: "Whether you're envisioning a primary residence, vacation retreat, or coastal getaway, Captivating Construction has the skill and insight to bring your dream to life. Our team takes the time to understand your unique needs, lifestyle, and preferences â€” ensuring every detail comes together beautifully.",
                 image: '/image/home-hero-bg.webp',
                 items: [
                     { title: 'Custom Luxury Home Design & New Home Construction', body: 'From foundation to finish, our design-and-build custom luxury homes are crafted entirely around your vision.' },
@@ -195,7 +195,7 @@ const SERVICES = {
                     { q: 'What does a luxury home builder do in New Jersey?', a: 'A luxury home builder manages the design and construction of high-end custom homes, coordinating every detail from architecture and materials to finishes and project management.' },
                     { q: 'How much does it cost to build a custom luxury home in NJ?', a: 'Costs vary widely based on size, location, materials, and finishes. We provide detailed, transparent estimates up front so you know exactly what to expect.' },
                     { q: 'How long does a high-end residential construction project take?', a: 'Most luxury home builds take 10 to 18 months depending on size and complexity. We provide a realistic timeline during planning and keep you updated throughout.' },
-                    { q: 'Can I customize every aspect of my luxury home?', a: 'Absolutely. Every home we build is fully custom — from floor plans and finishes to smart-home features — designed entirely around your vision and lifestyle.' },
+                    { q: 'Can I customize every aspect of my luxury home?', a: 'Absolutely. Every home we build is fully custom â€” from floor plans and finishes to smart-home features â€” designed entirely around your vision and lifestyle.' },
                     { q: 'Why should I hire a local NJ luxury home builder?', a: "A local builder understands New Jersey's zoning, permitting, and building requirements, and is nearby to manage your project closely from start to finish." },
                 ],
             },
@@ -204,7 +204,7 @@ const SERVICES = {
     'full-home-remodel-new-construction-nj': {
         title: 'New Construction In NJ',
         metaDescription:
-            'New home construction in New Jersey. Captivating Construction Group builds custom homes from the ground up — design, permits, and construction managed end to end.',
+            'New home construction in New Jersey. Captivating Construction Group builds custom homes from the ground up â€” design, permits, and construction managed end to end.',
         heroSubtitle:
             "Looking to build a home from scratch in New Jersey and want to make sure you end up with your dream home when all is said and done? The Captivating Construction Group is an experienced team of luxury home builders that specialize in new home construction in NJ.",
         heroImage: '/image/worker-site.webp',
@@ -212,7 +212,7 @@ const SERVICES = {
             {
                 type: 'feature',
                 heading: 'New Jersey New Home Construction Services',
-                body: "When it comes to new home construction in New Jersey, no project is too big for Captivating Construction to tackle. Whether you're building a primary residence or a vacation home, we'll work with you every step of the way — on every aspect of the project, including:",
+                body: "When it comes to new home construction in New Jersey, no project is too big for Captivating Construction to tackle. Whether you're building a primary residence or a vacation home, we'll work with you every step of the way â€” on every aspect of the project, including:",
                 bullets: [
                     'Custom home design & planning',
                     'Roofing & siding',
@@ -229,9 +229,9 @@ const SERVICES = {
             {
                 type: 'servicesGrid',
                 heading: 'Our New Home Construction Services',
-                body: 'At Captivating Construction, every build is guided by a commitment to precision, collaboration, and design excellence. From your first consultation to the moment you step inside your finished home, our team handles each detail with care — ensuring your vision is brought to life exactly as you imagined.',
+                body: 'At Captivating Construction, every build is guided by a commitment to precision, collaboration, and design excellence. From your first consultation to the moment you step inside your finished home, our team handles each detail with care â€” ensuring your vision is brought to life exactly as you imagined.',
                 items: [
-                    { title: 'Custom Home Design & Planning', body: 'Our in-house design and planning process begins with your ideas. We listen closely to your lifestyle goals and aesthetic preferences to create a blueprint that balances functionality and beauty — from layout optimization to architectural detail, made with your comfort and vision in mind.' },
+                    { title: 'Custom Home Design & Planning', body: 'Our in-house design and planning process begins with your ideas. We listen closely to your lifestyle goals and aesthetic preferences to create a blueprint that balances functionality and beauty â€” from layout optimization to architectural detail, made with your comfort and vision in mind.' },
                     { title: 'Full-Service Construction Management', body: 'From permits to final walkthrough, our construction management team oversees every phase of your build. We coordinate directly with trusted sub-contractors, suppliers, and inspectors to keep your project on schedule and on budget, ensuring a smooth experience from start to finish.' },
                     { title: 'Energy-Efficient & Modern Homes', body: 'Our team incorporates modern building practices to ensure homes that are as efficient as they are beautiful. From high-performance insulation and windows to sustainable materials and smart-home technology, we help you enjoy lasting comfort and lower energy costs year-round.' },
                     { title: 'Quality Craftsmanship & Materials', body: "We believe your home should stand the test of time. That's why we use only premium materials and proven building techniques for every project. Our meticulous attention to detail means every space is built to be durable, refined, and held to the highest standards." },
@@ -240,7 +240,7 @@ const SERVICES = {
             {
                 type: 'feature',
                 heading: 'Why Choose Us for New Home Construction in NJ',
-                body: 'Choosing us means working with a team that understands what it takes to build a home that feels truly yours. From day one, we focus on clear communication, dependable timelines, and lasting quality — so building your dream home is exciting, not stressful.',
+                body: 'Choosing us means working with a team that understands what it takes to build a home that feels truly yours. From day one, we focus on clear communication, dependable timelines, and lasting quality â€” so building your dream home is exciting, not stressful.',
                 image: '/image/gellory/15-Blackbriar-1.webp',
                 ctaLabel: null,
             },
@@ -248,7 +248,7 @@ const SERVICES = {
                 type: 'feature',
                 reverse: true,
                 heading: 'Timeline and Budget for New Home Construction in NJ',
-                body: 'When we begin a new home construction project, we do so with a clear timeline and budget in mind — and we stick to them. The timeline and budget are laid out for you upfront, before construction begins, so there are no surprises along the way, and our meticulous attention to detail means the timeline is followed as closely as possible.',
+                body: 'When we begin a new home construction project, we do so with a clear timeline and budget in mind â€” and we stick to them. The timeline and budget are laid out for you upfront, before construction begins, so there are no surprises along the way, and our meticulous attention to detail means the timeline is followed as closely as possible.',
                 image: '/image/gellory/4-Shady-oak-4.webp',
                 ctaLabel: null,
             },
@@ -274,7 +274,7 @@ const SERVICES = {
                 type: 'faqs',
                 heading: 'Frequently Asked Questions About New Home Construction in NJ',
                 faqs: [
-                    { q: 'How long does it take to build a new home in NJ?', a: 'The timeline varies depending on the size, design complexity, and permitting process. On average, new custom homes in New Jersey take between eight months and one year to complete — ensuring every phase, from foundation to finishing touches, is completed with accuracy and care.' },
+                    { q: 'How long does it take to build a new home in NJ?', a: 'The timeline varies depending on the size, design complexity, and permitting process. On average, new custom homes in New Jersey take between eight months and one year to complete â€” ensuring every phase, from foundation to finishing touches, is completed with accuracy and care.' },
                     { q: 'Can you customize every part of the home?', a: "Yes. Every home we build is fully custom, designed entirely around your needs, style, and how you live. From floor plans to finishes, you're involved in every decision." },
                     { q: 'What is the average cost of new home construction in NJ?', a: 'Costs vary widely based on size, location, materials, and finishes. We provide detailed, transparent estimates up front so you know exactly what to expect.' },
                     { q: 'Do you provide warranties on your new home?', a: 'Yes. We stand behind our work with a workmanship warranty and pass along the manufacturer warranties on the materials and systems we install.' },
@@ -285,7 +285,7 @@ const SERVICES = {
     'basement-services-nj': {
         title: 'Basement Renovations Near Me | Captivating Construction, NJ',
         metaDescription:
-            'Basement renovations in New Jersey — family rooms, home theaters, guest suites, custom bars, and finished living space. Captivating Construction finishes basements the right way.',
+            'Basement renovations in New Jersey â€” family rooms, home theaters, guest suites, custom bars, and finished living space. Captivating Construction finishes basements the right way.',
         heroSubtitle:
             'At Captivating Construction, we turn unfinished basements into functional and stylish living space that will delight both family and friends alike.',
         heroImage: '/image/gellory/18-Am-4.webp',
@@ -294,7 +294,7 @@ const SERVICES = {
             {
                 type: 'feature',
                 heading: 'Transform Your Basement With Expert Renovation Services',
-                body: 'Your basement is one of the most underused areas of your home — and one of the most full of potential. Our team handles everything from design to remodel, turning cold, unused square footage into a warm, welcoming space you and your family will love.',
+                body: 'Your basement is one of the most underused areas of your home â€” and one of the most full of potential. Our team handles everything from design to remodel, turning cold, unused square footage into a warm, welcoming space you and your family will love.',
                 bullets: [
                     'Full basement design & remodels',
                     'Kitchens & wet bars',
@@ -348,7 +348,7 @@ const SERVICES = {
             {
                 type: 'banner',
                 heading: 'Built on Experience, Driven by Excellence',
-                body: "For the best finishes that will truly captivate your family and friends, rely on experience. Our team has years of expertise fulfilling clients' dreams down to the finest detail. We'll guide you through the process with ease — whether you want to update a single room or transform your entire home.",
+                body: "For the best finishes that will truly captivate your family and friends, rely on experience. Our team has years of expertise fulfilling clients' dreams down to the finest detail. We'll guide you through the process with ease â€” whether you want to update a single room or transform your entire home.",
                 buttonLabel: 'Free Consultation',
                 buttonHref: '/contact',
                 image: '/image/gellory/36-HH-4.webp',
@@ -371,22 +371,22 @@ const SERVICES = {
     additions: {
         title: 'Home Additions in NJ',
         metaDescription:
-            'Home additions in New Jersey — room additions, in-law and primary suites, sunrooms, and second-story additions that blend seamlessly with your home.',
+            'Home additions in New Jersey â€” room additions, in-law and primary suites, sunrooms, and second-story additions that blend seamlessly with your home.',
         heroSubtitle:
-            'More space, more comfort, more value — designed to blend seamlessly with your existing home.',
+            'More space, more comfort, more value â€” designed to blend seamlessly with your existing home.',
         heroImage: '/image/gellory/178-Dart-scaled.webp',
         blocks: [
             {
                 eyebrow: 'Home Additions',
                 heading: 'Room to Grow',
-                body: 'When you love your home but need more space, an addition is the perfect solution. We design and build additions that feel like they were always part of the house — adding comfort today and value for years to come.',
+                body: 'When you love your home but need more space, an addition is the perfect solution. We design and build additions that feel like they were always part of the house â€” adding comfort today and value for years to come.',
                 bulletsTitle: 'Popular Additions:',
                 bullets: ['Room additions', 'In-law & primary suites', 'Sunrooms', 'Second-story additions'],
                 image: '/image/gellory/4-Shady-oak-4.webp',
             },
             {
                 heading: 'Built to Match',
-                body: 'Our additions integrate seamlessly with your existing rooflines, materials, and layout — so the finished result looks intentional and cohesive, never tacked on.',
+                body: 'Our additions integrate seamlessly with your existing rooflines, materials, and layout â€” so the finished result looks intentional and cohesive, never tacked on.',
                 image: '/image/gellory/24-West-4.webp',
             },
         ],
@@ -396,7 +396,7 @@ const SERVICES = {
 function FeatureSection({ block, reverse = false, bg = 'white' }) {
     return (
         <section className={bg === 'gray' ? 'bg-[#f3f4f6]' : 'bg-white'}>
-            <div className="mx-auto max-w-7xl px-4 py-14 lg:py-20">
+            <div className="mx-auto max-w-[1200px] px-4 py-14 lg:py-20">
                 <FeatureBlock {...block} reverse={reverse} />
             </div>
         </section>
@@ -406,7 +406,7 @@ function FeatureSection({ block, reverse = false, bg = 'white' }) {
 function ServicesListSection({ eyebrow, heading, body, bullets = [], image, imageAlt = 'Captivating Construction project' }) {
     return (
         <section className="bg-[#f3f4f6]">
-            <div className="mx-auto max-w-7xl px-4 py-14 lg:py-20">
+            <div className="mx-auto max-w-[1200px] px-4 py-14 lg:py-20">
                 <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
                     <div>
                         {eyebrow && (
@@ -442,7 +442,7 @@ function ServicesListSection({ eyebrow, heading, body, bullets = [], image, imag
 function ServicesGrid({ heading, body, items = [] }) {
     return (
         <section className="bg-white py-14 lg:py-20">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <h2 className="text-center font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-black">
                     {heading}
                 </h2>
@@ -467,7 +467,7 @@ function ServicesGrid({ heading, body, items = [] }) {
 function StepsSection({ heading, items = [] }) {
     return (
         <section className="bg-[#f3f4f6] py-14 lg:py-20">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <h2 className="text-center font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-black">
                     {heading}
                 </h2>
@@ -491,7 +491,7 @@ function StepsSection({ heading, items = [] }) {
 function BenefitsSection({ heading, body, bullets = [], image, imageAlt = 'Captivating Construction project' }) {
     return (
         <section className="bg-white py-14 lg:py-20">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="overflow-hidden rounded-2xl bg-brand-blue px-6 py-10 sm:px-10 lg:px-14 lg:py-14">
                     <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
                         <div>
@@ -528,7 +528,7 @@ function BenefitsSection({ heading, body, bullets = [], image, imageAlt = 'Capti
 function ServicesShowcaseSection({ heading, body, image, items = [], imageAlt = 'Captivating Construction project' }) {
     return (
         <section className="bg-white py-14 lg:py-20">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
                     <div>
                         <h2 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-black">
@@ -566,7 +566,7 @@ function IconCards({ heading, body, items = [], columns = 3, bg = 'gray' }) {
     const colClass = columns === 4 ? 'lg:grid-cols-4' : columns === 2 ? 'lg:grid-cols-2' : 'lg:grid-cols-3';
     return (
         <section className={bg === 'white' ? 'bg-white py-14 lg:py-20' : 'bg-[#f3f4f6] py-14 lg:py-20'}>
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <h2 className="text-center font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-black">
                     {heading}
                 </h2>
@@ -669,7 +669,7 @@ export default function ServiceDetail({ slug, reviews = [], seo = {} }) {
                     style={{ backgroundImage: `url('${service.heroImage}')` }}
                 />
                 <div aria-hidden="true" className="absolute inset-0 bg-black/60" />
-                <div className="relative mx-auto max-w-7xl px-4 py-20 text-center lg:py-28">
+                <div className="relative mx-auto max-w-[1200px] px-4 py-20 text-center lg:py-28">
                     <p className="text-sm font-bold uppercase tracking-[0.25em] text-brand-orange">
                         Our Services
                     </p>

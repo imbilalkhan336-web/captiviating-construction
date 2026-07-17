@@ -13,7 +13,7 @@
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=barlow-condensed:400,500,600,700,800,900|bebas-neue:400|corinthia:400,700|anton:400|montserrat:400,500,600,700,800|poppins:400,500,600,700,800,900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.bunny.net/css?family=barlow-condensed:400,500,600,700,800,900|bebas-neue:400|corinthia:400,700|anton:400|manrope:400,600,700|montserrat:400,500,600,700,800|poppins:400,500,600,700,800,900&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
         @routes

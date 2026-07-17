@@ -1,4 +1,4 @@
-import { Link } from '@inertiajs/react';
+﻿import { Link } from '@inertiajs/react';
 import { LuMail, LuMapPin, LuPhone } from 'react-icons/lu';
 import { FaInstagram, FaFacebookF, FaHouzz } from 'react-icons/fa';
 
@@ -60,7 +60,7 @@ export default function Footer() {
 
     return (
         <footer className="bg-[#0e4d8a] text-white">
-            <div className="mx-auto max-w-7xl px-4 py-14 lg:py-16">
+            <div className="mx-auto max-w-[1200px] px-4 py-14 lg:py-16">
                 <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
                     {/* Brand */}
                     <div>
@@ -128,7 +128,7 @@ export default function Footer() {
 
             {/* Bottom bar */}
             <div className="border-t border-white/15">
-                <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-sm text-white/70 sm:flex-row">
+                <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-3 px-4 py-5 text-sm text-white/70 sm:flex-row">
                     <p>&copy; {year} Captivating Construction. All Rights Reserved.</p>
                     <div className="flex gap-6">
                         <a href="/sitemap" className="transition-colors hover:text-white">Sitemap</a>

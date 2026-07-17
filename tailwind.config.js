@@ -24,6 +24,7 @@ export default {
                 body: ['Montserrat', ...defaultTheme.fontFamily.sans],
                 montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
                 barlow: ['Montserrat', ...defaultTheme.fontFamily.sans],
+                manrope: ['Manrope', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 brand: {

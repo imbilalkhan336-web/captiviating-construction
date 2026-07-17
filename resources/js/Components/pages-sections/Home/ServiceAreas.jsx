@@ -1,4 +1,4 @@
-import { Link } from '@inertiajs/react';
+﻿import { Link } from '@inertiajs/react';
 import { LuMapPin, LuArrowRight } from 'react-icons/lu';
 
 const counties = [
@@ -35,13 +35,13 @@ export default function ServiceAreas() {
                 className="pointer-events-none absolute -right-24 bottom-10 h-80 w-80 rounded-full bg-brand-blue/5 blur-3xl"
             />
 
-            <div className="relative mx-auto max-w-7xl px-4">
+            <div className="relative mx-auto max-w-[1200px] px-4">
                 <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
                     {/* Map */}
                     <div className="relative">
                         <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-black/40 ring-1 ring-white/10">
                             <iframe
-                                title="Guardian Air service map — New Jersey"
+                                title="Guardian Air service map â€” New Jersey"
                                 src="https://maps.google.com/maps?q=New+Jersey,+USA&t=&z=8&ie=UTF8&iwloc=&output=embed"
                                 className="block aspect-[4/3] w-full border-0"
                                 loading="lazy"

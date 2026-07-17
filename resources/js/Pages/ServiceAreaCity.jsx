@@ -1,4 +1,4 @@
-import { Link } from '@inertiajs/react';
+﻿import { Link } from '@inertiajs/react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
@@ -11,22 +11,22 @@ import { LuArrowLeft, LuArrowRight, LuCheck } from 'react-icons/lu';
 
 export default function ServiceAreaCity({ city, county, trades = [], reviews = [], seo = {} }) {
     const title = `HVAC, Plumbing & Drains in ${city.name}, NJ | Guardian Air`;
-    const description = `HVAC ${city.name} NJ — Guardian Air offers licensed heating, cooling, plumbing, and drain service in ${city.name}, ${county.name}. Same-day response and flat-rate pricing. Call now!`;
+    const description = `HVAC ${city.name} NJ â€” Guardian Air offers licensed heating, cooling, plumbing, and drain service in ${city.name}, ${county.name}. Same-day response and flat-rate pricing. Call now!`;
 
     // Unique per-city copy when available; otherwise a localized fallback.
     const intro = city.intro?.length
         ? city.intro
         : [
               `Guardian Air provides trusted HVAC in ${city.name}, NJ to homeowners and businesses throughout ${county.name}. Our licensed technicians deliver fast, same-day heating, cooling, plumbing, and drain service with honest, flat-rate pricing.`,
-              `Whether it's a furnace that won't start in January or an air conditioner struggling through a July heatwave, our local team is nearby and ready to help in ${city.name} — clean workmanship, no surprises, on every visit.`,
+              `Whether it's a furnace that won't start in January or an air conditioner struggling through a July heatwave, our local team is nearby and ready to help in ${city.name} â€” clean workmanship, no surprises, on every visit.`,
           ];
     // Prefer hand-written per-city FAQs; fall back to a localized generic set.
     const cityFaqs = (city.faqs || []).map((f) => ({ question: f.q, answer: f.a }));
     const fallbackFaqs = [
-        { question: `Which services does Guardian Air offer in ${city.name}?`, answer: `Everything under one roof: heating, cooling, plumbing, drains, and indoor air quality — handled by licensed technicians who already work in ${city.name} every week.` },
+        { question: `Which services does Guardian Air offer in ${city.name}?`, answer: `Everything under one roof: heating, cooling, plumbing, drains, and indoor air quality â€” handled by licensed technicians who already work in ${city.name} every week.` },
         { question: `How soon can a technician be in ${city.name}?`, answer: `Often the same day. Our ${county.name} routes pass through ${city.name} regularly, and emergencies jump the queue any hour of the day.` },
-        { question: `Do you charge extra to come to ${city.name}?`, answer: `No — ${city.name} is part of our core coverage, so there are no trip fees, and after-hours visits cost the same flat rate as daytime ones.` },
-        { question: `Can I get HVAC and plumbing work done in one visit in ${city.name}?`, answer: `Usually, yes. Because we're licensed across trades, one appointment can cover a furnace check and a leaky faucet — one truck, one invoice.` },
+        { question: `Do you charge extra to come to ${city.name}?`, answer: `No â€” ${city.name} is part of our core coverage, so there are no trip fees, and after-hours visits cost the same flat rate as daytime ones.` },
+        { question: `Can I get HVAC and plumbing work done in one visit in ${city.name}?`, answer: `Usually, yes. Because we're licensed across trades, one appointment can cover a furnace check and a leaky faucet â€” one truck, one invoice.` },
     ];
     const faqs = cityFaqs.length ? cityFaqs : fallbackFaqs;
 
@@ -52,7 +52,7 @@ export default function ServiceAreaCity({ city, county, trades = [], reviews = [
             <article>
                 <PageHeader
                     label={county.name}
-                    title={`Guardian Air in ${city.name}, NJ — HVAC, Plumbing & Drains`}
+                    title={`Guardian Air in ${city.name}, NJ â€” HVAC, Plumbing & Drains`}
                     image="/img/heroes/local.webp"
                     imageCover
                     description={`Licensed heating, cooling, plumbing, and drain service in ${city.name}, ${county.name}. Same-day response, flat-rate pricing, and a local team you can trust.`}
@@ -60,7 +60,7 @@ export default function ServiceAreaCity({ city, county, trades = [], reviews = [
                 />
 
                 <div className="bg-white">
-                    <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
+                    <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
                         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
                             <div className="lg:col-span-7">
                                 <Link

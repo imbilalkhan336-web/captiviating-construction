@@ -1,4 +1,4 @@
-export default function PageHeader({
+﻿export default function PageHeader({
     label,
     title,
     description,
@@ -13,7 +13,7 @@ export default function PageHeader({
 
     return (
         <section className="bg-white pt-6 lg:pt-10">
-            <div className="mx-auto max-w-7xl px-4">
+            <div className="mx-auto max-w-[1200px] px-4">
                 <div className="relative overflow-hidden rounded-2xl bg-[#0A2A4A] shadow-xl">
                     {/* Background image */}
                     {image && (
@@ -31,7 +31,7 @@ export default function PageHeader({
                         />
                     )}
 
-                    {/* Gradient overlay — darker on the left where text lives */}
+                    {/* Gradient overlay â€” darker on the left where text lives */}
                     <div
                         aria-hidden="true"
                         className="absolute inset-0 bg-gradient-to-r from-[#0A2A4A] via-[#0A2A4A]/85 to-[#0A2A4A]/30 md:via-[#0A2A4A]/75 md:to-transparent"

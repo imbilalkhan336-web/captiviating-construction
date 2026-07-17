@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import { LuChevronRight } from 'react-icons/lu';
@@ -9,19 +9,19 @@ const HERO_BG = '/image/home-hero-bg.webp';
 const FAQS = [
     {
         q: 'Timelines & Budgets?',
-        a: "Every project is unique, so timelines and budgets are tailored to your specific scope. During your initial consultation we'll walk through your goals, provide a detailed estimate, and set a realistic schedule — then keep you updated at every milestone so there are no surprises.",
+        a: "Every project is unique, so timelines and budgets are tailored to your specific scope. During your initial consultation we'll walk through your goals, provide a detailed estimate, and set a realistic schedule â€” then keep you updated at every milestone so there are no surprises.",
     },
     {
         q: 'How & When Are Payments Made?',
-        a: "Payments are structured around clearly defined project milestones rather than a single lump sum. You'll receive a written payment schedule up front, so you always know exactly what's due and when — tied to real, verifiable progress on your project.",
+        a: "Payments are structured around clearly defined project milestones rather than a single lump sum. You'll receive a written payment schedule up front, so you always know exactly what's due and when â€” tied to real, verifiable progress on your project.",
     },
     {
         q: 'What About Permits?',
-        a: 'As a licensed general contractor, we handle the entire permitting process for you — preparing documentation, submitting applications, and scheduling inspections so your project stays fully code-compliant from start to finish.',
+        a: 'As a licensed general contractor, we handle the entire permitting process for you â€” preparing documentation, submitting applications, and scheduling inspections so your project stays fully code-compliant from start to finish.',
     },
     {
         q: 'What Should I Ask Potential Contractors?',
-        a: "Always ask about licensing and insurance, references and completed projects, a written contract and timeline, and how they handle changes and communication. We're happy to answer every one of these — transparency is at the core of how we work.",
+        a: "Always ask about licensing and insurance, references and completed projects, a written contract and timeline, and how they handle changes and communication. We're happy to answer every one of these â€” transparency is at the core of how we work.",
     },
     {
         q: 'What About Materials?',
@@ -29,7 +29,7 @@ const FAQS = [
     },
     {
         q: 'What Is a Change Order?',
-        a: 'A change order is a written agreement documenting any change to the original scope, cost, or timeline — for example, if you decide to add or modify work mid-project. It keeps everything transparent and ensures you approve any adjustment before we proceed.',
+        a: 'A change order is a written agreement documenting any change to the original scope, cost, or timeline â€” for example, if you decide to add or modify work mid-project. It keeps everything transparent and ensures you approve any adjustment before we proceed.',
     },
 ];
 
@@ -75,7 +75,7 @@ export default function Faqs({ reviews = [], seo = {} }) {
                     style={{ backgroundImage: `url('${HERO_BG}')` }}
                 />
                 <div aria-hidden="true" className="absolute inset-0 bg-black/65" />
-                <div className="relative mx-auto max-w-7xl px-4 py-20 lg:py-24">
+                <div className="relative mx-auto max-w-[1200px] px-4 py-20 lg:py-24">
                     <h1 className="font-montserrat text-4xl font-bold text-white sm:text-5xl">
                         Frequently Asked Questions
                     </h1>

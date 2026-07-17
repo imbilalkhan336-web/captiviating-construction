@@ -1,4 +1,4 @@
-
+﻿
 import { PhonePillButton, SchedulePillButton } from './PillButton';
 
 export default function About() {
@@ -7,7 +7,7 @@ export default function About() {
             {/* Blue diagonal background for left side */}
             <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-br from-brand-blue to-brand-blue-light skew-x-6 -translate-x-20 hidden lg:block rounded-r-3xl" />
 
-            <div className="relative mx-auto max-w-7xl px-4">
+            <div className="relative mx-auto max-w-[1200px] px-4">
                 <div className="flex flex-col items-center gap-12 lg:flex-row">
                     {/* Image Side */}
                     <div className="relative w-full lg:w-1/2">
