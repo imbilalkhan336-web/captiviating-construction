@@ -1,4 +1,4 @@
-﻿import { Link } from '@inertiajs/react';
+﻿﻿import { Link } from '@inertiajs/react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
@@ -15,8 +15,8 @@ export default function CostGuidesIndex({ guides = [], faqs: rawFaqs = [], seo =
         <SiteLayout>
             <Seo
                 seo={seo}
-                fallbackTitle="HVAC, Plumbing & Drain Cost Guides (NJ) | Guardian Air"
-                fallbackDescription="HVAC repair cost NJ â€” flat-rate 2026 price guides for furnace, AC, plumbing, duct & drain service across Monmouth, Middlesex & Ocean counties. Call today!"
+                fallbackTitle="HVAC, Plumbing & Drain Cost Guides (NJ) | Captivating Construction Group"
+                fallbackDescription="HVAC repair cost NJ  -  flat-rate 2026 price guides for furnace, AC, plumbing, duct & drain service across Monmouth, Middlesex & Ocean counties. Call today!"
             />
             <ServiceSchema
                 serviceName="HVAC & Plumbing Cost Guides"
@@ -32,15 +32,15 @@ export default function CostGuidesIndex({ guides = [], faqs: rawFaqs = [], seo =
                 <PageHeader
                     label="Pricing"
                     title="What HVAC & Plumbing Services Cost in New Jersey"
-                    description="Wondering about HVAC repair cost in NJ? No gimmicks, no hidden conditions â€” honest price ranges for heating, AC, plumbing, duct, and drain work so you know what to expect before you call."
+                    description="Wondering about HVAC repair cost in NJ? No gimmicks, no hidden conditions  -  honest price ranges for heating, AC, plumbing, duct, and drain work so you know what to expect before you call."
                     image="/img/heroes/cost-guides.webp"
                     titleClassName="font-normal"
                 />
 
-                <div className="bg-white py-14 lg:py-20">
-                    <div className="mx-auto max-w-[1200px] px-4">
-                        <p className="max-w-3xl font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
-                            Looking for honest HVAC repair cost in NJ â€” or AC, plumbing, duct, and drain pricing? Guardian Air
+                <div className="bg-white py-[60px] md:py-[80px] lg:py-[100px]">
+                    <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
+                        <p className="max-w-3xl font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
+                            Looking for honest HVAC repair cost in NJ  -  or AC, plumbing, duct, and drain pricing? Captivating Construction Group
                             publishes transparent 2026 price ranges for the most common services across Monmouth, Middlesex, and
                             Ocean counties, from Toms River and Freehold to Brick, Old Bridge, Red Bank, and Lakewood. Your exact
                             price is always confirmed with a flat-rate quote before any work begins.
@@ -60,7 +60,7 @@ export default function CostGuidesIndex({ guides = [], faqs: rawFaqs = [], seo =
                                             <LuCalculator className="h-6 w-6" />
                                         </span>
                                         <h3 className="mt-5 font-display text-xl uppercase text-[#07264A]">{guide.name}</h3>
-                                        <p className="mt-2 flex-1 font-body text-sm leading-relaxed text-gray-600">{guide.description}</p>
+                                        <p className="mt-2 flex-1 font-montserrat text-[16px] font-normal leading-[26px] text-black">{guide.description}</p>
                                         <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-widest text-brand-orange">
                                             View Guide
                                             <LuArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
@@ -72,16 +72,16 @@ export default function CostGuidesIndex({ guides = [], faqs: rawFaqs = [], seo =
 
                         <section className="mt-12 max-w-3xl">
                             <SectionHeading sizeClass="text-[26px] font-normal">Average NJ Pricing</SectionHeading>
-                            <p className="mt-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
+                            <p className="mt-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
                                 Each guide breaks down typical New Jersey price ranges by job and explains what's included. Diagnostic
                                 service calls generally run $89 to $150 and are often credited toward the repair, and we never add
-                                overtime fees for nights, weekends, or holidays. Browse the related service pages â€” <Link href="/heating" className="font-semibold text-blue-600 underline">heating</Link>, <Link href="/cooling" className="font-semibold text-blue-600 underline">cooling</Link>, <Link href="/plumbing" className="font-semibold text-blue-600 underline">plumbing</Link>, <Link href="/drains" className="font-semibold text-blue-600 underline">drains</Link>, and <Link href="/indoor-air-quality" className="font-semibold text-blue-600 underline">indoor air quality</Link> â€” for full details.
+                                overtime fees for nights, weekends, or holidays. Browse the related service pages  -  <Link href="/heating" className="font-semibold text-blue-600 underline">heating</Link>, <Link href="/cooling" className="font-semibold text-blue-600 underline">cooling</Link>, <Link href="/plumbing" className="font-semibold text-blue-600 underline">plumbing</Link>, <Link href="/drains" className="font-semibold text-blue-600 underline">drains</Link>, and <Link href="/indoor-air-quality" className="font-semibold text-blue-600 underline">indoor air quality</Link>  -  for full details.
                             </p>
                         </section>
 
                         <section className="mt-12 max-w-3xl">
                             <SectionHeading sizeClass="text-[26px] font-normal">What Affects Price</SectionHeading>
-                            <p className="mt-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
+                            <p className="mt-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
                                 Final pricing depends on the specific part or job, the age and type of your system, accessibility,
                                 and whether it's an emergency. Because every home is different, we provide an upfront, flat-rate quote
                                 so you approve the price before we start.
@@ -90,7 +90,7 @@ export default function CostGuidesIndex({ guides = [], faqs: rawFaqs = [], seo =
 
                         <section className="mt-12 max-w-3xl">
                             <SectionHeading sizeClass="text-[26px] font-normal">Serving Monmouth, Middlesex & Ocean County</SectionHeading>
-                            <p className="mt-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
+                            <p className="mt-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
                                 These ranges apply across our service area. Find your town on our <Link href="/service-areas" className="font-semibold text-blue-600 underline">service areas</Link> page, or <Link href="/contact" className="font-semibold text-blue-600 underline">contact us</Link> for a precise quote.
                             </p>
                         </section>
@@ -105,7 +105,7 @@ export default function CostGuidesIndex({ guides = [], faqs: rawFaqs = [], seo =
                                                 {f.question}
                                                 <LuArrowRight className="h-4 w-4 flex-shrink-0 text-brand-orange transition-transform group-open:rotate-90" />
                                             </summary>
-                                            <p className="mt-3 font-body text-sm leading-relaxed text-gray-600">{f.answer}</p>
+                                            <p className="mt-3 font-montserrat text-[16px] font-normal leading-[26px] text-black">{f.answer}</p>
                                         </details>
                                     ))}
                                 </div>

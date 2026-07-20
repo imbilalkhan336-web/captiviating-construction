@@ -9,29 +9,28 @@ import CtaBanner from '@/Components/pages-sections/Home/CtaBanner';
 import { LuMapPin, LuArrowRight, LuClock, LuShieldCheck, LuBadgeDollarSign, LuHouse, LuFlame, LuSnowflake, LuWrench, LuDroplets, LuWind, LuBuilding2 } from 'react-icons/lu';
 
 const FAQS = [
-    { question: 'Which New Jersey counties does Guardian Air serve?', answer: 'Three: Monmouth, Middlesex, and Ocean. Inside those county lines we cover every town â€” the pages below break coverage down by county and by city.' },
-    { question: 'Are response times the same across all your service areas?', answer: 'Close to it. Trucks are stationed around the region rather than at one central shop, so same-day service is standard in all three counties and emergencies typically see help within hours.' },
-    { question: 'Does pricing change by location?', answer: 'Never. One flat-rate book covers the entire service area, so a repair costs the same in Freehold, Edison, or Toms River.' },
-    { question: "What if my town isn't listed on your service-area pages?", answer: 'Call anyway. The listed towns are anchors, not boundaries â€” we routinely serve neighboring communities just outside them.' },
-    { question: 'Is every service available in every town you cover?', answer: 'Yes. Heating, cooling, plumbing, drains, and indoor air quality are all offered everywhere we work â€” there are no "partial coverage" towns where only some trades are available.' },
-    { question: 'Do you serve commercial properties throughout your service areas?', answer: 'We do. Offices, restaurants, retail spaces, and light-industrial buildings get the same coverage footprint as homes, with commercial HVAC and plumbing crews dispatched across all three counties.' },
-    { question: 'Is emergency service available across the entire coverage area?', answer: 'Around the clock. Burst pipes, no-heat nights, and failed AC during a heatwave get priority dispatch in every county we serve â€” weekends and holidays included, with no overtime premium.' },
+    { question: 'Which areas of New Jersey does Captivating Construction Group serve?', answer: 'We serve homeowners throughout New Jersey, with a strong focus on Monmouth, Middlesex, Ocean, Bergen, and Essex counties. The pages below break down coverage by county and city.' },
+    { question: 'Do you build custom homes across all your service areas?', answer: 'Yes. Custom home builds, additions, kitchen renovations, basement finishing, and full remodels are available throughout every county we serve.' },
+    { question: 'Does pricing change by location?', answer: 'Project pricing is based on scope, materials, and site conditions — not your zip code. We provide detailed written estimates for every project before work begins.' },
+    { question: “What if my town isn't listed on your service-area pages?”, answer: 'Contact us anyway. The listed towns are anchors, not boundaries — we regularly take on projects in surrounding communities throughout New Jersey.' },
+    { question: 'Do you handle permits for projects in every area you serve?', answer: 'Yes. We manage all required permits and inspections in every municipality we work in, so you never have to navigate local building departments alone.' },
+    { question: 'Can you work on commercial or multi-family properties?', answer: 'We focus primarily on residential construction and renovation, but we do take on select commercial and multi-family projects — contact us to discuss your specific needs.' },
 ];
 
 const TRADES = [
-    { icon: LuFlame, name: 'Heating', href: '/heating', body: 'Furnace, boiler, and heat-pump repair, replacement, and tune-ups for cold Jersey winters.' },
-    { icon: LuSnowflake, name: 'Cooling', href: '/cooling', body: 'AC repair, central air installation, and ductless mini-splits sized for humid shore summers.' },
-    { icon: LuWrench, name: 'Plumbing', href: '/plumbing', body: 'Licensed plumbers for water heaters, leaks, fixtures, and 24/7 emergency calls.' },
-    { icon: LuDroplets, name: 'Drains', href: '/drains', body: 'Drain cleaning, hydro jetting, and sewer camera inspections that find the real blockage.' },
-    { icon: LuWind, name: 'Indoor Air Quality', href: '/indoor-air-quality', body: 'Duct cleaning, air purifiers, and humidity control for cleaner air in every room.' },
-    { icon: LuBuilding2, name: 'Commercial HVAC', href: '/commercial-hvac', body: 'Rooftop units, ductwork, and maintenance plans for businesses across central NJ.' },
+    { icon: LuHouse, name: 'Custom Home Builds', href: '/services/luxury-home-builder-nj', body: 'Full custom home construction on your lot — designed and built to your vision.' },
+    { icon: LuWrench, name: 'Kitchen Renovations', href: '/services/nj-kitchen-renovations', body: 'Complete kitchen remodels with custom cabinetry, countertops, and layout redesigns.' },
+    { icon: LuBuilding2, name: 'Additions', href: '/services/additions', body: 'Seamless home additions that expand your living space without disrupting your life.' },
+    { icon: LuFlame, name: 'Basement Finishing', href: '/services/basement-services-nj', body: 'Transform unfinished basements into living space, home offices, or entertainment rooms.' },
+    { icon: LuShieldCheck, name: 'Build On Your Lot', href: '/services/build-on-your-lot-in-nj', body: 'Own land? We\'ll design and build your dream home from the ground up.' },
+    { icon: LuMapPin, name: 'New Construction', href: '/services/full-home-remodel-new-construction-nj', body: 'Full-home new construction and complete gut renovations across New Jersey.' },
 ];
 
 const WHY = [
-    { icon: LuClock, title: 'Local & Same-Day', body: 'Technicians based in the area mean faster response when you need it most.' },
-    { icon: LuShieldCheck, title: 'Licensed & Insured', body: 'Fully licensed NJ technicians and clean, code-compliant work on every visit.' },
-    { icon: LuBadgeDollarSign, title: 'Upfront Pricing', body: 'Flat-rate quotes before any work begins â€” no overtime fees, no surprises.' },
-    { icon: LuHouse, title: 'Neighbors You Trust', body: 'Family-owned and rooted in the communities we serve across central NJ.' },
+    { icon: LuShieldCheck, title: 'Licensed & Insured', body: 'Fully licensed NJ general contractor with insurance on every project, every time.' },
+    { icon: LuBadgeDollarSign, title: 'Transparent Pricing', body: 'Detailed written estimates before any work begins — no hidden costs or surprises.' },
+    { icon: LuClock, title: 'On-Time Delivery', body: 'We set realistic timelines and hold ourselves accountable to deliver on schedule.' },
+    { icon: LuHouse, title: 'NJ Local Experts', body: 'Family-owned and rooted in New Jersey — we know local codes, permits, and communities.' },
 ];
 
 export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
@@ -39,13 +38,13 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
         <SiteLayout reviews={reviews}>
             <Seo
                 seo={{}}
-                fallbackTitle="HVAC Service Areas â€” Central New Jersey | Guardian Air"
-                fallbackDescription="Guardian Air's HVAC service areas span Monmouth, Middlesex & Ocean counties, NJ â€” find your town for fast, licensed heating, cooling & plumbing. Call today!"
+                fallbackTitle=”Service Areas — Custom Home Builder & Remodeler NJ | Captivating Construction Group”
+                fallbackDescription=”Captivating Construction Group serves homeowners throughout New Jersey — find your county for custom home builds, kitchen renovations, additions, and basement finishing. Call today!”
             />
             <ServiceSchema
-                serviceName="HVAC Service Areas"
-                serviceType="HVAC, plumbing, and drain service"
-                description="Guardian Air's HVAC service areas across Monmouth, Middlesex, and Ocean counties, New Jersey."
+                serviceName="Service Areas — NJ Custom Home Builder"
+                serviceType="Custom home building and renovation"
+                description="Captivating Construction Group serves homeowners across New Jersey with custom home builds, renovations, additions, and remodels."
                 path="/service-areas"
                 faqs={FAQS}
             />
@@ -56,24 +55,24 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                 <PageHeader
                     label="Where We Work"
                     title="Areas We Serve Across New Jersey"
-                    description="Find your county and town below â€” Guardian Air brings the same trusted technicians to homes and businesses across central New Jersey."
+                    description="Find your county and town below  -  Captivating Construction Group brings the same trusted technicians to homes and businesses across central New Jersey."
                     image="/img/heroes/local.webp"
                 />
 
                 {/* Intro + map */}
-                <section className="bg-white py-14 lg:py-20">
-                    <div className="mx-auto max-w-[1200px] px-4">
+                <section className="bg-white py-[60px] md:py-[80px] lg:py-[100px]">
+                    <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
                             <div>
-                                <p className="font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
-                                    Looking for trusted HVAC service areas in NJ? Guardian Air covers homes and
+                                <p className="font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
+                                    Looking for trusted HVAC service areas in NJ? Captivating Construction Group covers homes and
                                     businesses across <strong className="text-[#07264A]">Monmouth, Middlesex, and Ocean
-                                    counties</strong> â€” from the Jersey Shore towns along the Garden State Parkway to the
+                                    counties</strong>  -  from the Jersey Shore towns along the Garden State Parkway to the
                                     inland neighborhoods of central New Jersey. Whether you're near the boardwalks of Point
                                     Pleasant, the historic downtown of Red Bank, or the busy corridors of Edison and
-                                    Woodbridge, our licensed technicians are nearby and ready to help â€” often the same day.
+                                    Woodbridge, our licensed technicians are nearby and ready to help  -  often the same day.
                                 </p>
-                                <p className="mt-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
+                                <p className="mt-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
                                     We handle heating, cooling, plumbing, drains, and indoor air quality for every kind of
                                     home and property in the region. No matter where you live across our three counties, you
                                     get the same honest, flat-rate pricing and friendly, professional service.
@@ -97,7 +96,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                             {/* Service-area map */}
                             <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-black/20 ring-1 ring-gray-200">
                                 <iframe
-                                    title="Guardian Air HVAC service area map â€” Monmouth, Middlesex & Ocean counties, NJ"
+                                    title="Captivating Construction Group HVAC service area map  -  Monmouth, Middlesex & Ocean counties, NJ"
                                     src="https://maps.google.com/maps?q=Monmouth+County,+New+Jersey&t=&z=8&ie=UTF8&iwloc=&output=embed"
                                     className="block aspect-[4/3] w-full border-0"
                                     loading="lazy"
@@ -110,8 +109,8 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                 </section>
 
                 {/* County hubs + city hubs */}
-                <section className="bg-gray-50 py-14 lg:py-20">
-                    <div className="mx-auto max-w-[1200px] px-4">
+                <section className="bg-gray-50 py-[60px] md:py-[80px] lg:py-[100px]">
+                    <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                         <div className="mb-10">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">Counties We Serve</p>
                             <h2 className="mt-2 font-display text-[28px] uppercase leading-[0.95] text-[#07264A] md:text-[34px]">
@@ -130,7 +129,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                                             <div>
                                                 <h3 className="font-display text-2xl uppercase text-[#07264A]">{county.name}</h3>
                                                 {county.description && (
-                                                    <p className="mt-1 max-w-2xl font-body text-sm leading-relaxed text-gray-600">
+                                                    <p className="mt-1 max-w-2xl font-montserrat text-[16px] font-normal leading-[26px] text-black">
                                                         {county.description}
                                                     </p>
                                                 )}
@@ -167,16 +166,16 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                 </section>
 
                 {/* Trades available across the full service area */}
-                <section className="bg-white py-14 lg:py-20">
-                    <div className="mx-auto max-w-[1200px] px-4">
+                <section className="bg-white py-[60px] md:py-[80px] lg:py-[100px]">
+                    <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                         <div className="mb-10 max-w-3xl">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">Full-Service Coverage</p>
                             <h2 className="mt-2 font-display text-[28px] uppercase leading-[0.95] text-[#07264A] md:text-[34px]">
                                 Every Service, Everywhere We Work
                             </h2>
-                            <p className="mt-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
+                            <p className="mt-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
                                 Coverage means more than a pin on a map. Every trade we offer is available in every
-                                town across our HVAC service areas â€” there's no town where we only do heating or
+                                town across our HVAC service areas  -  there's no town where we only do heating or
                                 only do drains. The same licensed technicians, the same flat-rate book, all six
                                 service lines, all three counties.
                             </p>
@@ -192,7 +191,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                                         <Icon className="h-5 w-5" />
                                     </span>
                                     <h3 className="mt-4 font-display text-xl uppercase text-[#07264A]">{name}</h3>
-                                    <p className="mt-2 font-body text-sm leading-relaxed text-gray-600">{body}</p>
+                                    <p className="mt-2 font-montserrat text-[16px] font-normal leading-[26px] text-black">{body}</p>
                                     <span className="mt-4 inline-flex items-center gap-1.5 font-body text-xs font-extrabold uppercase tracking-widest text-brand-orange">
                                         Explore {name}
                                         <LuArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
@@ -204,7 +203,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                 </section>
 
                 {/* How regional coverage actually works */}
-                <section className="bg-gray-50 py-14 lg:py-20">
+                <section className="bg-gray-50 py-[60px] md:py-[80px] lg:py-[100px]">
                     <div className="mx-auto max-w-3xl px-4">
                         <div className="mb-8">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">How Coverage Works</p>
@@ -212,9 +211,9 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                                 Built Around Central Jersey's Roads
                             </h2>
                         </div>
-                        <div className="space-y-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base [&_a]:font-semibold [&_a]:text-blue-600 [&_a]:underline">
+                        <div className="space-y-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base [&_a]:font-semibold [&_a]:text-blue-600 [&_a]:underline">
                             <p>
-                                Our service areas aren't drawn around a single shop â€” they're built along the
+                                Our service areas aren't drawn around a single shop  -  they're built along the
                                 corridors central New Jersey actually drives. Crews run zoned routes off the Garden
                                 State Parkway, Route 9, Route 18, and I-195, so the truck that reaches you is the
                                 one already working your part of the region, not one fighting traffic from the
@@ -222,8 +221,8 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                                 swap in Woodbridge can both land same-day appointments on the same afternoon.
                             </p>
                             <p>
-                                Calls are dispatched in three tiers. Emergencies â€” burst pipes, gas smells, no heat
-                                in a freeze â€” go straight to the front of the line in whichever county they come from. Same-day slots
+                                Calls are dispatched in three tiers. Emergencies  -  burst pipes, gas smells, no heat
+                                in a freeze  -  go straight to the front of the line in whichever county they come from. Same-day slots
                                 handle urgent-but-stable problems like a failing AC or a slow leak. Everything else,
                                 from <Link href="/heating">seasonal tune-ups</Link> to planned
                                 {' '}<Link href="/cooling">system replacements</Link>, is scheduled around your week,
@@ -232,7 +231,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                             <p>
                                 The easiest way to use this page: pick your county hub above for an overview of
                                 local service, then click through to your town's page for neighborhood-level detail.
-                                Each town page also links to dedicated pages for every trade in that location â€” so
+                                Each town page also links to dedicated pages for every trade in that location  -  so
                                 whether you're searching for a plumber in Toms River or AC repair in Edison, there's
                                 a page that speaks to exactly where you live.
                             </p>
@@ -241,7 +240,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                 </section>
 
                 {/* Service-area FAQs */}
-                <section className="bg-white py-14 lg:py-20">
+                <section className="bg-white py-[60px] md:py-[80px] lg:py-[100px]">
                     <div className="mx-auto max-w-3xl px-4">
                         <div className="mb-8 text-center">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">Coverage Questions</p>
@@ -256,7 +255,7 @@ export default function ServiceAreasIndex({ counties = [], reviews = [] }) {
                                         {f.question}
                                         <LuArrowRight className="h-4 w-4 flex-shrink-0 text-brand-orange transition-transform group-open:rotate-90" />
                                     </summary>
-                                    <p className="mt-3 font-body text-sm leading-relaxed text-gray-600">{f.answer}</p>
+                                    <p className="mt-3 font-montserrat text-[16px] font-normal leading-[26px] text-black">{f.answer}</p>
                                 </details>
                             ))}
                         </div>

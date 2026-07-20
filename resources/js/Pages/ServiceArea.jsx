@@ -12,19 +12,19 @@ import { LuMapPin, LuArrowRight, LuCheck } from 'react-icons/lu';
 export default function ServiceArea({ area, cities = [], trades = [], reviews = [] }) {
     const intro = area.intro?.length
         ? area.intro
-        : [`Guardian Air proudly serves homeowners and businesses throughout ${area.name} with licensed heating, cooling, plumbing, and drain service.`];
+        : [`Captivating Construction Group proudly serves homeowners throughout ${area.name} with custom home builds, kitchen renovations, basement finishing, additions, and full remodels.`];
     const faqs = (area.faqs || []).map((f) => ({ question: f.q, answer: f.a }));
 
     return (
         <SiteLayout showReviews={false}>
             <Seo
                 seo={{}}
-                fallbackTitle={`${area.title} | Guardian Air`}
+                fallbackTitle={`${area.title} | Captivating Construction Group`}
                 fallbackDescription={area.description}
             />
             <ServiceSchema
-                serviceName={`HVAC, Plumbing & Drain Services in ${area.name}`}
-                serviceType="HVAC, plumbing, and drain service"
+                serviceName={`Custom Home Builder & Remodeler in ${area.name}`}
+                serviceType="Custom home building and renovation"
                 description={area.description}
                 path={`/service-areas/${area.slug}`}
                 faqs={faqs}
@@ -40,7 +40,7 @@ export default function ServiceArea({ area, cities = [], trades = [], reviews = 
             <article>
                 <PageHeader
                     label="Service Area"
-                    title={`Guardian Air in ${area.name}, NJ`}
+                    title={`Captivating Construction Group in ${area.name}, NJ`}
                     image="/img/heroes/local.webp"
                     imageCover
                     description={area.description}
@@ -48,14 +48,14 @@ export default function ServiceArea({ area, cities = [], trades = [], reviews = 
                 />
 
                 <div className="bg-white">
-                    <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
+                    <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
                         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
                             <div className="lg:col-span-7">
                                 <section>
                                     <SectionHeading sizeClass="text-[30px] font-normal">
                                         Your Local HVAC &amp; Plumbing Team in {area.name}
                                     </SectionHeading>
-                                    <div className="mt-6 space-y-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base [&_a]:font-semibold [&_a]:text-blue-600 [&_a]:underline">
+                                    <div className="mt-6 space-y-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base [&_a]:font-semibold [&_a]:text-blue-600 [&_a]:underline">
                                         {intro.map((p, i) => (
                                             <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
                                         ))}
@@ -84,7 +84,7 @@ export default function ServiceArea({ area, cities = [], trades = [], reviews = 
                                     </div>
                                 </section>
 
-                                {/* Towns served â€” each links to its city hub */}
+                                {/* Towns served  -  each links to its city hub */}
                                 <section className="mt-12">
                                     <SectionHeading sizeClass="text-[26px] font-normal">
                                         Towns We Serve in {area.name}
@@ -115,7 +115,7 @@ export default function ServiceArea({ area, cities = [], trades = [], reviews = 
                                         )}
                                     </div>
                                     <p className="mt-4 font-body text-sm text-gray-500">
-                                        Don&apos;t see your town? We likely still serve it â€” give us a call to confirm.
+                                        Don&apos;t see your town? We likely still serve it  -  give us a call to confirm.
                                     </p>
                                 </section>
 
@@ -131,7 +131,7 @@ export default function ServiceArea({ area, cities = [], trades = [], reviews = 
                                                         {f.question}
                                                         <LuArrowRight className="h-4 w-4 flex-shrink-0 text-brand-orange transition-transform group-open:rotate-90" />
                                                     </summary>
-                                                    <p className="mt-3 font-body text-sm leading-relaxed text-gray-600">{f.answer}</p>
+                                                    <p className="mt-3 font-montserrat text-[16px] font-normal leading-[26px] text-black">{f.answer}</p>
                                                 </details>
                                             ))}
                                         </div>

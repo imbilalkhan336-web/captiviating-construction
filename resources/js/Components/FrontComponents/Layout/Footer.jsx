@@ -60,14 +60,14 @@ export default function Footer() {
 
     return (
         <footer className="bg-[#0e4d8a] text-white">
-            <div className="mx-auto max-w-[1200px] px-4 py-14 lg:py-16">
+            <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-14 lg:py-16">
                 <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
                     {/* Brand */}
                     <div>
                         <div className="inline-block rounded-lg bg-white p-3 shadow-sm">
                             <img src="/image/logo.webp" alt="Captivating Construction Group" className="h-14 w-auto" />
                         </div>
-                        <p className="mt-5 max-w-xs font-body text-sm leading-relaxed text-white/80">
+                        <p className="mt-5 max-w-xs font-body text-sm leading-relaxed text-white">
                             Captivating Construction is a full service customer focused commercial construction
                             company delivering high quality projects by traditional design-bid-build services as a
                             general contractor as well as design-build services.
@@ -128,7 +128,7 @@ export default function Footer() {
 
             {/* Bottom bar */}
             <div className="border-t border-white/15">
-                <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-3 px-4 py-5 text-sm text-white/70 sm:flex-row">
+                <div className="mx-auto flex w-full flex-col items-center justify-between gap-3 px-4 py-5 text-sm text-white/70 sm:flex-row">
                     <p>&copy; {year} Captivating Construction. All Rights Reserved.</p>
                     <div className="flex gap-6">
                         <a href="/sitemap" className="transition-colors hover:text-white">Sitemap</a>

@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+﻿﻿import { useState } from 'react';
 import { router } from '@inertiajs/react';
 import { LuLoader, LuCheck, LuRotateCw } from 'react-icons/lu';
 import Seo from '@/Components/Seo';
@@ -7,7 +7,7 @@ import ServiceSchema from '@/Components/FrontComponents/ServiceSchema';
 import FeatureBlock from '@/Components/FrontComponents/FeatureBlock';
 import Gallery from '@/Components/FrontComponents/Gallery';
 import CtaSection from '@/Components/pages-sections/CtaSection';
-import { PillButton } from '@/Components/FrontComponents/PillButton';
+import Btn from '@/Components/FrontComponents/Btn';
 
 const HERO_BG = '/image/home-hero-bg.webp';
 const FORM_ANCHOR = '#design-form';
@@ -17,7 +17,7 @@ const INCLUDED = [
     'Selection of cabinet styles, colors, and finishes',
     'Integration of RTA (Ready to Assemble) or pre-assembled cabinets',
     'Appliance placement and functional flow optimization',
-    'Realistic renderings delivered within 5â€“7 business days',
+    'Realistic renderings delivered within 5 - 7 business days',
 ];
 
 const WHY_US = [
@@ -48,17 +48,17 @@ function Hero() {
                     <h1 className="mt-2 font-montserrat text-[45px] font-bold leading-[54px] text-white">
                         Transform Your Kitchen With A Free 3D Design From Captivating Construction
                     </h1>
-                    <p className="mx-auto mt-5 max-w-2xl font-montserrat text-[16px] font-normal leading-[24px] text-white/85">
+                    <p className="mx-auto mt-5 max-w-2xl font-montserrat text-[16px] font-normal leading-[26px] text-white">
                         At Captivating Construction, we make it easy to bring your kitchen renovation vision to
-                        life â€” starting with a <span className="font-semibold text-white">free 3D kitchen design</span> tailored
+                        life  -  starting with a <span className="font-semibold text-white">free 3D kitchen design</span> tailored
                         to your space, style, and budget. Whether you&apos;re upgrading your home, remodeling for
                         resale, or starting fresh, our expert kitchen designers use advanced software to deliver
                         photorealistic 3D renderings that help you visualize the final result before construction begins.
                     </p>
                     <div className="mt-8">
-                        <PillButton href={FORM_ANCHOR} variant="blue" size="md">
+                        <Btn href={FORM_ANCHOR}>
                             Start Your Free 3D Design
-                        </PillButton>
+                        </Btn>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,6 @@ function DesignForm() {
         notes: '',
         fileName: '',
     });
-    const [robot, setRobot] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const [processing, setProcessing] = useState(false);
     const [error, setError] = useState('');
@@ -100,10 +99,6 @@ function DesignForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!robot) {
-            setError('Please confirm you are not a robot.');
-            return;
-        }
         setProcessing(true);
         setError('');
 
@@ -141,14 +136,14 @@ function DesignForm() {
     };
 
     return (
-        <section id="design-form" className="bg-[#f3f4f6] py-16 lg:py-24">
-            <div className="mx-auto max-w-3xl px-4">
+        <section id="design-form" className="bg-[#f3f4f6] py-[60px] md:py-[80px] lg:py-[100px]">
+            <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                 <div className="rounded-2xl bg-white p-6 shadow-xl sm:p-10">
                     <h2 className="text-center font-montserrat text-2xl font-bold text-[#0A2A4A] md:text-3xl">
                         Get Your Free 3D Kitchen Design Today
                     </h2>
                     <p className="mt-2 text-center font-body text-sm font-semibold text-brand-orange">
-                        Start planning your dream kitchen with a custom 3D design â€” absolutely free and tailored to your space.
+                        Start planning your dream kitchen with a custom 3D design  -  absolutely free and tailored to your space.
                     </p>
 
                     {submitted ? (
@@ -245,24 +240,6 @@ function DesignForm() {
                                 />
                             </div>
 
-                            {/* reCAPTCHA-style confirmation (visual placeholder) */}
-                            <div className="flex w-full max-w-xs items-center justify-between rounded border border-gray-300 bg-[#f9f9f9] px-4 py-3">
-                                <label className="flex items-center gap-3 font-body text-sm text-gray-700">
-                                    <input
-                                        type="checkbox"
-                                        checked={robot}
-                                        onChange={(e) => setRobot(e.target.checked)}
-                                        className="h-6 w-6 rounded border-2 border-gray-300 text-brand-blue-light focus:ring-brand-blue-light/30"
-                                    />
-                                    I&apos;m not a robot
-                                </label>
-                                <div className="flex flex-col items-center text-[9px] leading-tight text-gray-400">
-                                    <LuRotateCw className="mb-0.5 h-6 w-6 text-gray-400" />
-                                    reCAPTCHA
-                                    <span>Privacy Â· Terms</span>
-                                </div>
-                            </div>
-
                             <button
                                 type="submit"
                                 disabled={processing}
@@ -270,7 +247,7 @@ function DesignForm() {
                             >
                                 {processing ? (
                                     <>
-                                        <LuLoader className="h-4 w-4 animate-spin" /> Sendingâ€¦
+                                        <LuLoader className="h-4 w-4 animate-spin" /> Sending...
                                     </>
                                 ) : (
                                     'Submit My Free Design Request'
@@ -295,15 +272,15 @@ export default function Free3dDesign({ reviews = [], seo = {}, gallery = [] }) {
             <ServiceSchema
                 serviceName="Free 3D Kitchen Design"
                 serviceType="Kitchen design and remodeling"
-                description="Free photorealistic 3D kitchen designs tailored to your space, style, and budget â€” for homeowners and contractors across New Jersey and nationwide."
+                description="Free photorealistic 3D kitchen designs tailored to your space, style, and budget  -  for homeowners and contractors across New Jersey and nationwide."
                 path="/free-3d-design"
             />
 
             <Hero />
 
-            {/* What's Included â€” text left, image right */}
-            <section className="bg-white py-16 lg:py-24">
-                <div className="mx-auto max-w-[1200px] px-4">
+            {/* What's Included  -  text left, image right */}
+            <section className="bg-white py-[60px] md:py-[80px] lg:py-[100px]">
+                <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                     <FeatureBlock
                         heading="What's Included In Your Free 3D Kitchen Design?"
                         bullets={INCLUDED}
@@ -316,9 +293,9 @@ export default function Free3dDesign({ reviews = [], seo = {}, gallery = [] }) {
                 </div>
             </section>
 
-            {/* Why choose us â€” image left, text right */}
-            <section className="bg-[#f3f4f6] py-16 lg:py-24">
-                <div className="mx-auto max-w-[1200px] px-4">
+            {/* Why choose us  -  image left, text right */}
+            <section className="bg-[#f3f4f6] py-[60px] md:py-[80px] lg:py-[100px]">
+                <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                     <FeatureBlock
                         heading="Why Homeowners & Contractors Choose Us:"
                         bullets={WHY_US}
@@ -331,14 +308,14 @@ export default function Free3dDesign({ reviews = [], seo = {}, gallery = [] }) {
             </section>
 
             {/* Gallery */}
-            <section className="bg-white py-16 lg:py-24">
-                <div className="mx-auto max-w-[1200px] px-4">
+            <section className="bg-white py-[60px] md:py-[80px] lg:py-[100px]">
+                <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
-                        <h2 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-black">
+                        <h2 className="font-montserrat text-[35px] font-bold leading-[54px] text-black">
                             Real Kitchens. Real Results.
                         </h2>
-                        <p className="mx-auto mt-3 max-w-2xl font-body text-base leading-relaxed text-gray-600">
-                            Browse real 3D kitchen designs and remodels â€” custom-built by our team and delivered nationwide.
+                        <p className="mx-auto mt-3 max-w-2xl font-montserrat text-[16px] font-normal leading-[26px] text-black">
+                            Browse real 3D kitchen designs and remodels  -  custom-built by our team and delivered nationwide.
                         </p>
                     </div>
                     <div className="mt-10">

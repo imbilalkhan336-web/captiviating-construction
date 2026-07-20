@@ -1,4 +1,4 @@
-﻿import Seo from '@/Components/Seo';
+﻿﻿import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
 import CtaBanner from '@/Components/pages-sections/Home/CtaBanner';
@@ -83,8 +83,8 @@ export default function ResourcesPage({ reviews = [], seo = {} }) {
         <SiteLayout reviews={reviews}>
             <Seo
                 seo={seo}
-                fallbackTitle="HVAC & Plumbing Resources & Tips | Guardian Air"
-                fallbackDescription="Free guides, checklists, and tips for HVAC maintenance, plumbing prevention, and indoor air quality from Guardian Air â€” serving Monmouth, Middlesex, and Ocean counties."
+                fallbackTitle="HVAC & Plumbing Resources & Tips | Captivating Construction Group"
+                fallbackDescription="Free guides, checklists, and tips for HVAC maintenance, plumbing prevention, and indoor air quality from Captivating Construction Group  -  serving Monmouth, Middlesex, and Ocean counties."
             />
 
             <article>
@@ -95,7 +95,7 @@ export default function ResourcesPage({ reviews = [], seo = {} }) {
                 />
 
                 {/* Resource Cards */}
-                <section className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white py-20 lg:py-28">
+                <section className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white py-[60px] md:py-[80px] lg:py-[100px]">
                     <div
                         aria-hidden="true"
                         className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-brand-orange/5 blur-3xl"
@@ -105,7 +105,7 @@ export default function ResourcesPage({ reviews = [], seo = {} }) {
                         className="pointer-events-none absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-brand-blue/5 blur-3xl"
                     />
 
-                    <div className="relative mx-auto max-w-[1200px] px-4">
+                    <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                         <div className="mb-14 lg:mb-16">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">
                                 Knowledge Base
@@ -136,7 +136,7 @@ export default function ResourcesPage({ reviews = [], seo = {} }) {
                                     <h3 className="mt-5 font-display text-xl uppercase text-[#07264A]">
                                         {item.title}
                                     </h3>
-                                    <p className="mt-2 flex-1 font-body text-sm leading-relaxed text-gray-600">
+                                    <p className="mt-2 flex-1 font-montserrat text-[16px] font-normal leading-[26px] text-black">
                                         {item.description}
                                     </p>
                                     <button className="mt-5 inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-brand-orange transition-all group-hover:gap-3">
@@ -150,7 +150,7 @@ export default function ResourcesPage({ reviews = [], seo = {} }) {
                 </section>
 
                 {/* Seasonal Checklist */}
-                <section className="relative overflow-hidden bg-[#07264A] py-20 lg:py-28">
+                <section className="relative overflow-hidden bg-[#07264A] py-[60px] md:py-[80px] lg:py-[100px]">
                     <div
                         aria-hidden="true"
                         className="pointer-events-none absolute -left-20 top-0 h-72 w-72 rounded-full bg-brand-orange/5 blur-3xl"
@@ -160,7 +160,7 @@ export default function ResourcesPage({ reviews = [], seo = {} }) {
                         className="pointer-events-none absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-brand-blue/5 blur-3xl"
                     />
 
-                    <div className="relative mx-auto max-w-[1200px] px-4">
+                    <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                         <div className="mb-14 lg:mb-16">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">
                                 Stay Ahead
@@ -169,7 +169,7 @@ export default function ResourcesPage({ reviews = [], seo = {} }) {
                                 aria-hidden="true"
                                 className="mt-3 block h-0.5 w-10 rounded-full bg-brand-orange"
                             />
-                            <h2 className="mt-4 max-w-2xl font-display text-[34px] uppercase leading-[0.95] text-white md:text-[46px] lg:text-[54px]">
+                            <h2 className="mt-4 max-w-2xl font-display text-[34px] uppercase leading-[0.95] text-black md:text-[46px] lg:text-[54px]">
                                 Seasonal <span className="text-brand-orange">Maintenance</span> Checklist
                             </h2>
                         </div>

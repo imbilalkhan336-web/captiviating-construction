@@ -1,10 +1,10 @@
-﻿import { Head, Link } from '@inertiajs/react';
+﻿﻿import { Head, Link } from '@inertiajs/react';
 import { LuChevronRight } from 'react-icons/lu';
 
 /**
  * Visual breadcrumb trail + BreadcrumbList JSON-LD.
  *
- * items: [{ label, href }] â€” the last item is rendered as the current page
+ * items: [{ label, href }]  -  the last item is rendered as the current page
  * (not a link). Always prepend Home.
  */
 export default function Breadcrumbs({ items = [], baseUrl = 'https://guardmyhvac.com' }) {
@@ -26,7 +26,7 @@ export default function Breadcrumbs({ items = [], baseUrl = 'https://guardmyhvac
             <Head>
                 <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
             </Head>
-            <div className="mx-auto max-w-[1200px] px-4 pt-6">
+            <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 pt-6">
                 <ol className="flex flex-wrap items-center gap-1.5 text-xs font-semibold text-gray-500">
                     {trail.map((item, i) => {
                         const isLast = i === trail.length - 1;

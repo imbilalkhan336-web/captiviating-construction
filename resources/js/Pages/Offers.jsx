@@ -1,4 +1,4 @@
-﻿import Seo from '@/Components/Seo';
+﻿﻿import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
 import CtaBanner from '@/Components/pages-sections/Home/CtaBanner';
@@ -40,7 +40,7 @@ const offers = [
         badge: 'New Customers',
         title: '$100 Off First Service Call',
         description:
-            'New to Guardian Air? Welcome to the family. Take $100 off your first service call â€” any trade, any time. No restrictions.',
+            'New to Captivating Construction Group? Welcome to the family. Take $100 off your first service call  -  any trade, any time. No restrictions.',
         expires: 'Ongoing',
         cta: 'Redeem Now',
     },
@@ -56,7 +56,7 @@ const offers = [
     {
         icon: LuShieldCheck,
         badge: 'Membership',
-        title: 'Guardian Care Club â€” 20% Off',
+        title: 'Guardian Care Club  -  20% Off',
         description:
             'Join our maintenance membership and save 20% on all repairs, priority scheduling, and two free tune-ups per year.',
         expires: 'Membership Renews Annually',
@@ -65,7 +65,7 @@ const offers = [
     {
         icon: LuClock,
         badge: 'Emergency',
-        title: 'No Emergency Fees â€” Ever',
+        title: 'No Emergency Fees  -  Ever',
         description:
             'We never charge extra for after-hours, weekend, or holiday emergency calls. Same fair rate, 24 hours a day, 365 days a year.',
         expires: 'Always',
@@ -87,7 +87,7 @@ const howToRedeem = [
     {
         step: '03',
         title: 'Save on Service',
-        description: 'Our technician applies the discount to your final invoice â€” no hassle.',
+        description: 'Our technician applies the discount to your final invoice  -  no hassle.',
     },
 ];
 
@@ -97,19 +97,19 @@ export default function OffersPage({ reviews = [], seo = {} }) {
         <SiteLayout reviews={reviews}>
             <Seo
                 seo={seo}
-                fallbackTitle="HVAC & Plumbing Specials & Coupons NJ | Guardian Air"
-                fallbackDescription="HVAC coupons in NJ â€” current Guardian Air specials on heating, cooling & plumbing across Monmouth, Middlesex & Ocean counties. Licensed & insured. Save now!"
+                fallbackTitle="HVAC & Plumbing Specials & Coupons NJ | Captivating Construction Group"
+                fallbackDescription="HVAC coupons in NJ  -  current Captivating Construction Group specials on heating, cooling & plumbing across Monmouth, Middlesex & Ocean counties. Licensed & insured. Save now!"
             />
 
             <article>
                 <PageHeader
                     label="Save Big"
                     title="Current Specials & Offers"
-                    description="HVAC coupons and plumbing specials for NJ homeowners â€” no gimmicks, no hidden conditions, just honest discounts from a local team that values your business."
+                    description="HVAC coupons and plumbing specials for NJ homeowners  -  no gimmicks, no hidden conditions, just honest discounts from a local team that values your business."
                 />
 
                 {/* Offer Cards */}
-                <section className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white py-20 lg:py-28">
+                <section className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white py-[60px] md:py-[80px] lg:py-[100px]">
                     <div
                         aria-hidden="true"
                         className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-brand-orange/5 blur-3xl"
@@ -119,7 +119,7 @@ export default function OffersPage({ reviews = [], seo = {} }) {
                         className="pointer-events-none absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-brand-blue/5 blur-3xl"
                     />
 
-                    <div className="relative mx-auto max-w-[1200px] px-4">
+                    <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                         <div className="mb-14 lg:mb-16">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">
                                 Active Promotions
@@ -150,13 +150,13 @@ export default function OffersPage({ reviews = [], seo = {} }) {
                                     <h3 className="mt-5 font-display text-xl uppercase text-[#07264A]">
                                         {offer.title}
                                     </h3>
-                                    <p className="mt-2 flex-1 font-body text-sm leading-relaxed text-gray-600">
+                                    <p className="mt-2 flex-1 font-montserrat text-[16px] font-normal leading-[26px] text-black">
                                         {offer.description}
                                     </p>
                                     <p className="mt-4 text-[10px] font-extrabold uppercase tracking-widest text-gray-400">
                                         {offer.expires}
                                     </p>
-                                    <PillButton href="/contact" aria-label={`${offer.cta} â€” ${offer.title}`} variant="outline" size="sm" className="mt-5 tracking-widest">
+                                    <PillButton href="/contact" aria-label={`${offer.cta}  -  ${offer.title}`} variant="outline" size="sm" className="mt-5 tracking-widest">
                                         {offer.cta}
                                         <LuArrowRight className="h-3.5 w-3.5" />
                                     </PillButton>
@@ -167,7 +167,7 @@ export default function OffersPage({ reviews = [], seo = {} }) {
                 </section>
 
                 {/* How to Redeem */}
-                <section className="relative overflow-hidden bg-[#07264A] py-20 lg:py-28">
+                <section className="relative overflow-hidden bg-[#07264A] py-[60px] md:py-[80px] lg:py-[100px]">
                     <div
                         aria-hidden="true"
                         className="pointer-events-none absolute -left-20 top-0 h-72 w-72 rounded-full bg-brand-orange/5 blur-3xl"
@@ -177,7 +177,7 @@ export default function OffersPage({ reviews = [], seo = {} }) {
                         className="pointer-events-none absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-brand-blue/5 blur-3xl"
                     />
 
-                    <div className="relative mx-auto max-w-[1200px] px-4">
+                    <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                         <div className="mb-14 lg:mb-16">
                             <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">
                                 Easy Savings
@@ -186,7 +186,7 @@ export default function OffersPage({ reviews = [], seo = {} }) {
                                 aria-hidden="true"
                                 className="mt-3 block h-0.5 w-10 rounded-full bg-brand-orange"
                             />
-                            <h2 className="mt-4 max-w-2xl font-display text-[34px] uppercase leading-[0.95] text-white md:text-[46px] lg:text-[54px]">
+                            <h2 className="mt-4 max-w-2xl font-display text-[34px] uppercase leading-[0.95] text-black md:text-[46px] lg:text-[54px]">
                                 How to <span className="text-brand-orange">Redeem</span>
                             </h2>
                         </div>
@@ -203,7 +203,7 @@ export default function OffersPage({ reviews = [], seo = {} }) {
                                     <h3 className="-mt-4 font-display text-xl uppercase text-white">
                                         {item.title}
                                     </h3>
-                                    <p className="mt-3 font-body text-sm leading-relaxed text-white/60">
+                                    <p className="mt-3 font-body text-sm leading-relaxed text-black/60">
                                         {item.description}
                                     </p>
                                 </div>

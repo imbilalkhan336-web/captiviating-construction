@@ -1,4 +1,4 @@
-import { Link, usePage } from '@inertiajs/react';
+﻿import { Link, usePage } from '@inertiajs/react';
 import { LuPhone, LuMail } from 'react-icons/lu';
 
 export default function TopBar() {
@@ -7,7 +7,7 @@ export default function TopBar() {
 
     return (
         <div className="bg-[#0A477A] text-white">
-            <div className="mx-auto flex max-w-[1200px] items-center justify-end gap-6 px-4 py-[10px]">
+            <div className="mx-auto flex w-full max-w-[1280px] items-center justify-end gap-6 px-4 py-[10px] sm:px-6 lg:px-8">
                 <a
                     href="mailto:info@capconnj.com"
                     className="flex items-center gap-1.5 [font-family:'Montserrat',sans-serif] text-[14px] font-normal leading-[21px] text-white transition-colors hover:text-white/80"

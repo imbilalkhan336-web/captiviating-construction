@@ -1,4 +1,4 @@
-﻿import { Link } from '@inertiajs/react';
+﻿﻿import { Link } from '@inertiajs/react';
 import { LuArrowRight, LuChevronRight } from 'react-icons/lu';
 import { PillButton } from '@/Components/FrontComponents/PillButton';
 
@@ -6,13 +6,13 @@ import { PillButton } from '@/Components/FrontComponents/PillButton';
  * Polished internal-links block used at the bottom of service pages.
  *
  * columns: [{ title, links: [{ label, href }] }]
- * viewAll: { label, href } â€” optional branded pill button
+ * viewAll: { label, href }  -  optional branded pill button
  * note:    optional ReactNode rendered under the button (e.g. emergency line)
  */
 export default function RelatedLinks({ eyebrow = 'Explore', heading = 'Related Services & Areas', columns = [], viewAll, note }) {
     return (
-        <section className="border-t border-gray-100 bg-gradient-to-b from-gray-50 to-white py-16 lg:py-20">
-            <div className="mx-auto max-w-[1200px] px-4">
+        <section className="border-t border-gray-100 bg-gradient-to-b from-gray-50 to-white py-[60px] md:py-[80px] lg:py-[100px]">
+            <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                 <div className="mb-10">
                     {eyebrow && (
                         <p className="text-[12px] font-extrabold uppercase tracking-[0.25em] text-brand-orange">{eyebrow}</p>

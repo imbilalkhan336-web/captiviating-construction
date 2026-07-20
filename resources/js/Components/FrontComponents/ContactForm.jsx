@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { router } from '@inertiajs/react';
 import { LuLoader, LuCheck, LuRotateCw } from 'react-icons/lu';
 
@@ -22,7 +22,6 @@ const inputClass =
  */
 export default function ContactForm({ title = 'Contact Us For A Free Consultation' }) {
     const [form, setForm] = useState({ firstName: '', lastName: '', email: '', phone: '', service: '', message: '' });
-    const [robot, setRobot] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const [processing, setProcessing] = useState(false);
     const [error, setError] = useState('');
@@ -35,10 +34,6 @@ export default function ContactForm({ title = 'Contact Us For A Free Consultatio
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!robot) {
-            setError('Please confirm you are not a robot.');
-            return;
-        }
         setProcessing(true);
         setError('');
 
@@ -59,7 +54,6 @@ export default function ContactForm({ title = 'Contact Us For A Free Consultatio
                     setSubmitted(true);
                     setProcessing(false);
                     setForm({ firstName: '', lastName: '', email: '', phone: '', service: '', message: '' });
-                    setRobot(false);
                 },
                 onError: (errors) => {
                     setProcessing(false);
@@ -70,8 +64,8 @@ export default function ContactForm({ title = 'Contact Us For A Free Consultatio
     };
 
     return (
-        <section className="bg-white py-16 lg:py-20">
-            <div className="mx-auto max-w-3xl px-4">
+        <section className="bg-white py-[60px] md:py-[80px] lg:py-[100px]">
+            <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                 <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-xl sm:p-8 lg:p-10">
                     <h2 className="text-center font-montserrat text-2xl font-semibold text-[#0A2A4A] md:text-3xl">
                         {title}
@@ -147,19 +141,6 @@ export default function ContactForm({ title = 'Contact Us For A Free Consultatio
                             <div>
                                 <label htmlFor="c-message" className={labelClass}>Message</label>
                                 <textarea id="c-message" name="message" rows={4} value={form.message} onChange={handleChange} className={inputClass} placeholder="Tell us about your project..." />
-                            </div>
-
-                            {/* reCAPTCHA-style confirmation (visual placeholder) */}
-                            <div className="flex max-w-xs items-center justify-between rounded border border-gray-300 bg-[#f9f9f9] px-4 py-3">
-                                <label className="flex items-center gap-3 font-body text-sm text-gray-700">
-                                    <input type="checkbox" checked={robot} onChange={(e) => setRobot(e.target.checked)} className="h-7 w-7 rounded border-2 border-gray-300 text-brand-blue-light focus:ring-brand-blue-light/30" />
-                                    I&apos;m not a robot
-                                </label>
-                                <div className="flex flex-col items-center text-[9px] leading-tight text-gray-400">
-                                    <LuRotateCw className="mb-0.5 h-6 w-6" />
-                                    reCAPTCHA
-                                    <span>Privacy · Terms</span>
-                                </div>
                             </div>
 
                             <button

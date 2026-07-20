@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { router } from '@inertiajs/react';
 import { LuLoader, LuCheck, LuRotateCw } from 'react-icons/lu';
 
@@ -28,7 +28,6 @@ export default function QuoteBanner({
     subtitle = "Let's Get Started—Just Fill Out The Form Below!",
 }) {
     const [form, setForm] = useState({ service: '', phone: '', name: '', email: '' });
-    const [robot, setRobot] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const [processing, setProcessing] = useState(false);
     const [error, setError] = useState('');
@@ -43,10 +42,6 @@ export default function QuoteBanner({
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!robot) {
-            setError('Please confirm you are not a robot.');
-            return;
-        }
         setProcessing(true);
         setError('');
 
@@ -66,7 +61,6 @@ export default function QuoteBanner({
                     setSubmitted(true);
                     setProcessing(false);
                     setForm({ service: '', phone: '', name: '', email: '' });
-                    setRobot(false);
                 },
                 onError: (errors) => {
                     setProcessing(false);
@@ -86,8 +80,8 @@ export default function QuoteBanner({
                 />
                 <div aria-hidden="true" className="absolute inset-0 bg-black/75" />
 
-                <div className="relative mx-auto max-w-3xl px-4 py-16 lg:py-20">
-                    <h2 className="font-montserrat text-[28px] font-semibold not-italic leading-tight text-white md:text-[34px]">
+                <div className="relative mx-auto max-w-3xl px-4 py-[60px] md:py-[80px] lg:py-[100px]">
+                    <h2 className="font-montserrat text-[28px] font-semibold not-italic leading-tight text-black md:text-[34px]">
                         {title}
                     </h2>
                     <p className="mt-2 font-body text-lg font-bold text-brand-orange">{highlight}</p>
@@ -151,24 +145,6 @@ export default function QuoteBanner({
                                     Email <span className="text-brand-orange">*</span>
                                 </label>
                                 <input id="qb-email" name="email" type="email" required value={form.email} onChange={handleChange} className={inputClass} placeholder="Email" />
-                            </div>
-
-                            {/* reCAPTCHA-style confirmation (visual placeholder) */}
-                            <div className="flex w-full max-w-xs items-center justify-between rounded border border-gray-300 bg-white px-4 py-3">
-                                <label className="flex items-center gap-3 font-body text-sm text-gray-700">
-                                    <input
-                                        type="checkbox"
-                                        checked={robot}
-                                        onChange={(e) => setRobot(e.target.checked)}
-                                        className="h-6 w-6 rounded border-2 border-gray-300 text-brand-blue-light focus:ring-brand-blue-light/30"
-                                    />
-                                    I&apos;m not a robot
-                                </label>
-                                <div className="flex flex-col items-center text-[9px] leading-tight text-gray-400">
-                                    <LuRotateCw className="mb-0.5 h-6 w-6 text-gray-400" />
-                                    reCAPTCHA
-                                    <span>Privacy · Terms</span>
-                                </div>
                             </div>
 
                             <button

@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+﻿﻿import { useState } from 'react';
 import { router, usePage } from '@inertiajs/react';
 import SectionHeading from '@/Components/FrontComponents/SectionHeading';
 import ScheduleForm from '@/Components/FrontComponents/ScheduleForm';
@@ -24,7 +24,7 @@ const labelClass = 'block text-[11px] font-extrabold uppercase tracking-widest t
  * ------------------------------------------------------------------ */
 
 // Section body: blank-line-separated paragraphs, with a bold lead-in for
-// "Term â€” explanation" lines so the article keeps its styled look.
+// "Term  -  explanation" lines so the article keeps its styled look.
 function Paragraphs({ text }) {
     if (!text) return null;
 
@@ -32,7 +32,7 @@ function Paragraphs({ text }) {
     if (/<[a-z][\s\S]*>/i.test(text)) {
         return (
             <div
-                className="mt-6 space-y-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base [&_a]:font-semibold [&_a]:text-blue-600 [&_a]:underline"
+                className="mt-6 space-y-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base [&_a]:font-semibold [&_a]:text-blue-600 [&_a]:underline"
                 dangerouslySetInnerHTML={{ __html: text }}
             />
         );
@@ -45,9 +45,9 @@ function Paragraphs({ text }) {
         .filter(Boolean);
 
     return (
-        <div className="mt-6 space-y-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
+        <div className="mt-6 space-y-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
             {paras.map((p, i) => {
-                const dash = p.indexOf(' â€” ');
+                const dash = p.indexOf('  -  ');
                 if (dash > 0 && dash < 48 && !/[,.]/.test(p.slice(0, dash))) {
                     return (
                         <p key={i}>
@@ -68,7 +68,7 @@ function ArticleBlock({ block, headingSizeClass }) {
             <div className="overflow-hidden rounded-2xl shadow-xl">
                 <img
                     src={block.image_path || '/img/heating.webp'}
-                    alt={block.heading || 'Guardian Air HVAC and plumbing service in New Jersey'}
+                    alt={block.heading || 'Captivating Construction Group HVAC and plumbing service in New Jersey'}
                     className="h-full w-full object-cover"
                 />
             </div>
@@ -81,7 +81,7 @@ function ArticleBlock({ block, headingSizeClass }) {
             <Paragraphs text={block.body} />
             {block.image_path && (
                 <div className="mt-6 overflow-hidden rounded-2xl shadow-lg">
-                    <img src={block.image_path} alt={block.heading || 'Guardian Air HVAC and plumbing service in New Jersey'} className="h-full w-full object-cover" />
+                    <img src={block.image_path} alt={block.heading || 'Captivating Construction Group HVAC and plumbing service in New Jersey'} className="h-full w-full object-cover" />
                 </div>
             )}
             {block.tags?.length > 0 && (
@@ -299,7 +299,7 @@ function BlockToolbar({ onEdit, onDelete, onUp, onDown, isFirst, isLast }) {
 }
 
 /* ------------------------------------------------------------------ *
- * ServiceArticle â€” shared two-column article + editor + sticky form
+ * ServiceArticle  -  shared two-column article + editor + sticky form
  * ------------------------------------------------------------------ */
 
 export default function ServiceArticle({ page, blocks = [], tags = [], metaLabel = 'Service Guide', faqEyebrow, headingSizeClass, formHeadingClassName = '' }) {
@@ -350,7 +350,7 @@ export default function ServiceArticle({ page, blocks = [], tags = [], metaLabel
     return (
         <>
             <div className="bg-white">
-                <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
+                <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
                     <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
                         {/* Article content */}
                         <div className="lg:col-span-7">

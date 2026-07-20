@@ -1,6 +1,6 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { Link, usePage } from '@inertiajs/react';
-import { PillButton } from '../PillButton';
+import Btn from '../Btn';
 
 const navLinks = [
     { label: 'Home', href: '/' },
@@ -57,7 +57,7 @@ function NavItem({ link, openMenu, setOpenMenu }) {
                             <Link
                                 key={sub.label}
                                 href={sub.href}
-                                className="block whitespace-nowrap px-4 py-2 text-xs font-semibold uppercase text-[#07264A] transition-colors hover:bg-[#005EAB] hover:text-white"
+                                className="block whitespace-nowrap px-5 py-3 text-xs font-semibold uppercase text-[#07264A] transition-colors hover:bg-[#005EAB] hover:text-white"
                             >
                                 {sub.label}
                             </Link>
@@ -89,12 +89,12 @@ export default function Navbar() {
 
     return (
         <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-md">
-            <div className="mx-auto flex max-w-[1200px] items-center px-4 py-1">
+            <div className="mx-auto flex w-full max-w-[1280px] items-center px-4 py-1 sm:px-6 lg:px-8">
                 <Link href="/" className="mr-6 flex flex-shrink-0 items-center">
                     <img
                         src="/image/logo.webp"
                         alt="Captivating Construction Group"
-                        className="h-14 w-auto md:h-16 lg:h-20"
+                        className="h-[72px] w-auto lg:h-20"
                     />
                 </Link>
 
@@ -110,9 +110,7 @@ export default function Navbar() {
 
                 {/* CTA button */}
                 <div className="hidden flex-shrink-0 items-center md:flex">
-                    <PillButton href="/contact" variant="dark" size="sm" className="!px-7 !py-3">
-                        Get A Quote
-                    </PillButton>
+                    <Btn href="/contact">Get A Quote</Btn>
                 </div>
 
                 {/* Mobile hamburger */}
@@ -135,7 +133,7 @@ export default function Navbar() {
 
             {/* Mobile menu */}
             {mobileOpen && (
-                <div className="max-h-[calc(100dvh-64px)] overflow-y-auto overscroll-contain border-t border-gray-200 bg-white px-4 pb-6 lg:hidden">
+                <div className="max-h-[calc(100dvh-64px)] overflow-y-auto overscroll-contain border-t border-gray-200 bg-white px-4 py-6 lg:hidden">
                     <div className="flex flex-col gap-1 pt-4">
                         {navLinks.map((link) => (
                             <div key={link.label}>
@@ -174,9 +172,9 @@ export default function Navbar() {
                         ))}
                     </div>
                     <div className="mt-5 border-t border-gray-200 pt-5">
-                        <PillButton href="/contact" variant="dark" size="md" className="w-full justify-center">
+                        <Btn href="/contact" className="w-full justify-center">
                             Get A Quote
-                        </PillButton>
+                        </Btn>
                     </div>
                 </div>
             )}

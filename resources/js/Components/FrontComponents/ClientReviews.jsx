@@ -7,7 +7,7 @@ const REVIEWS = [
     { name: 'Hal Simoff', initial: 'H', color: 'bg-purple-500', time: '11 months ago', text: 'Great experience renovating our kitchen. Highly recommend' },
     { name: 'Priscila Salcedo', initial: 'P', color: 'bg-blue-600', time: '11 months ago', text: 'Captivating Construction Group did an exceptional job from start to finish. Their team was professional, punctual, and paid incredible attention to detail throughout the entire project.' },
     { name: 'Sharon Jaramillo', initial: 'S', color: 'bg-teal-500', time: '11 months ago', text: 'Excellent work.' },
-    { name: 'Michael Reyes', initial: 'M', color: 'bg-slate-600', time: '1 year ago', text: 'From design to completion the craftsmanship was outstanding. Couldnâ€™t be happier with our new custom home.' },
+    { name: 'Michael Reyes', initial: 'M', color: 'bg-slate-600', time: '1 year ago', text: "From design to completion the craftsmanship was outstanding. Couldn't be happier with our new custom home." },
     { name: 'Jennifer Torres', initial: 'J', color: 'bg-rose-500', time: '1 year ago', text: 'Professional, on time, and on budget. They made the whole build process stress-free from day one.' },
 ];
 
@@ -56,7 +56,7 @@ function ReviewCard({ review }) {
                 <RiVerifiedBadgeFill className="h-4 w-4 text-[#4285F4]" />
             </div>
 
-            <p className="mt-3 font-body text-sm leading-relaxed text-gray-700">{review.text}</p>
+            <p className="mt-3 font-montserrat text-[16px] font-normal leading-[26px] text-black">{review.text}</p>
         </div>
     );
 }
@@ -71,14 +71,14 @@ export default function ClientReviews() {
     };
 
     return (
-        <section className="bg-white py-16 lg:py-24">
-            <div className="mx-auto max-w-[1200px] px-4">
+        <section className="bg-white py-[60px] md:py-[80px] lg:py-[100px]">
+            <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center">
                     <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-blue-light">
                         Google Reviews
                     </p>
-                    <h2 className="mt-2 font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-black">
+                    <h2 className="mt-2 font-montserrat text-[35px] font-bold leading-[54px] text-black">
                         What Our Clients Say
                     </h2>
                 </div>
@@ -120,7 +120,7 @@ export default function ClientReviews() {
 
                         <div
                             ref={scrollRef}
-                            className="flex gap-5 overflow-x-auto scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+                            className="flex gap-5 overflow-x-auto scroll-smooth py-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
                         >
                             {REVIEWS.map((review) => (
                                 <ReviewCard key={review.name} review={review} />

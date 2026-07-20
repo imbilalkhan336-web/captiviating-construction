@@ -25,7 +25,7 @@ function Paragraphs({ text }) {
     if (/<[a-z][\s\S]*>/i.test(str)) {
         return (
             <div
-                className="mt-4 space-y-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base [&_a]:font-semibold [&_a]:text-blue-600 [&_a]:underline"
+                className="mt-4 space-y-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base [&_a]:font-semibold [&_a]:text-blue-600 [&_a]:underline"
                 dangerouslySetInnerHTML={{ __html: str }}
             />
         );
@@ -35,7 +35,7 @@ function Paragraphs({ text }) {
         .map((p) => p.trim())
         .filter(Boolean);
     return (
-        <div className="mt-4 space-y-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
+        <div className="mt-4 space-y-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
             {paras.map((p, i) => (
                 <p key={i}>{p}</p>
             ))}
@@ -52,7 +52,7 @@ export default function ServiceSubpage({ trade, service, siblings = [], reviews 
             <Seo seo={seo} fallbackTitle={service.title} fallbackDescription={service.description} />
             <ServiceSchema
                 serviceName={service.name}
-                serviceType={`${trade.label} â€” ${service.name}`}
+                serviceType={`${trade.label}  -  ${service.name}`}
                 description={service.description}
                 path={`/${trade.slug}/${service.slug}`}
                 faqs={faqs}
@@ -76,7 +76,7 @@ export default function ServiceSubpage({ trade, service, siblings = [], reviews 
                 />
 
                 <div className="bg-white">
-                    <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
+                    <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
                         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
                             <div className="lg:col-span-7">
                                 <Link
@@ -101,14 +101,14 @@ export default function ServiceSubpage({ trade, service, siblings = [], reviews 
                                 )}
 
                                 {/* In-content contextual links */}
-                                <p className="mt-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
+                                <p className="mt-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
                                     Explore our full range of{' '}
                                     <Link href={`/${trade.slug}`} className="font-semibold text-blue-600 underline">
                                         {trade.label.toLowerCase()} services
                                     </Link>
                                     {related.length > 0 && (
                                         <>
-                                            {' '}â€” including{' '}
+                                            {' '} -  including{' '}
                                             {related.map((s, i) => (
                                                 <span key={s.href}>
                                                     <Link href={s.href} className="font-semibold text-blue-600 underline">
@@ -119,7 +119,7 @@ export default function ServiceSubpage({ trade, service, siblings = [], reviews 
                                             ))}
                                         </>
                                     )}
-                                    {' '}â€” or{' '}
+                                    {' '} -  or{' '}
                                     <Link href="/contact" className="font-semibold text-blue-600 underline">
                                         contact us
                                     </Link>{' '}
@@ -159,7 +159,7 @@ export default function ServiceSubpage({ trade, service, siblings = [], reviews 
                                                         {f.question}
                                                         <LuArrowRight className="h-4 w-4 flex-shrink-0 text-brand-orange transition-transform group-open:rotate-90" />
                                                     </summary>
-                                                    <p className="mt-3 font-body text-sm leading-relaxed text-gray-600">{f.answer}</p>
+                                                    <p className="mt-3 font-montserrat text-[16px] font-normal leading-[26px] text-black">{f.answer}</p>
                                                 </details>
                                             ))}
                                         </div>
@@ -187,7 +187,7 @@ export default function ServiceSubpage({ trade, service, siblings = [], reviews 
                                         <li>
                                             <Link href="/contact" className="group inline-flex items-center gap-1.5 font-body text-sm font-semibold text-gray-600 hover:text-brand-orange">
                                                 <LuArrowRight className="h-3.5 w-3.5 text-brand-orange" />
-                                                Contact Guardian Air
+                                                Contact Captivating Construction Group
                                             </Link>
                                         </li>
                                     </ul>

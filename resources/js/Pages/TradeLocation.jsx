@@ -26,14 +26,14 @@ export default function TradeLocation({ trade, location, otherTrades = [], nearb
     const svc = trade.locationName; // e.g. "Furnace Repair"
     const svcLower = svc.toLowerCase();
     const loc = location.name;
-    const title = `${svc} in ${loc}, NJ | Guardian Air`;
-    const description = `${svc} in ${loc} â€” Guardian Air provides licensed ${trade.label.toLowerCase()} service in ${loc}, ${location.county_name}, NJ. Same-day response & flat-rate pricing. Call now!`;
+    const title = `${svc} in ${loc}, NJ | Captivating Construction Group`;
+    const description = `${svc} in ${loc}  -  Captivating Construction Group provides licensed ${trade.label.toLowerCase()} service in ${loc}, ${location.county_name}, NJ. Same-day response & flat-rate pricing. Call now!`;
 
     const faqs = [
-        { question: `How much does ${svcLower} cost in ${loc}?`, answer: `Cost depends on the specific issue and parts involved, but Guardian Air always provides a flat-rate quote before any work begins â€” no hidden fees. Most ${svcLower} jobs in ${loc} are quoted on the spot after a quick diagnosis.` },
+        { question: `How much does ${svcLower} cost in ${loc}?`, answer: `Cost depends on the specific issue and parts involved, but Captivating Construction Group always provides a flat-rate quote before any work begins  -  no hidden fees. Most ${svcLower} jobs in ${loc} are quoted on the spot after a quick diagnosis.` },
         { question: `How fast can you respond in ${loc}?`, answer: `Because our technicians work throughout ${location.county_name}, we can often reach ${loc} the same day, and we offer emergency service for urgent ${trade.label.toLowerCase()} problems.` },
-        { question: `What ${trade.label.toLowerCase()} services do you offer in ${loc}?`, answer: `In ${loc} we handle repair, installation, replacement, and maintenance â€” backed by licensed, insured technicians and upfront, flat-rate pricing on every visit.` },
-        { question: `Are you local to ${loc}?`, answer: `Yes. Guardian Air serves ${loc} and the surrounding ${location.county_name} area with local technicians, so help is never far away.` },
+        { question: `What ${trade.label.toLowerCase()} services do you offer in ${loc}?`, answer: `In ${loc} we handle repair, installation, replacement, and maintenance  -  backed by licensed, insured technicians and upfront, flat-rate pricing on every visit.` },
+        { question: `Are you local to ${loc}?`, answer: `Yes. Captivating Construction Group serves ${loc} and the surrounding ${location.county_name} area with local technicians, so help is never far away.` },
     ];
 
     return (
@@ -60,12 +60,12 @@ export default function TradeLocation({ trade, location, otherTrades = [], nearb
                     title={`${svc} in ${loc}, NJ`}
                     image={HERO_BY_TRADE[trade.slug] || '/img/heroes/company.webp'}
                     imageCover
-                    description={`Licensed ${trade.label.toLowerCase()} service in ${loc} â€” fast scheduling, upfront flat-rate quotes, and technicians based right in ${location.county_name}.`}
+                    description={`Licensed ${trade.label.toLowerCase()} service in ${loc}  -  fast scheduling, upfront flat-rate quotes, and technicians based right in ${location.county_name}.`}
                     titleClassName="font-normal"
                 />
 
                 <div className="bg-white">
-                    <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
+                    <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
                         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
                             <div className="lg:col-span-7">
                                 <Link
@@ -78,12 +78,12 @@ export default function TradeLocation({ trade, location, otherTrades = [], nearb
 
                                 <section className="mt-6">
                                     <SectionHeading sizeClass="text-[30px] font-normal">{svc} in {loc}</SectionHeading>
-                                    <div className="mt-6 space-y-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base [&_a]:font-semibold [&_a]:text-blue-600 [&_a]:underline">
+                                    <div className="mt-6 space-y-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base [&_a]:font-semibold [&_a]:text-blue-600 [&_a]:underline">
                                         {(trade.intro?.length
                                             ? trade.intro
                                             : [
-                                                  `When you need ${svcLower} in ${loc}, Guardian Air is the local team to call. We provide licensed, insured ${trade.label.toLowerCase()} service to homeowners and businesses throughout ${loc} and the surrounding ${location.county_name} area â€” with fast, often same-day response and honest, flat-rate pricing.`,
-                                                  `Our technicians know the homes and systems common to ${loc}, so we diagnose the real problem quickly and fix it right the first time. No upsells, no surprises â€” just reliable comfort backed by a satisfaction guarantee.`,
+                                                  `When you need ${svcLower} in ${loc}, Captivating Construction Group is the local team to call. We provide licensed, insured ${trade.label.toLowerCase()} service to homeowners and businesses throughout ${loc} and the surrounding ${location.county_name} area  -  with fast, often same-day response and honest, flat-rate pricing.`,
+                                                  `Our technicians know the homes and systems common to ${loc}, so we diagnose the real problem quickly and fix it right the first time. No upsells, no surprises  -  just reliable comfort backed by a satisfaction guarantee.`,
                                               ]
                                         ).map((p, i) => (
                                             <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
@@ -133,13 +133,13 @@ export default function TradeLocation({ trade, location, otherTrades = [], nearb
                                 )}
 
                                 <section className="mt-12">
-                                    <SectionHeading sizeClass="text-[26px] font-normal">Why {loc} Homeowners Choose Guardian Air</SectionHeading>
-                                    <div className="mt-6 space-y-4 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
+                                    <SectionHeading sizeClass="text-[26px] font-normal">Why {loc} Homeowners Choose Captivating Construction Group</SectionHeading>
+                                    <div className="mt-6 space-y-4 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
                                         {(trade.why?.length
                                             ? trade.why
                                             : [
-                                                  `Families across ${loc} choose Guardian Air because we show up fast, charge fair flat rates, and treat your home like our own. Every technician is licensed and insured, and every job comes with a clear quote before any work begins.`,
-                                                  `We're proud to be a local, family-owned company serving ${location.county_name} â€” the same trusted team your neighbors already rely on.`,
+                                                  `Families across ${loc} choose Captivating Construction Group because we show up fast, charge fair flat rates, and treat your home like our own. Every technician is licensed and insured, and every job comes with a clear quote before any work begins.`,
+                                                  `We're proud to be a local, family-owned company serving ${location.county_name}  -  the same trusted team your neighbors already rely on.`,
                                               ]
                                         ).map((p, i) => (
                                             <p key={i}>{p}</p>
@@ -149,8 +149,8 @@ export default function TradeLocation({ trade, location, otherTrades = [], nearb
 
                                 <section className="mt-12">
                                     <SectionHeading sizeClass="text-[26px] font-normal">Book Service in {loc}</SectionHeading>
-                                    <p className="mt-6 font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
-                                        Ready to schedule {svcLower} in {loc}? Call us at {PHONE} or request service online â€” we'll
+                                    <p className="mt-6 font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
+                                        Ready to schedule {svcLower} in {loc}? Call us at {PHONE} or request service online  -  we'll
                                         confirm a time that works for you, often the same day.
                                     </p>
                                     <div className="mt-5">
@@ -170,7 +170,7 @@ export default function TradeLocation({ trade, location, otherTrades = [], nearb
                                                     {f.question}
                                                     <LuArrowRight className="h-4 w-4 flex-shrink-0 text-brand-orange transition-transform group-open:rotate-90" />
                                                 </summary>
-                                                <p className="mt-3 font-body text-sm leading-relaxed text-gray-600">{f.answer}</p>
+                                                <p className="mt-3 font-montserrat text-[16px] font-normal leading-[26px] text-black">{f.answer}</p>
                                             </details>
                                         ))}
                                     </div>
@@ -197,7 +197,7 @@ export default function TradeLocation({ trade, location, otherTrades = [], nearb
                                         <li>
                                             <Link href="/contact" className="group inline-flex items-center gap-1.5 font-body text-sm font-semibold text-gray-600 hover:text-brand-orange">
                                                 <LuArrowRight className="h-3.5 w-3.5 text-brand-orange" />
-                                                Contact Guardian Air
+                                                Contact Captivating Construction Group
                                             </Link>
                                         </li>
                                     </ul>

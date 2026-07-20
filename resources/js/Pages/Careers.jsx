@@ -1,4 +1,4 @@
-﻿import { Link } from '@inertiajs/react';
+﻿﻿import { Link } from '@inertiajs/react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import PageHeader from '@/Components/FrontComponents/PageHeader';
@@ -18,11 +18,12 @@ const PERKS = [
 ];
 
 const ROLES = [
-    'HVAC Service Technicians',
-    'HVAC Installers',
-    'Licensed Plumbers',
-    'Drain & Sewer Technicians',
-    'Customer Service / Dispatch',
+    'Project Managers',
+    'Site Superintendents',
+    'Carpenters & Framers',
+    'Kitchen & Bath Installers',
+    'Estimators',
+    'Customer Service / Scheduling',
 ];
 
 export default function Careers() {
@@ -30,8 +31,8 @@ export default function Careers() {
         <SiteLayout>
             <Seo
                 seo={{}}
-                fallbackTitle="Careers â€” Join Our Team | Guardian Air NJ"
-                fallbackDescription="Join the Guardian Air team. We're hiring HVAC technicians, installers, and plumbers across Monmouth, Middlesex & Ocean counties, NJ â€” competitive pay, benefits, and growth."
+                fallbackTitle=”Construction Careers NJ — Join Our Team | Captivating Construction Group”
+                fallbackDescription=”Join the Captivating Construction Group team. We're hiring skilled carpenters, project managers, and construction professionals across New Jersey — competitive pay, benefits, and growth.”
             />
 
             <Breadcrumbs items={[{ label: 'Careers', href: '/careers' }]} />
@@ -39,8 +40,8 @@ export default function Careers() {
             <article>
                 <PageHeader
                     label="Join Our Team"
-                    title="Build Your Career at Guardian Air"
-                    description="We're a growing, family-owned home-services company serving central New Jersey â€” and we're always looking for skilled, customer-focused people to join us."
+                    title="Build Your Career at Captivating Construction Group"
+                    description="We're a growing, family-owned home-services company serving central New Jersey  -  and we're always looking for skilled, customer-focused people to join us."
                     titleClassName="font-normal"
                 >
                     <PillButton href={`tel:+1${PHONE.replace(/[^\d]/g, '')}`} variant="yellow" size="md" icon="phone">
@@ -49,13 +50,13 @@ export default function Careers() {
                 </PageHeader>
 
                 <div className="bg-white">
-                    <div className="mx-auto max-w-[1200px] px-5 py-14 sm:px-6 lg:px-4 lg:py-20">
+                    <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
                         {/* Why work with us */}
                         <section>
                             <SectionHeading sizeClass="text-[28px] font-normal">Why Work With Us</SectionHeading>
-                            <p className="mt-4 max-w-3xl font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
-                                At Guardian Air, our people are the company. We serve homeowners and businesses across Monmouth,
-                                Middlesex, and Ocean counties with honest, high-quality work â€” and we treat our team the same way
+                            <p className="mt-4 max-w-3xl font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
+                                At Captivating Construction Group, our people are the company. We serve homeowners and businesses across Monmouth,
+                                Middlesex, and Ocean counties with honest, high-quality work  -  and we treat our team the same way
                                 we treat our customers: fairly, with respect, and with room to grow.
                             </p>
                             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -65,7 +66,7 @@ export default function Careers() {
                                             <Icon className="h-6 w-6" />
                                         </span>
                                         <h3 className="mt-4 font-display text-lg uppercase text-[#07264A]">{title}</h3>
-                                        <p className="mt-2 font-body text-sm leading-relaxed text-gray-600">{body}</p>
+                                        <p className="mt-2 font-montserrat text-[16px] font-normal leading-[26px] text-black">{body}</p>
                                     </div>
                                 ))}
                             </div>
@@ -74,9 +75,9 @@ export default function Careers() {
                         {/* Open roles */}
                         <section className="mt-14">
                             <SectionHeading sizeClass="text-[28px] font-normal">Positions We Hire For</SectionHeading>
-                            <p className="mt-4 max-w-3xl font-body text-[15px] leading-relaxed text-gray-600 md:text-base">
+                            <p className="mt-4 max-w-3xl font-montserrat text-[16px] font-normal leading-[26px] text-black md:text-base">
                                 We're frequently hiring across our trades. Even if you don't see your exact role listed, we'd love
-                                to hear from great people â€” reach out and tell us what you do.
+                                to hear from great people  -  reach out and tell us what you do.
                             </p>
                             <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
                                 {ROLES.map((role) => (
@@ -92,8 +93,8 @@ export default function Careers() {
 
                         {/* How to apply */}
                         <section className="mt-14 rounded-2xl bg-[#07264A] p-8 text-center sm:p-12">
-                            <h2 className="font-display text-[26px] uppercase leading-tight text-white md:text-[32px]">Ready to Apply?</h2>
-                            <p className="mx-auto mt-3 max-w-xl font-body text-sm leading-relaxed text-white/80 md:text-base">
+                            <h2 className="font-display text-[26px] uppercase leading-tight text-black md:text-[32px]">Ready to Apply?</h2>
+                            <p className="mx-auto mt-3 max-w-xl font-body text-sm leading-relaxed text-black/80 md:text-base">
                                 Send us your details and a quick note about your experience. We review every application and reach
                                 out to qualified candidates fast.
                             </p>

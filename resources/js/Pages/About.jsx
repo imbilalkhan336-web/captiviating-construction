@@ -4,7 +4,7 @@ import ServiceSchema from '@/Components/FrontComponents/ServiceSchema';
 import FeatureBlock from '@/Components/FrontComponents/FeatureBlock';
 import ClientReviews from '@/Components/FrontComponents/ClientReviews';
 import CtaSection from '@/Components/pages-sections/CtaSection';
-import { PillButton } from '@/Components/FrontComponents/PillButton';
+import Btn from '@/Components/FrontComponents/Btn';
 import { IoCheckmarkCircle } from 'react-icons/io5';
 import {
     LuHandshake,
@@ -20,7 +20,7 @@ const HERO_BG = '/image/new-construction.webp';
 const VALUES = [
     {
         title: 'Quality craftsmanship',
-        body: 'We focus on the finest materials, workmanship, and finishes â€” built to last, never rushed.',
+        body: 'We focus on the finest materials, workmanship, and finishes  -  built to last, never rushed.',
     },
     {
         title: 'Professional responsibility',
@@ -107,15 +107,15 @@ function AboutHero() {
                     <h1 className="mt-3 font-montserrat text-[45px] font-bold leading-[54px] text-white">
                         Building Your Vision Into Reality
                     </h1>
-                    <p className="mx-auto mt-5 max-w-2xl font-montserrat text-[16px] font-normal leading-[24px] text-white/85">
+                    <p className="mx-auto mt-5 max-w-2xl font-montserrat text-[16px] font-normal leading-[26px] text-white">
                         At Captivating Construction, we bring your dream home to life with expert craftsmanship,
                         innovative solutions, and personalized service. From concept to completion, our team
                         delivers exceptional results that stand the test of time.
                     </p>
                     <div className="mt-8">
-                        <PillButton href="/contact" variant="blue" size="md">
+                        <Btn href="/contact">
                             Get Your Free Consultation
-                        </PillButton>
+                        </Btn>
                     </div>
                 </div>
             </div>
@@ -125,14 +125,14 @@ function AboutHero() {
 
 function AboutCompany() {
     return (
-        <section className="bg-white py-16 lg:py-24">
-            <div className="mx-auto max-w-[1200px] px-4">
+        <section className="bg-white py-[60px] md:py-[80px] lg:py-[100px]">
+            <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-14">
                     <div>
-                        <h2 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-black">
+                        <h2 className="font-montserrat text-[35px] font-bold leading-[54px] text-black">
                             About <span className="text-brand-blue-light">Captivating Construction Group</span>
                         </h2>
-                        <div className="mt-6 space-y-4 font-body text-[15px] leading-relaxed text-gray-600">
+                        <div className="mt-6 space-y-4 font-montserrat text-[16px] font-normal leading-[26px] text-black">
                             <p>
                                 Captivating Construction Group is a full-service custom home builder based in
                                 Colts Neck, New Jersey, serving homeowners throughout the state. We specialize in
@@ -144,7 +144,7 @@ function AboutCompany() {
                                 thoughtful planning, and hands-on project management. Whether you&apos;re building
                                 a new custom home, expanding the footprint of your home, or transforming an
                                 outdated, underused space, we bring a concierge-like approach tailored to your
-                                needs â€” with meticulous attention to detail and a constant drive for perfection.
+                                needs  -  with meticulous attention to detail and a constant drive for perfection.
                             </p>
                             <p>
                                 Our promise is simple: deliver well-built homes and renovations through
@@ -153,9 +153,9 @@ function AboutCompany() {
                             </p>
                         </div>
                         <div className="mt-8">
-                            <PillButton href="/contact" variant="blue" size="md">
+                            <Btn href="/contact">
                                 Get A Free Consultation
-                            </PillButton>
+                            </Btn>
                         </div>
                     </div>
 
@@ -175,21 +175,21 @@ function AboutCompany() {
 
 function MissionValues() {
     return (
-        <section className="bg-[#f3f4f6] py-16 lg:py-24">
-            <div className="mx-auto max-w-[1200px] px-4">
+        <section className="bg-[#f3f4f6] py-[60px] md:py-[80px] lg:py-[100px]">
+            <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
                     <div>
-                        <h2 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-black">
+                        <h2 className="font-montserrat text-[35px] font-bold leading-[54px] text-black">
                             Our Mission &amp; Values
                         </h2>
-                        <p className="mt-5 font-body text-base leading-relaxed text-gray-600">
+                        <p className="mt-5 font-montserrat text-[16px] font-normal leading-[26px] text-black">
                             Our work is guided by clear principles that shape how we build and how we serve our clients.
                         </p>
                         <ul className="mt-6 space-y-4">
                             {VALUES.map((v) => (
                                 <li key={v.title} className="flex items-start gap-3">
                                     <IoCheckmarkCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue-light" />
-                                    <p className="font-body text-sm leading-relaxed text-gray-700">
+                                    <p className="font-montserrat text-[16px] font-normal leading-[26px] text-black">
                                         <span className="font-bold text-[#0A2A4A]">{v.title}:</span> {v.body}
                                     </p>
                                 </li>
@@ -213,10 +213,10 @@ function MissionValues() {
 
 function OurProcess() {
     return (
-        <section className="bg-brand-blue-light py-16 lg:py-24">
-            <div className="mx-auto max-w-[1200px] px-4">
+        <section className="bg-brand-blue-light py-[60px] md:py-[80px] lg:py-[100px]">
+            <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
-                    <h2 className="font-montserrat text-[35px] font-semibold not-italic leading-[46px] text-white">
+                    <h2 className="font-montserrat text-[35px] font-bold leading-[54px] text-white">
                         Our Process
                     </h2>
                     <p className="mx-auto mt-3 max-w-2xl font-body text-base leading-relaxed text-white/85">
@@ -231,7 +231,7 @@ function OurProcess() {
                                 <Icon className="h-7 w-7" />
                             </div>
                             <h3 className="mt-4 font-body text-lg font-bold text-brand-blue-light">{title}</h3>
-                            <p className="mt-2 font-body text-sm leading-relaxed text-gray-600">{body}</p>
+                            <p className="mt-2 font-montserrat text-[16px] font-normal leading-[26px] text-black">{body}</p>
                         </div>
                     ))}
                 </div>
@@ -246,21 +246,21 @@ export default function AboutPage({ reviews = [], seo = {} }) {
             <Seo
                 seo={seo}
                 fallbackTitle="About Captivating Construction Group | NJ Custom Home Builder"
-                fallbackDescription="Captivating Construction Group is a full-service New Jersey custom home builder with over 30 years of experience â€” new construction, renovations, additions, and remodeling built with luxury craftsmanship."
+                fallbackDescription="Captivating Construction Group is a full-service New Jersey custom home builder with over 30 years of experience  -  new construction, renovations, additions, and remodeling built with luxury craftsmanship."
             />
             <ServiceSchema
                 serviceName="About Captivating Construction Group"
                 serviceType="Custom home builder and general contractor"
-                description="A full-service New Jersey custom home builder based in Colts Neck â€” new construction, renovations, additions, and remodeling from concept to completion."
+                description="A full-service New Jersey custom home builder based in Colts Neck  -  new construction, renovations, additions, and remodeling from concept to completion."
                 path="/about"
             />
 
             <AboutHero />
             <AboutCompany />
 
-            {/* What We Do â€” image left, service list right */}
-            <section className="bg-white py-16 lg:py-24">
-                <div className="mx-auto max-w-[1200px] px-4">
+            {/* What We Do  -  image left, service list right */}
+            <section className="bg-white py-[60px] md:py-[80px] lg:py-[100px]">
+                <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                     <FeatureBlock
                         heading="What We Do"
                         body="We provide comprehensive construction and renovation services, tailored to homeowners who value craftsmanship, quality, and dependable execution. Our core services include:"
@@ -276,9 +276,9 @@ export default function AboutPage({ reviews = [], seo = {} }) {
             <MissionValues />
             <OurProcess />
 
-            {/* Why Homeowners Choose Us â€” image left, checklist right */}
-            <section className="bg-white py-16 lg:py-24">
-                <div className="mx-auto max-w-[1200px] px-4">
+            {/* Why Homeowners Choose Us  -  image left, checklist right */}
+            <section className="bg-white py-[60px] md:py-[80px] lg:py-[100px]">
+                <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                     <FeatureBlock
                         eyebrow="Why Choose Us"
                         heading="Why Homeowners Choose Us"

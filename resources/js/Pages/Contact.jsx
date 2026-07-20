@@ -4,6 +4,7 @@ import { LuLoader, LuCheck } from 'react-icons/lu';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import ServiceSchema from '@/Components/FrontComponents/ServiceSchema';
+import CtaSection from '@/Components/pages-sections/CtaSection';
 
 const HERO_BG = '/image/about-company.webp';
 
@@ -17,7 +18,7 @@ const PROJECT_TYPES = [
     'Other',
 ];
 
-const BUDGETS = ['Under $50k', '$50k â€“ $100k', '$100k â€“ $250k', '$250k â€“ $500k', '$500k+'];
+const BUDGETS = ['Under $50k', '$50k - $100k', '$100k - $250k', '$250k - $500k', '$500k+'];
 
 const HEAR_OPTIONS = ['Google', 'Referral', 'Social Media', 'Drove By', 'Home Show', 'Other'];
 
@@ -36,7 +37,7 @@ function ContactHero() {
                 />
                 <div aria-hidden="true" className="absolute inset-0 bg-black/35" />
 
-                <div className="relative mx-auto max-w-[1200px] px-4 py-20 lg:py-28">
+                <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-[60px] md:py-[80px] lg:py-[100px]">
                     <h1 className="font-montserrat text-[45px] font-bold leading-[54px] text-white">
                         Contact Us
                     </h1>
@@ -119,7 +120,7 @@ export default function ContactPage({ reviews = [], seo = {} }) {
         <SiteLayout reviews={reviews}>
             <Seo
                 seo={seo}
-                fallbackTitle="Contact Us | Captivating Construction Group â€” NJ Custom Home Builder"
+                fallbackTitle="Contact Us | Captivating Construction Group - NJ Custom Home Builder"
                 fallbackDescription="Request a free consultation with Captivating Construction Group. Tell us about your custom home, renovation, or addition project in New Jersey and we'll be in touch."
             />
             <ServiceSchema
@@ -132,8 +133,8 @@ export default function ContactPage({ reviews = [], seo = {} }) {
             <ContactHero />
 
             {/* Request a consultation form */}
-            <section className="bg-[#f3f4f6] py-16 lg:py-24">
-                <div className="mx-auto max-w-3xl px-4">
+            <section className="bg-[#f3f4f6] py-[60px] md:py-[80px] lg:py-[100px]">
+                <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                     <div className="rounded-2xl bg-white p-6 shadow-xl sm:p-10">
                         <h2 className="font-montserrat text-2xl font-bold text-[#0A2A4A] md:text-3xl">
                             Request A Free Consultation
@@ -222,7 +223,7 @@ export default function ContactPage({ reviews = [], seo = {} }) {
                                     className="inline-flex items-center gap-2 rounded-lg bg-brand-blue-light px-7 py-3 font-body text-sm font-bold uppercase tracking-wide text-white shadow-lg transition-colors hover:bg-brand-blue disabled:opacity-60"
                                 >
                                     {processing ? (
-                                        <><LuLoader className="h-4 w-4 animate-spin" /> Sendingâ€¦</>
+                                        <><LuLoader className="h-4 w-4 animate-spin" /> Sending...</>
                                     ) : (
                                         'Submit'
                                     )}
@@ -236,7 +237,7 @@ export default function ContactPage({ reviews = [], seo = {} }) {
             {/* Service-area map */}
             <section>
                 <iframe
-                    title="Captivating Construction Group service area â€” New Jersey"
+                    title="Captivating Construction Group service area - New Jersey"
                     src="https://maps.google.com/maps?q=Colts+Neck,+New+Jersey&t=&z=10&ie=UTF8&iwloc=&output=embed"
                     className="block h-[420px] w-full border-0"
                     loading="lazy"
@@ -244,6 +245,8 @@ export default function ContactPage({ reviews = [], seo = {} }) {
                     allowFullScreen
                 />
             </section>
+
+            <CtaSection />
         </SiteLayout>
     );
 }

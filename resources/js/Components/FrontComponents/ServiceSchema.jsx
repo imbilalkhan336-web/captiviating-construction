@@ -1,24 +1,20 @@
 import { Head } from '@inertiajs/react';
 
-const BASE_URL = 'https://guardmyhvac.com';
-const PHONE = '(848) 276-6300';
-const COUNTIES = ['Monmouth County', 'Middlesex County', 'Ocean County'];
+const BASE_URL = 'https://capconnj.com';
+const PHONE = '(732) 272-5937';
+const AREAS = ['Monmouth County, NJ', 'Middlesex County, NJ', 'Ocean County, NJ', 'Bergen County, NJ', 'Essex County, NJ'];
 
-/**
- * Emits JSON-LD for a service page: HVACBusiness (LocalBusiness) with
- * areaServed, a Service node, and an optional FAQPage built from the page's
- * FAQ blocks. Helps Google show rich results and understand local intent.
- */
 export default function ServiceSchema({ serviceName, serviceType, description, path = '/', faqs = [] }) {
     const business = {
         '@context': 'https://schema.org',
-        '@type': 'HVACBusiness',
+        '@type': 'HomeAndConstructionBusiness',
         '@id': `${BASE_URL}/#business`,
-        name: 'Guardian Air',
-        description: 'Licensed and insured HVAC and plumbing service across Monmouth, Middlesex, and Ocean counties, New Jersey.',
+        name: 'Captivating Construction Group',
+        description: 'Licensed and insured custom home builder and renovation contractor serving New Jersey homeowners.',
         url: BASE_URL,
         telephone: PHONE,
-        areaServed: COUNTIES.map((name) => ({ '@type': 'AdministrativeArea', name })),
+        email: 'info@capconnj.com',
+        areaServed: AREAS.map((name) => ({ '@type': 'AdministrativeArea', name })),
         address: {
             '@type': 'PostalAddress',
             addressRegion: 'NJ',
@@ -34,7 +30,7 @@ export default function ServiceSchema({ serviceName, serviceType, description, p
         description,
         url: `${BASE_URL}${path}`,
         provider: { '@id': `${BASE_URL}/#business` },
-        areaServed: COUNTIES.map((name) => ({ '@type': 'AdministrativeArea', name })),
+        areaServed: AREAS.map((name) => ({ '@type': 'AdministrativeArea', name })),
     };
 
     const graph = [business, service];

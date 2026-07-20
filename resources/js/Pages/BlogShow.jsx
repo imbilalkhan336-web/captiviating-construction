@@ -1,4 +1,4 @@
-﻿import { Head, Link } from '@inertiajs/react';
+﻿﻿import { Head, Link } from '@inertiajs/react';
 import SiteLayout from '@/Layouts/SiteLayout';
 import RequestQuoteCard from '@/Components/FrontComponents/RequestQuoteCard';
 import CtaSection from '@/Components/pages-sections/CtaSection';
@@ -105,7 +105,7 @@ export default function BlogShow({ post, related = [] }) {
             </Head>
 
             <article>
-                {/* Hero â€” full-width bg image + light black overlay, like the other pages */}
+                {/* Hero  -  full-width bg image + light black overlay, like the other pages */}
                 <section className="relative bg-black">
                     <div className="relative overflow-hidden">
                         <div
@@ -115,7 +115,7 @@ export default function BlogShow({ post, related = [] }) {
                         />
                         <div aria-hidden="true" className="absolute inset-0 bg-black/35" />
 
-                        <div className="relative mx-auto max-w-[1200px] px-4 py-20 lg:py-28">
+                        <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-[60px] md:py-[80px] lg:py-[100px]">
                             {post.created_at && (
                                 <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-brand-blue-light">
                                     {formatDate(post.created_at)}
@@ -125,7 +125,7 @@ export default function BlogShow({ post, related = [] }) {
                                 {post.title}
                             </h1>
                             {post.excerpt && (
-                                <p className="mt-4 max-w-2xl font-montserrat text-[16px] font-normal leading-[24px] text-white/85">
+                                <p className="mt-4 max-w-2xl font-montserrat text-[16px] font-normal leading-[26px] text-white">
                                     {post.excerpt}
                                 </p>
                             )}
@@ -134,7 +134,7 @@ export default function BlogShow({ post, related = [] }) {
                 </section>
 
                 <div className="bg-white">
-                    <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
+                    <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 px-5 py-16 sm:px-6 lg:px-4 lg:py-24">
                         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
                             <div className="min-w-0 lg:col-span-7">
                                 <Link
@@ -189,7 +189,7 @@ export default function BlogShow({ post, related = [] }) {
             {/* Related posts */}
             {related.length > 0 && (
                 <section className="bg-gray-50 py-16">
-                    <div className="mx-auto max-w-[1200px] px-4">
+                    <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                         <h2 className="font-display text-2xl uppercase text-[#07264A]">More From the Blog</h2>
                         <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                             {related.map((p) => (

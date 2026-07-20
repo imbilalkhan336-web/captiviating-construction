@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+﻿﻿import { useState } from 'react';
 import Seo from '@/Components/Seo';
 import SiteLayout from '@/Layouts/SiteLayout';
 import Gallery from '@/Components/FrontComponents/Gallery';
@@ -31,25 +31,25 @@ export default function Portfolio({ gallery = [], reviews = [], seo = {} }) {
                     style={{ backgroundImage: `url('${HERO_BG}')` }}
                 />
                 <div aria-hidden="true" className="absolute inset-0 bg-black/35" />
-                <div className="relative mx-auto max-w-[1200px] px-4 py-20 text-center lg:py-28">
+                <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-20 text-center lg:py-28">
                     <h1 className="mt-3 font-montserrat text-[45px] font-bold leading-[54px] text-white">
                         Portfolio
                     </h1>
-                    <p className="mx-auto mt-5 max-w-2xl font-montserrat text-[16px] font-normal leading-[24px] text-white/85">
+                    <p className="mx-auto mt-5 max-w-2xl font-montserrat text-[16px] font-normal leading-[26px] text-white">
                         A look at the custom homes, renovations, and additions we&apos;ve brought to life for
-                        families across New Jersey â€” built with craftsmanship, care, and lasting value.
+                        families across New Jersey  -  built with craftsmanship, care, and lasting value.
                     </p>
                 </div>
             </section>
 
             {/* Gallery */}
-            <section className="bg-white py-16 lg:py-24">
-                <div className="mx-auto max-w-[1200px] px-4">
+            <section className="bg-white py-[60px] md:py-[80px] lg:py-[100px]">
+                <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
                         <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-blue-light">
                             Portfolio
                         </p>
-                        <h2 className="mt-2 font-montserrat text-[35px] font-semibold leading-tight text-black">
+                        <h2 className="mt-2 font-montserrat text-[35px] font-bold leading-[54px] text-black">
                             Building Success Stories
                         </h2>
                     </div>
@@ -81,13 +81,13 @@ export default function Portfolio({ gallery = [], reviews = [], seo = {} }) {
             <RedefiningLuxury />
 
             {/* Second feature block */}
-            <section className="bg-[#f3f4f6] py-16 lg:py-24">
-                <div className="mx-auto max-w-[1200px] px-4">
+            <section className="bg-[#f3f4f6] py-[60px] md:py-[80px] lg:py-[100px]">
+                <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
                     <FeatureBlock
                         reverse
                         eyebrow="Our Approach"
                         heading="Built Around You, From Start to Finish"
-                        body="Every project begins with your vision. We combine decades of experience with a concierge-like approach â€” guiding you through planning, design, and construction so the finished result reflects exactly how you want to live. Meticulous attention to detail and an uncompromising commitment to quality are the cornerstone of everything we build."
+                        body="Every project begins with your vision. We combine decades of experience with a concierge-like approach  -  guiding you through planning, design, and construction so the finished result reflects exactly how you want to live. Meticulous attention to detail and an uncompromising commitment to quality are the cornerstone of everything we build."
                         image="/image/gellory/21-Driftwood-5-1.webp"
                         imageAlt="Custom home built by Captivating Construction"
                     />
